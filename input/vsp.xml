@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
+  <id value="fhir.cqf.vsp"/>
+  <url value="http://fhir.org/guides/cqf/vsp/ImplementationGuide/fhir.cqf.vsp"/>
+  <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
+  <version value="0.1.0-cibuild"/>
+  <name value="VSP"/>
+  <title value="Value Set Packages"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Clinical Quality Framework"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cqframework.org"/>
+    </telecom>
+  </contact>
+  <description value="An implementation guide documenting and demonstrating Value Set Packages that can be used to define and obtain terminology refresh packages for FHIR implementation guides."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="fhir.cqf.vsp"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="crmi">
+    <uri value="http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"/>
+    <packageId value="hl7.fhir.uv.crmi"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <definition>
+    <resource>
+      <reference>
+        <reference value="Parameters/manifest"/>
+      </reference>
+      <name value="Input Expansion Parameters"/>
+      <description value="The input expansion parameters resource for this implementation guide, specifying SNOMED Edition and version. This resource will be contained within the published implementation guide with all pinned references."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <!-- The root will always be toc.html - the template will force it if you don't do it -->
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home Page"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="background.html"/>
+        <title value="Background"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="specification.html"/>
+        <title value="Specification"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="license.html"/>
+        <title value="License"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-expansion-params"/>
+      <value value="resources/parameters/Parameters-manifest.json"/>
+    </parameter>
+    <parameter>
+      <code value="pin-canonicals"/>
+      <value value="pin-all"/>
+    </parameter>
+    <parameter>
+      <code value="pin-manifest"/>
+      <value value="manifest"/>
+    </parameter>
+    <!-- copyright year is a mandatory parameter -->
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2019+"/>
+    </parameter>
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="CI Build"/>
+    </parameter>
+    <parameter>
+      <code value="autoload-resources"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/resources/library"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/resources/parameters"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/vocabulary/valueset"/>
+    </parameter>
+    <parameter>
+      <code value="path-liquid"/>
+      <value value="templates/liquid"/>
+    </parameter>
+    <parameter>
+      <code value="path-suppressed-warnings"/>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>
