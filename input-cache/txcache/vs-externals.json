@@ -1,18 +1,547 @@
 {
+  "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-codesystem-cqfm" : null,
   "http://hl7.org/fhir/Library/QICore-ModelInfo" : null,
-  "http://hl7.org/fhir/ValueSet/knowledge-representation-level" : null,
-  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-mednotrequested" : null,
-  "https://madie.cms.gov/Library/SupplementalDataElements|5.1.000" : null,
-  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance|6.1.0" : null,
+  "http://hl7.org/cda/us/ccda/ImplementationGuide/hl7.cda.us.ccda|3.0.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4|20240606" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-daacde7e-fcba-4fef-8bf2-ed0168acfb45.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-report-and-note-codes" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-017b4ae9-b4c8-4207-b586-1d3de88d1fd1.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-date|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-authored|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-5786274d-0f78-4aef-a4a1-484b946b9784.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-name|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-name|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-type|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-a9105245-d6a5-405a-9f30-9274fd0f6be3.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-survey-codes" : null,
+  "http://hl7.org/fhir/ValueSet/all-resource-types" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-9458a481-8c91-4228-8da8-010a51a1815c.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-date|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/simple-language" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-a7be774e-c5a2-44fd-b778-171e8497f6d2.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-patient|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.10|20231129" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-9f880018-de21-41e5-b069-98b95f2bd23b.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/simple-observation" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-b7d8e058-c25b-4aed-8b10-92781be61283.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-afbc42b4-4563-4978-9227-59041d4ea5c5.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-87ce11e8-5717-490e-abef-e168e5a3ebd9.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-condition-category" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-6a3f9d3e-48e3-4f49-851b-2374b579a451.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-date|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-patient|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.32" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-b9a0117d-f48b-4158-b8e3-9782e20fd810.json"
+  },
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-c4dd5a5c-17ee-4c85-aa22-96afd9f7a93c.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-6281166e-6fed-42ae-9d07-c0d3019d137c.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-observation-category" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-4346ce52-48ee-44bd-b027-628cadde7693.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient|6.1.0" : null,
   "http://fhir.org/guides/cqf/cpg/example/Library/DailyAppleLogic" : null,
-  "http://somewhere.org/fhir/uv/mycontentig/Library/FHIRHelpers|4.0.1" : null,
-  "http://utah.edu/fhir/lcs-cds/ValueSet/conditionclinical" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.8" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-3f6b26a3-6b88-4ec0-beb1-db78ac0ab06c.json"
+  },
+  "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.54|20240606" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-8512d937-62d9-491f-ad36-4b12003c0ce8.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-identifier|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-344ce4c6-ea1c-4252-8c2a-6e20e4fedd0a.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/simple-language|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smokingstatus-max" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/birthsex" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-postalcode|6.1.0" : null,
+  "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-clinical-status|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1114.14|20250723" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-smoking-status-observation-codes" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-report-and-note-codes|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-code|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-id|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-sexual-orientation" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-discharge-disposition|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/simple-observation|6.1.0" : null,
+  "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7901" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-cc7be7d4-3960-442d-86a5-ea752f328070.json"
+  },
+  "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7900" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-e7b338cd-4641-4c94-a2c7-07024b8ec1d1.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-id|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/us-core-category" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.877" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-21e707eb-3175-4c07-a6b4-8c31f72e0ff6.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-city|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.10267|20240605" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-5689716d-7536-4727-86d2-0710bff059b6.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.54" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-ea400fc7-5154-4dff-aab6-4ca2b71da13f.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-location|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-smoking-status-observation-codes|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-name|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-goal-description" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-4b783b80-eaba-4066-afed-c24adf9ea243.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.3" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-bf6c6efe-f27c-48f6-8445-21c41cb35f05.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-observation-value-codes" : null,
+  "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-client|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.22" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-ba90b6cb-d70f-4708-8801-728247e6cfb7.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-52b38bc3-1e4f-4346-ab57-7b0e555beb2a.json"
+  },
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.3|20240625" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-8d9d6a64-b9c2-4493-a6ca-f82f3a33d548.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/careplan-category|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.32|20240215" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-146e051d-36fb-4c5e-93ab-46af5f907a4c.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-extension-questionnaire-uri|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/head-occipital-frontal-circumference-percentile|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-ae168ec0-c53c-42dd-9b99-c2a87b71e405.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-type|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|6.1.0|6.1.0" : null,
   "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm" : null,
-  "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm" : null,
-  "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-class|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30|20240605" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-d959ef04-b1e7-40ae-b939-900c9dc900d1.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/detailed-race|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.38" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-c21d94b4-7da3-46ad-981c-1a8a97200e42.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-6e6a1f0a-fad4-43b1-915c-3f9e64ef81c9.json"
+  },
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.837" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-38783ab6-a960-4708-abbc-eae413bcd54a.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/condition-category|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-id|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-vital-signs|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.5|20240627" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-8147656c-f543-4458-b486-5d8d04e37305.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/careplan-category" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-type|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code|6.1.0" : null,
+  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category" : null,
+  "http://hl7.org/fhir/us/core/OperationDefinition/docref|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-gender|6.1.0" : null,
   "https://madie.cms.gov/Library/HRExampleRatioMeasureCQLLibrary" : null,
-  "http://fhir.org/guides/cqf/cpg/example/ValueSet/Apple" : null,
-  "http://loinc.org/vs/LL358-3" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-temperature|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-condition-category|6.1.0" : null,
   "https://madie.cms.gov/Library/FHIRHelpers|4.4.000" : null,
-  "https://madie.cms.gov/Library/SupplementalDataElements|4.0.000" : null
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-jurisdiction|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-a76ffd92-d7fd-4043-a904-530b31b2045c.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-755b1e3a-48b5-4c42-af2a-959339dcd1ff.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-encounter|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.24" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-095b4cd0-70c4-411b-86b0-f9094f82e891.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-extension-questionnaire-uri|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smoking-status-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-sexual-orientation|6.1.0" : null,
+  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-mednotrequested" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/birthsex|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-pregnancy-status" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-observation-value-codes|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-pregnancy-intent" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-status|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.14914" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-be22424d-7c09-4776-a177-bbade2bbd8d6.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-problem-or-health-concern|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.5|20240606" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-42bdf838-a643-4ab6-b768-d49979dcc5ca.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-abccff40-02c2-45bc-be2d-ad8cdefdd165.json"
+  },
+  "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-id|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-pregnancy-intent|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date|6.1.0" : null,
+  "https://madie.cms.gov/Library/SupplementalDataElements|5.1.000" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-pregnancy-status|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.2074.1.1.3" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-4cf584ab-be09-4b5f-82d1-d7ba3ac542ed.json"
+  },
+  "http://utah.edu/fhir/lcs-cds/ValueSet/conditionclinical" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-id|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-1c4a15a4-26b4-428f-9c0b-8f7cd513ff91.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smokingstatus-max|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-observation-category|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.38|20240606" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-76e14c23-930b-4e4d-b905-906ac5ae5507.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-fbcddbc1-5369-46a5-a6df-85ff2b3f70dd.json"
+  },
+  "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-head-circumference|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-aa8c23ff-7b3b-4683-9b3a-bf48f73bcd4d.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-goal-description|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.1|20240625" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-0c827114-4ff7-43dc-ac44-be75fe98f8b4.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-coverage-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-name|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-practitioner|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-state|6.1.0" : null,
+  "http://fhir.org/guides/cqf/cpg/example/ValueSet/Apple" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.3|20230628" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-fd53055a-f9c9-4855-b1b7-d09aabcd4e6c.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-ethnicity|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.102" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-63b669ef-5d15-4782-8c2e-7ef3e6194a9f.json"
+  },
+  "http://hl7.org/fhir/us/core/CodeSystem/condition-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.103" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-563b383b-4b8c-4b1d-b4bf-0a74f38037ff.json"
+  },
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.53|20240217" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-5dc7c6cc-ac6f-4e72-b129-1dadc21fb86c.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address|6.1.0" : null,
+  "http://hl7.org/fhir/ValueSet/knowledge-representation-level" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-patient|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066|20240606" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-a8ad8df1-5b90-4a93-a496-65dd24ebb719.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-survey-codes|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-identifier|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.4|20230628" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-5ff94ab2-bb48-4909-8641-f494ae77c1d1.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-questionnaire|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-problem-or-health-concern" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-d1968bcb-cd62-42fe-b794-7dd3640f33c8.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-aba5e001-d1f8-41a0-8a3f-1755b15d60ef.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-category" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-85c43083-6c36-475c-9ebf-fbb3537af1b2.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-address|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-description|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591|20250419" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-3ed63be5-c60d-4c5c-bdbe-bcfa3a095674.json"
+  },
+  "https://madie.cms.gov/Library/SupplementalDataElements|4.0.000" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-intent|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6|20250411" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-64e127d3-f4f1-48ef-a2a9-5e0a4f221230.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smoking-status-status" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-9915d799-5cbb-405c-9ebd-0871f66bdc4f.json"
+  },
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.4|20240606" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-81cb6cd7-680a-4c68-a58d-ae672d295afb.json"
+  },
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0|6.1.0" : null,
+  "http://somewhere.org/fhir/uv/mycontentig/Library/FHIRHelpers|4.0.1" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/detailed-race" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-c4b055ef-b52d-41cf-b3e5-63d4f8951883.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height|6.1.0" : null,
+  "http://loinc.org/vs/LL358-3" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-period|6.1.0" : null,
+  "http://www.nubc.org/patient-discharge" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-vital-signs" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-d154c111-7f63-491f-a059-ea70583952d3.json"
+  },
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.8|20240625" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-f338311e-5fcc-410b-abc7-e8fd36c43cb8.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-gender-identity|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-race|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/us-core-category|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-690c1bb8-5c06-4e43-bf9d-c5cb365a52d2.json"
+  },
+  "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.101|20240215" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-755b4936-ebd2-4bc3-a0cd-328d5f8b82ed.json"
+  },
+  "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam|6.1.0|6.1.0" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27|20230706" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-3192cbfe-ec7a-4bf5-a727-12f2f73d3f0b.json"
+  },
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-status|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/ValueSet/omb-race-category" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-06619eda-6880-407a-8da5-11401e21d7bf.json"
+  },
+  "http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type|6.1.0|6.1.0" : null,
+  "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-authoredon|6.1.0" : null,
+  "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.17|20240627" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-8e65e479-7c6d-480f-9d4b-c4d9267319c6.json"
+  }
 }
