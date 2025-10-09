@@ -92,6 +92,14 @@
       <code value="pin-manifest"/>
       <value value="manifest"/>
     </parameter>
+    <parameter>
+      <code value="apply-version"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="default-version"/>
+      <value value="true"/>
+    </parameter>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>

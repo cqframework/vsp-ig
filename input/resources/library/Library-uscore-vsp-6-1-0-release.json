@@ -1,9 +1,7 @@
 {
     "resourceType": "Library",
-    "id": "uscore-vsp-6-1-0-draft",
+    "id": "uscore-vsp-6-1-0-release",
     "meta": {
-        "versionId": "4",
-        "lastUpdated": "2025-10-08T14:19:24.663-06:00",
         "profile": [
             "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-manifestlibrary"
         ]
@@ -3299,8 +3297,8 @@
             }
         }
     ],
-    "url": "http://hl7.org/fhir/us/core-vsp/6.1.0/Library/hl7.fhir.us.core-vsp-6-1-0-draft",
-    "version": "6.1.0",
+    "url": "http://hl7.org/fhir/us/core-vsp/6.1.0/Library/hl7.fhir.us.core-vsp-6-1-0-release",
+    "version": "2025-09",
     "name": "USCore610ValueSetPackage",
     "title": "US Core 6.1.0 Value Set Package",
     "status": "active",

@@ -118,7 +118,7 @@
       }
     } ],
   "url": "http://hl7.org/cda/us/ccda-vsp/3.0.0/Library/hl7.fhir.us.ccda-vsp-3-0-0-draft",
-  "version": "2025-09-draft",
+  "version": "2025-09",
   "name": "CCDA300ValueSetPackage",
   "title": "C-CDA 3.0.0 Value Set Package",
   "status": "draft",
