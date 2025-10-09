@@ -130,7 +130,7 @@
     } ]
   },
   "date": "2025-09-23",
-  "description":  "This is a Value Set Refresh Package for the Consolidated-CDA 3.0.0 implementation guide. It contains expansions of any value sets defined or used in the C-CDA 3.0.0 implementation guide, but refreshed using the code systems versions specified in the input expansion parameters",
+  "description":  "This is a draft version of a Value Set Refresh Package for the Consolidated-CDA 3.0.0 implementation guide. It contains expansions of any value sets defined or used in the C-CDA 3.0.0 implementation guide, but refreshed using the code systems versions specified in the input expansion parameters.",
   "lastReviewDate": "2025-09-23",
   "approvalDate": "2025-09-23",
   "relatedArtifact": [

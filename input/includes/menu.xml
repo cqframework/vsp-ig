@@ -1,6 +1,5 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
       </b>
@@ -21,6 +20,7 @@
       </li>
     </ul>
   </li>
+  <li><a href="examples.html" class="item">Examples</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
@@ -42,5 +42,4 @@
     </ul>
   </li>
   <li><a href="changes.html" class="item">Changes</a></li>
-  <li><a href="examples.html" class="item">Examples</a></li>
 </ul>
