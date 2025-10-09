@@ -6,58 +6,252 @@
   },
   "contained": [
     {
-      "resourceType": "Parameters",
-      "id": "exp-params",
-      "parameter": [
-        {
-          "name": "system-version",
-          "valueCanonical": "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"
-        },
-        {
-          "name": "system-version",
-          "valueCanonical": "http://loinc.org|2.76"
-        },
-        {
-          "name": "system-version",
-          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
-        },
-        {
-          "name": "system-version",
-          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender|3.0.0"
-        },
-        {
-          "name": "system-version",
-          "valueCanonical": "urn:oid:2.16.840.1.113883.6.238|1.2"
-        },
-        {
-          "name": "system-version",
-          "valueCanonical": "http://www.ama-assn.org/go/cpt|2024"
-        },
-        {
-          "name": "system-version",
-          "valueCanonical": "http://hl7.org/fhir/sid/cvx|20231102"
-        },
-        {
-          "name": "system-version",
-          "valueCanonical": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2024"
-        },
-        {
-          "name": "system-version",
-          "valueCanonical": "http://hl7.org/fhir/sid/icd-10-cm|2024"
-        },
-        {
-          "name": "system-version",
-          "valueCanonical": "http://www.cms.gov/Medicare/Coding/ICD10|2024"
-        },
-        {
-          "name": "system-version",
-          "valueCanonical": "http://www.nlm.nih.gov/research/umls/rxnorm|01022024"
-        },
-        {
-          "name": "system-version",
-          "valueCanonical": "https://nahdo.org/sopt|9.2"
+        "resourceType": "Parameters",
+        "id": "exp-params",
+        "parameter": [ {
+        "name": "system-version",
+        "valueCanonical": "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240901",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "SNOMEDCT, 2024-09"
+            } ]
         }
-      ]
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "ActCode, 9.0.0"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "urn:oid:2.16.840.1.113883.6.238|1.2",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "CDCREC, 1.2"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://www.ada.org/cdt|2023",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "CDT, 2023"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://www.ama-assn.org/go/cpt|2025",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "CPT, 2025"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://hl7.org/fhir/sid/cvx|20241216",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "CVX, 2024-12-16"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://terminology.hl7.org/CodeSystem/data-absent-reason|1.0.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "DataAbsentReason, 1.0.0"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "HCPCS, 2025"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html|2022",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "HSLOC, 2022"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://hl7.org/fhir/sid/icd-10-cm|2025",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "ICD10CM, 2025"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://www.cms.gov/Medicare/Coding/ICD10|2025",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "ICD10PCS, 2025"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://hl7.org/fhir/sid/icd-9-cm|2013",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "ICD9CM, 2013"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://loinc.org|2.78",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "LOINC, 2.78"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding|2021",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "PresentOnAdmission, 2021"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://www.nlm.nih.gov/research/umls/rxnorm|01062025",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "RXNORM, 2025-01"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "https://nahdo.org/sopt|9.2",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "SOP, 9.2"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://hl7.org/fhir/CodeSystem/task-code|4.0.1",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "Task Codes, 4.0.1"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://hl7.org/fhir/us/core/CodeSystem/condition-category|6.1.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "US Core Condition Category Extension Codes, 6.1.0"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|1.0.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "AllergyIntolerance Clinical Status Codes, 1.0.0"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification|1.0.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "AllergyIntolerance Verification Status, 1.0.0"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "Condition Clinical Status Codes, 3.0.0"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://terminology.hl7.org/CodeSystem/condition-ver-status|2.0.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "Condition Verification Status, 2.0.0"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://terminology.hl7.org/CodeSystem/diagnosis-role|1.1.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "Diagnosis Role, 1.1.0"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype|1.0.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "Example Diagnosis Type Codes, 1.0.0"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://terminology.hl7.org/CodeSystem/ex-procedure-type|1.0.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "Example Procedure Type Codes, 1.0.0"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "Medication Request Category Codes, 1.0.0"
+            } ]
+        }
+        }, {
+        "name": "system-version",
+        "valueCanonical": "http://terminology.hl7.org/CodeSystem/observation-category|1.0.0",
+        "_valueCanonical": {
+            "extension": [ {
+            "url": "http://hl7.org/fhir/StructureDefinition/display",
+            "valueString": "Observation Category Codes, 1.0.0"
+            } ]
+        }
+        } ]
     },
     {
       "resourceType": "Parameters",
