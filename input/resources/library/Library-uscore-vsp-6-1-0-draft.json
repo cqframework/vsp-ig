@@ -313,8 +313,8 @@
     } ],
   "url": "http://hl7.org/fhir/us/core-vsp/6.1.0/Library/hl7.fhir.us.core-vsp-6-1-0-draft",
   "version": "2025-09",
-  "name": "USCore610ValueSetPackage",
-  "title": "US Core 6.1.0 Value Set Package",
+  "name": "USCore610ValueSetPackageDefinition",
+  "title": "US Core 6.1.0 Draft Value Set Package Definition",
   "status": "draft",
   "experimental": true,
   "type": {
@@ -324,7 +324,7 @@
     } ]
   },
   "date": "2025-09-23",
-  "description":  "This is a Value Set Refresh Package for the US Core 6.1.0 implementation guide. It contains expansions of any value sets defined or used in the US Core 6.1.0 implementation guide, but refreshed using the code systems versions specified in the input expansion parameters",
+  "description":  "This is a draft Value Set Refresh Package Definition for the US Core 6.1.0 implementation guide. It contains expansions of any value sets defined or used in the US Core 6.1.0 implementation guide, but refreshed using the code systems versions specified in the input expansion parameters.",
   "lastReviewDate": "2025-09-23",
   "approvalDate": "2025-09-23",
   "relatedArtifact": [
