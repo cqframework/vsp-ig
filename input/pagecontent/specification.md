@@ -61,7 +61,7 @@ Third, the Value Set Package definition will have a contains Parameters resource
 
 And finally, the Value Set Package definition will have a `relatedArtifact` entry identifying the Implementation Guide. The `type` of this entry is `composed-of` to indicate that the Asset Collection starts with the implementation guide.
 
-To ensure content expectations are met, a Value Set Package Definition SHALL conform to the [CRMIManifestLibrary]({{site.data.fhir.ver.crmi}}/StructureDefinition-crmi-manifestlibrary.html) profile.
+To ensure content expectations are met, a Value Set Package Definition must conform to the [CRMIManifestLibrary]({{site.data.fhir.ver.crmi}}/StructureDefinition-crmi-manifestlibrary.html) profile.
 
 #### Release
 
