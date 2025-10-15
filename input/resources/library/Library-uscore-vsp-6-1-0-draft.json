@@ -320,7 +320,8 @@
   "type": {
     "coding": [ {
       "system": "http://terminology.hl7.org/CodeSystem/library-type",
-      "code": "asset-collection"
+      "code": "asset-collection",
+      "display": "Asset Collection"
     } ]
   },
   "date": "2025-09-23",
