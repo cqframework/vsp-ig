@@ -4,6 +4,15 @@ Ensure that Value Set Package specification $package results include "all value 
 
 In more detail, this means the package would include value sets that are referenced by key elements in profiles defined in the implementation guide, resulting in the inclusion of inherited key elements. Recursively here means that this inheritance applies to the derived profiles all the way back to the resource on which the profile is defined.
 
+> BR: We should keep the "key elements" decision separate from the "recursively" decision
+
+> BR: I think there are 3 options we need to consider for recursion too:
+> 1. Not recursive (i.e. only consider artifacts that are "in" the artifact being packaged) (this is roughly packageOnly = true)
+> 2. Recursive, but excluding core (consider artifacts that are in dependencies, but not if that dependency is the core spec)
+> 3. Fully recursive (this is roughly packageOnly = false)
+>
+> The dependency trace should be complete, regardless of how the packaging is performed
+
 ### CRMI $package Context
 
 - $package already takes include, which can include terminology, profiles, examples, etc.  ￼
@@ -27,6 +36,8 @@ There are approaches that do not require changes to the CRMI specification and a
    - Pass each required ValueSet as includeUri={canonical}|{version}.
    - Do not ask for include=terminology at all (or ask for it and then use excludeUri to prune).
    - The main downside of this approach is the caller (or a helper service in front of $package) needs to run that Key Elements traversal before calling $package. So the logic still exists, but it runs client-side instead of inside the package operation.
+  
+> BR: I don't think we should try to fit this into the existing because as you point out, there's too much room for discrepancy in implementation, I think we need new parameters that are explicit about the behavior we expect.
 
 #### CRMI Specification Change Approaches
 
@@ -52,3 +63,14 @@ There are approaches that do not require changes to the CRMI specification and a
    - New $package parameter bindingProfile (0..* canonical(StructureDefinition)).
    - Server includes only terminology needed for the Key Elements of those specific profiles, recursively through their baseDefinition.
    - Useful when the caller only wants a subset of an IG.
+  
+> BR: I don't think we should mix the key element tracing with terminology. That's what the feature is focused on for value set packages, but the idea is more general than that, and I think we'll get a more flexible implementation by keeping the notions orthogonal. I like the dependencyRole idea, and the $release operation could flag, as part of its dependency walk, the role that the dependency is in. We could extend that to include the notions of "test", and "example" and that would give us a way to capture those types of dependencies (and then give meaning to the "test" and "example" include codes as well). And in fact, by allowing the "role types" as "include codes" we could without introducing a new parameter, use that to do the filtering. So...
+>
+> crmi-dependencyRole - valueCode - bound required to { default, key, example, test }
+>
+> If a dependency has no dependencyRole, it is assumed to be a "default" dependency
+> If no dependency role include code is specified, all dependencies are assumed to be included
+> A key dependency is one encountered while walking a dependency from a key element
+> Dependency roles are imposed recursively (i.e. a CodeSystem referenced from a key ValueSet is a key CodeSystem)
+> Dependency roles are cumulative (i.e. a CodeSystem dependency referenced from both a key ValueSet and an example ValueSet is both a key and an example dependency)
+
