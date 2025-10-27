@@ -9,7 +9,8 @@ In more detail, this means the package would include value sets that are referen
 > BR: I think there are 3 options we need to consider for recursion too:
 > 1. Not recursive (i.e. only consider artifacts that are "in" the artifact being packaged) (this is roughly packageOnly = true)
 > 2. Recursive, but excluding core (consider artifacts that are in dependencies, but not if that dependency is the core spec)
-> 3. Fully recursive (this is roughly packageOnly = false)
+>    a. Need to understand whether the dependencies are in core (hl7.fhir), extensions (hl7.fhir.extensions), or THO (hl7.terminology)
+> 4. Fully recursive (this is roughly packageOnly = false)
 >
 > The dependency trace should be complete, regardless of how the packaging is performed
 
