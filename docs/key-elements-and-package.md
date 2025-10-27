@@ -10,6 +10,7 @@ In more detail, this means the package would include value sets that are referen
 > 1. Not recursive (i.e. only consider artifacts that are "in" the artifact being packaged) (this is roughly packageOnly = true)
 > 2. Recursive, but excluding core (consider artifacts that are in dependencies, but not if that dependency is the core spec)
 >    a. Need to understand whether the dependencies are in core (hl7.fhir), extensions (hl7.fhir.extensions), or THO (hl7.terminology)
+>    b. Proposed: new $package parameter excludePackageId 0..* string Whether to exclude dependencies that are in the package id (note the id may include a version i.e. `hl7.fhir.uv.crmi#1.0.0`
 > 4. Fully recursive (this is roughly packageOnly = false)
 >
 > The dependency trace should be complete, regardless of how the packaging is performed
