@@ -4,6 +4,8 @@ Determining the key elements of a profile consists of:
 - Starting with mustSupport elements, elements changed in the differential, and their ancestors, then
 - Recursively adding mandatory children, constrained children, sliced children, modifier elements, etc.
 
+> BR: Would be helpful to link to the definition of "key elements" in the specification here (IG Guidance IG, IIRC)
+
 ## Key Element Procedure
 
 Using the key element definition, a procedure can be determined to run on a StructureDefinition (SD).
