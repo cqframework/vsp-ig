@@ -1,0 +1,159 @@
+{
+  "resourceType": "ValueSet",
+  "id": "patient-contactrelationship",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-10-31T13:33:02.751-06:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode": "pa"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode": "normative"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+    "valueCode": "4.0.0"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger": 5
+  } ],
+  "url": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.4.642.3.1130"
+  } ],
+  "version": "4.0.1",
+  "name": "PatientContactRelationship",
+  "title": "Patient Contact Relationship ",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-11-01T09:29:23+11:00",
+  "publisher": "FHIR Project team",
+  "contact": [ {
+    "telecom": [ {
+      "system": "url",
+      "value": "http://hl7.org/fhir"
+    } ]
+  } ],
+  "description": "The nature of the relationship between the patient and the contact person.",
+  "compose": {
+    "include": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-not-a",
+        "value": "O"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.property",
+      "extension": [ {
+        "url": "uri",
+        "valueUri": "http://hl7.org/fhir/concept-properties#status"
+      }, {
+        "url": "code",
+        "valueCode": "status"
+      } ]
+    } ],
+    "identifier": "urn:uuid:007b2b46-1c0e-4955-b2e7-bb2f5a92c8c4",
+    "timestamp": "2025-10-31T20:21:06.129Z",
+    "total": 12,
+    "parameter": [ {
+      "name": "used-codesystem",
+      "valueUri": "http://terminology.hl7.org/CodeSystem/v2-0131|2.9"
+    } ],
+    "contains": [ {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.contains.property",
+        "extension": [ {
+          "url": "code",
+          "valueCode": "status"
+        }, {
+          "url": "value",
+          "valueCode": "deprecated"
+        } ]
+      } ],
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "BP",
+      "display": "Billing contact person"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "C",
+      "display": "Emergency Contact"
+    }, {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.contains.property",
+        "extension": [ {
+          "url": "code",
+          "valueCode": "status"
+        }, {
+          "url": "value",
+          "valueCode": "deprecated"
+        } ]
+      } ],
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "CP",
+      "display": "Contact person"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "E",
+      "display": "Employer"
+    }, {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.contains.property",
+        "extension": [ {
+          "url": "code",
+          "valueCode": "status"
+        }, {
+          "url": "value",
+          "valueCode": "deprecated"
+        } ]
+      } ],
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "EP",
+      "display": "Emergency contact person"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "F",
+      "display": "Federal Agency"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "I",
+      "display": "Insurance Company"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "N",
+      "display": "Next-of-Kin"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "O",
+      "display": "Other"
+    }, {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.contains.property",
+        "extension": [ {
+          "url": "code",
+          "valueCode": "status"
+        }, {
+          "url": "value",
+          "valueCode": "deprecated"
+        } ]
+      } ],
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "PR",
+      "display": "Person preparing referral"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "S",
+      "display": "State Agency"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code": "U",
+      "display": "Unknown"
+    } ]
+  }
+}

@@ -190,3 +190,9 @@ In addition, consider setting the `pin-external` parameter, as this will instruc
 Following these recommendations ensures that resources published in implementation guides do not pin references to canonical resources, so that these references can be redirected using the value set package definitions.
 
 See the [Canonical Pinning](https://build.fhir.org/ig/FHIR/ig-guidance/pinning.html#managing-canonical-versions-pinning) topic in FHIR IG Guidance for a detailed description of how pinning works in the publisher.
+
+### Guidance on Terminology Usage
+
+TODO: Provide guidance that IG editors can include in their terminology pages that explains how terminology packages can be used
+
+

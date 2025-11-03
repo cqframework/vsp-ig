@@ -1,0 +1,1002 @@
+{
+  "resourceType": "ValueSet",
+  "id": "v3-NativeEntityAlaska",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-10-31T13:35:33.273-06:00"
+  },
+  "language": "en",
+  "text": {
+    "status": "extensions",
+    "div": "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"CodeSystem-v3-TribalEntityUS.html\"><code>http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS</code></a> where concept  is-a  <a href=\"CodeSystem-v3-TribalEntityUS.html#v3-TribalEntityUS-_NativeEntityAlaska\">_NativeEntityAlaska</a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"CodeSystem-v3-TribalEntityUS.html\"><code>http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-v3-TribalEntityUS.html#v3-TribalEntityUS-_NativeEntityAlaska\">_NativeEntityAlaska</a></td><td>NativeEntityAlaska</td><td>NATIVE ENTITIES WITHIN THE STATE OF ALASKA RECOGNIZED AND ELIGIBLE TO RECEIVE SERVICES FROM THE UNITED STATES BUREAU OF INDIAN AFFAIRS</td></tr></table></li></ul></div>"
+  },
+  "url": "http://terminology.hl7.org/ValueSet/v3-NativeEntityAlaska",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.1.11.11969"
+  } ],
+  "version": "2.0.0",
+  "name": "NativeEntityAlaska",
+  "title": "NativeEntityAlaska",
+  "status": "active",
+  "experimental": false,
+  "date": "2014-03-26",
+  "description": "NATIVE ENTITIES WITHIN THE STATE OF ALASKA RECOGNIZED AND ELIGIBLE TO RECEIVE SERVICES FROM THE UNITED STATES BUREAU OF INDIAN AFFAIRS",
+  "compose": {
+    "include": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "_NativeEntityAlaska"
+      } ]
+    } ],
+    "exclude": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "concept": [ {
+        "code": "_NativeEntityAlaska"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.property",
+      "extension": [ {
+        "url": "uri",
+        "valueUri": "http://hl7.org/fhir/concept-properties#status"
+      }, {
+        "url": "code",
+        "valueCode": "status"
+      } ]
+    } ],
+    "identifier": "urn:uuid:41c3cf54-4181-40d3-bef2-70f9e149be28",
+    "timestamp": "2025-10-31T20:18:07.474Z",
+    "total": 230,
+    "parameter": [ {
+      "name": "displayLanguage",
+      "valueCode": "en"
+    }, {
+      "name": "used-codesystem",
+      "valueUri": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS|4.0.0"
+    } ],
+    "contains": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "338",
+      "display": "Native Village of Afognak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "339",
+      "display": "Agdaagux Tribe of King Cove"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "340",
+      "display": "Native Village of Akhiok"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "341",
+      "display": "Akiachak Native Community"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "342",
+      "display": "Akiak Native Community"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "343",
+      "display": "Native Village of Akutan"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "344",
+      "display": "Village of Alakanuk"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "345",
+      "display": "Alatna Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "346",
+      "display": "Native Village of Aleknagik"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "347",
+      "display": "Algaaciq Native Village (St. Mary's)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "348",
+      "display": "Allakaket Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "349",
+      "display": "Native Village of Ambler"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "350",
+      "display": "Village of Anaktuvuk Pass"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "351",
+      "display": "Yupiit of Andreafski"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "352",
+      "display": "Angoon Community Association"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "353",
+      "display": "Village of Aniak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "354",
+      "display": "Anvik Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "355",
+      "display": "Arctic Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "356",
+      "display": "Asa'carsarmiut Tribe"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "357",
+      "display": "Native Village of Atka"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "358",
+      "display": "Village of Atmautluak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "359",
+      "display": "Native Village of Atqasuk"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "360",
+      "display": "Native Village of Barrow Inupiat Traditional Government"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "361",
+      "display": "Beaver Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "362",
+      "display": "Native Village of Belkofski"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "363",
+      "display": "Village of Bill Moore's Slough"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "364",
+      "display": "Birch Creek Tribe"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "365",
+      "display": "Native Village of Brevig Mission"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "366",
+      "display": "Native Village of Buckland"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "367",
+      "display": "Native Village of Cantwell"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "368",
+      "display": "Native Village of Chenega (aka Chanega)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "369",
+      "display": "Chalkyitsik Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "370",
+      "display": "Village of Chefornak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "371",
+      "display": "Chevak Native Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "372",
+      "display": "Chickaloon Native Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "373",
+      "display": "Chignik Bay Tribal Council"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "374",
+      "display": "Native Village of Chignik Lagoon"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "375",
+      "display": "Chignik Lake Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "376",
+      "display": "Chilkat Indian Village (Klukwan)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "377",
+      "display": "Chilkoot Indian Association (Haines)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "378",
+      "display": "Chinik Eskimo Community (Golovin)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "379",
+      "display": "Cheesh-Na Tribe"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "380",
+      "display": "Native Village of Chitina"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "381",
+      "display": "Native Village of Chuathbaluk (Russian Mission, Kuskokwim)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "382",
+      "display": "Chuloonawick Native Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "383",
+      "display": "Circle Native Community"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "384",
+      "display": "Village of Clarks Point"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "385",
+      "display": "Native Village of Council"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "386",
+      "display": "Craig Tribal Association"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "387",
+      "display": "Village of Crooked Creek"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "388",
+      "display": "Curyung Tribal Council"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "389",
+      "display": "Native Village of Deering"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "390",
+      "display": "Native Village of Diomede (aka Inalik)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "391",
+      "display": "Village of Dot Lake"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "392",
+      "display": "Douglas Indian Association"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "393",
+      "display": "Native Village of Eagle"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "394",
+      "display": "Native Village of Eek"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "395",
+      "display": "Egegik Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "396",
+      "display": "Eklutna Native Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "397",
+      "display": "Native Village of Ekuk"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "398",
+      "display": "Native Village of Ekwok"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "399",
+      "display": "Native Village of Elim"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "400",
+      "display": "Emmonak Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "401",
+      "display": "Evansville Village (aka Bettles Field)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "402",
+      "display": "Native Village of Eyak (Cordova)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "403",
+      "display": "Native Village of False Pass"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "404",
+      "display": "Native Village of Fort Yukon"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "405",
+      "display": "Native Village of Gakona"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "406",
+      "display": "Galena Village (aka Louden Village)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "407",
+      "display": "Native Village of Gambell"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "408",
+      "display": "Native Village of Georgetown"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "409",
+      "display": "Native Village of Goodnews Bay"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "410",
+      "display": "Organized Village of Grayling (aka Holikachuk)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "411",
+      "display": "Gulkana Village Council"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "412",
+      "display": "Native Village of Hamilton"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "413",
+      "display": "Healy Lake Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "414",
+      "display": "Holy Cross Tribe"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "415",
+      "display": "Hoonah Indian Association"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "416",
+      "display": "Native Village of Hooper Bay"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "417",
+      "display": "Hughes Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "418",
+      "display": "Huslia Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "419",
+      "display": "Hydaburg Cooperative Association"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "420",
+      "display": "Igiugig Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "421",
+      "display": "Village of Iliamna"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "422",
+      "display": "Inupiat Community of the Arctic Slope"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "423",
+      "display": "Iqugmiut Traditional Council"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "424",
+      "display": "Ivanof Bay Tribe"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "425",
+      "display": "Kaguyak Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "426",
+      "display": "Organized Village of Kake"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "427",
+      "display": "Kaktovik Village (aka Barter Island)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "428",
+      "display": "Village of Kalskag"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "429",
+      "display": "Village of Kaltag"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "430",
+      "display": "Native Village of Kanatak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "431",
+      "display": "Native Village of Karluk"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "432",
+      "display": "Organized Village of Kasaan"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "433",
+      "display": "Kasigluk Traditional Elders Council"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "434",
+      "display": "Kenaitze Indian Tribe"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "435",
+      "display": "Ketchikan Indian Community"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "436",
+      "display": "Native Village of Kiana"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "437",
+      "display": "King Island Native Community"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "438",
+      "display": "King Salmon Tribe"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "439",
+      "display": "Native Village of Kipnuk"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "440",
+      "display": "Native Village of Kivalina"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "441",
+      "display": "Klawock Cooperative Association"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "442",
+      "display": "Native Village of Kluti Kaah (aka Copper Center)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "443",
+      "display": "Knik Tribe"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "444",
+      "display": "Native Village of Kobuk"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "445",
+      "display": "Kokhanok Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "446",
+      "display": "Native Village of Kongiganak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "447",
+      "display": "Village of Kotlik"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "448",
+      "display": "Native Village of Kotzebue"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "449",
+      "display": "Native Village of Koyuk"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "450",
+      "display": "Koyukuk Native Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "451",
+      "display": "Organized Village of Kwethluk"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "452",
+      "display": "Native Village of Kwigillingok"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "453",
+      "display": "Native Village of Kwinhagak (aka Quinhagak)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "454",
+      "display": "Native Village of Larsen Bay"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "455",
+      "display": "Levelock Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "456",
+      "display": "Tangirnaq Native Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "457",
+      "display": "Lime Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "458",
+      "display": "Village of Lower Kalskag"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "459",
+      "display": "Manley Hot Springs Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "460",
+      "display": "Manokotak Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "461",
+      "display": "Native Village of Marshall (aka Fortuna Ledge)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "462",
+      "display": "Native Village of Mary's Igloo"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "463",
+      "display": "McGrath Native Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "464",
+      "display": "Native Village of Mekoryuk"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "465",
+      "display": "Mentasta Traditional Council"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "466",
+      "display": "Metlakatla Indian Community, Annette Island Reserve"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "467",
+      "display": "Native Village of Minto"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "468",
+      "display": "Naknek Native Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "469",
+      "display": "Native Village of Nanwalek (aka English Bay)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "470",
+      "display": "Native Village of Napaimute"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "471",
+      "display": "Native Village of Napakiak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "472",
+      "display": "Native Village of Napaskiak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "473",
+      "display": "Native Village of Nelson Lagoon"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "474",
+      "display": "Nenana Native Association"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "475",
+      "display": "New Koliganek Village Council"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "476",
+      "display": "New Stuyahok Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "477",
+      "display": "Newhalen Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "478",
+      "display": "Newtok Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "479",
+      "display": "Native Village of Nightmute"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "480",
+      "display": "Nikolai Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "481",
+      "display": "Native Village of Nikolski"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "482",
+      "display": "Ninilchik Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "483",
+      "display": "Native Village of Noatak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "484",
+      "display": "Nome Eskimo Community"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "485",
+      "display": "Nondalton Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "486",
+      "display": "Noorvik Native Community"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "487",
+      "display": "Northway Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "488",
+      "display": "Native Village of Nuiqsut (aka Nooiksut)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "489",
+      "display": "Nulato Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "490",
+      "display": "Nunakauyarmiut Tribe"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "491",
+      "display": "Native Village of Nunapitchuk"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "492",
+      "display": "Village of Ohogamiut"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "493",
+      "display": "Alutiiq Tribe of Old Harbor"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "494",
+      "display": "Orutsararmiut Traditional Native Council"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "495",
+      "display": "Oscarville Traditional Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "496",
+      "display": "Native Village of Ouzinkie"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "497",
+      "display": "Native Village of Paimiut"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "498",
+      "display": "Pauloff Harbor Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "499",
+      "display": "Pedro Bay Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "500",
+      "display": "Native Village of Perryville"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "501",
+      "display": "Petersburg Indian Association"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "502",
+      "display": "Native Village of Pilot Point"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "503",
+      "display": "Pilot Station Traditional Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "504",
+      "display": "Pitka's Point Traditional Council"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "505",
+      "display": "Platinum Traditional Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "506",
+      "display": "Native Village of Point Hope"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "507",
+      "display": "Native Village of Point Lay"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "508",
+      "display": "Native Village of Port Graham"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "509",
+      "display": "Native Village of Port Heiden"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "510",
+      "display": "Native Village of Port Lions"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "511",
+      "display": "Portage Creek Village (aka Ohgsenakale)"
+    }, {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.contains.property",
+        "extension": [ {
+          "url": "code",
+          "valueCode": "status"
+        }, {
+          "url": "value",
+          "valueCode": "retired"
+        } ]
+      } ],
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "inactive": true,
+      "code": "512",
+      "display": "Pribilof Islands Aleut Communities of St. Paul & St. George Islands (Saint George Island and Saint Paul Island)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "513",
+      "display": "Qagan Tayagungin Tribe of Sand Point"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "514",
+      "display": "Qawalangin Tribe of Unalaska"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "515",
+      "display": "Rampart Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "516",
+      "display": "Village of Red Devil"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "517",
+      "display": "Native Village of Ruby"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "518",
+      "display": "Saint George Island"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "519",
+      "display": "Native Village of Saint Michael"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "520",
+      "display": "Saint Paul Island"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "521",
+      "display": "Salamatof Tribe"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "522",
+      "display": "Native Village of Savoonga"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "523",
+      "display": "Organized Village of Saxman"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "524",
+      "display": "Native Village of Scammon Bay"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "525",
+      "display": "Native Village of Selawik"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "526",
+      "display": "Seldovia Village Tribe"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "527",
+      "display": "Shageluk Native Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "528",
+      "display": "Native Village of Shaktoolik"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "529",
+      "display": "Native Village of Nunam Iqua"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "530",
+      "display": "Native Village of Shishmaref"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "531",
+      "display": "Sun'aq Tribe of Kodiak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "532",
+      "display": "Native Village of Shungnak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "533",
+      "display": "Sitka Tribe of Alaska"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "534",
+      "display": "Skagway Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "535",
+      "display": "Village of Sleetmute"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "536",
+      "display": "Village of Solomon"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "537",
+      "display": "South Naknek Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "538",
+      "display": "Stebbins Community Association"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "539",
+      "display": "Native Village of Stevens"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "540",
+      "display": "Village of Stony River"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "541",
+      "display": "Takotna Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "542",
+      "display": "Native Village of Tanacross"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "543",
+      "display": "Native Village of Tanana"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "544",
+      "display": "Native Village of Tatitlek"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "545",
+      "display": "Native Village of Tazlina"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "546",
+      "display": "Telida Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "547",
+      "display": "Native Village of Teller"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "548",
+      "display": "Native Village of Tetlin"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "549",
+      "display": "Central Council of the Tlingit & Haida Indian Tribes"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "550",
+      "display": "Traditional Village of Togiak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "551",
+      "display": "Tuluksak Native Community"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "552",
+      "display": "Native Village of Tuntutuliak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "553",
+      "display": "Native Village of Tununak"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "554",
+      "display": "Twin Hills Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "555",
+      "display": "Native Village of Tyonek"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "556",
+      "display": "Ugashik Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "557",
+      "display": "Umkumiut Native Village"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "558",
+      "display": "Native Village of Unalakleet"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "559",
+      "display": "Native Village of Unga"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "560",
+      "display": "Village of Venetie"
+    }, {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.contains.property",
+        "extension": [ {
+          "url": "code",
+          "valueCode": "status"
+        }, {
+          "url": "value",
+          "valueCode": "retired"
+        } ]
+      } ],
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "inactive": true,
+      "code": "561",
+      "display": "Native Village of Venetie Tribal Government (Arctic Village and Village of Venetie)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "562",
+      "display": "Village of Wainwright"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "563",
+      "display": "Native Village of Wales"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "564",
+      "display": "Native Village of White Mountain"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "565",
+      "display": "Wrangell Cooperative Association"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+      "code": "566",
+      "display": "Yakutat Tlingit Tribe"
+    } ]
+  }
+}

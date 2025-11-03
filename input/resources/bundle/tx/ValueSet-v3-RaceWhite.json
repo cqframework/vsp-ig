@@ -1,0 +1,135 @@
+{
+  "resourceType": "ValueSet",
+  "id": "v3-RaceWhite",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-10-31T13:35:35.357-06:00"
+  },
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><ul><li>Include codes from <a href=\"CodeSystem-v3-Race.html\"><code>http://terminology.hl7.org/CodeSystem/v3-Race</code></a> where concept  is-a  <a href=\"CodeSystem-v3-Race.html#v3-Race-2106-3\">2106-3</a></li></ul></div>"
+  },
+  "url": "http://terminology.hl7.org/ValueSet/v3-RaceWhite",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.1.11.15814"
+  } ],
+  "version": "2.0.0",
+  "name": "RaceWhite",
+  "title": "RaceWhite",
+  "status": "active",
+  "experimental": false,
+  "date": "2014-03-26",
+  "description": "***No description***",
+  "compose": {
+    "include": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "2106-3"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:5e540c66-4d00-41cd-ab90-205c8f8722f6",
+    "timestamp": "2025-10-31T20:20:00.895Z",
+    "total": 21,
+    "parameter": [ {
+      "name": "displayLanguage",
+      "valueCode": "en"
+    }, {
+      "name": "used-codesystem",
+      "valueUri": "http://terminology.hl7.org/CodeSystem/v3-Race|4.0.0"
+    } ],
+    "contains": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+      "code": "2106-3",
+      "display": "White",
+      "contains": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "code": "2108-9",
+        "display": "European",
+        "contains": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2109-7",
+          "display": "Armenian"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2110-5",
+          "display": "English"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2111-3",
+          "display": "French"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2112-1",
+          "display": "German"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2113-9",
+          "display": "Irish"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2114-7",
+          "display": "Italian"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2115-4",
+          "display": "Polish"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2116-2",
+          "display": "Scottish"
+        } ]
+      }, {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "code": "2118-8",
+        "display": "Middle Eastern or North African",
+        "contains": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2119-6",
+          "display": "Assyrian"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2120-4",
+          "display": "Egyptian"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2121-2",
+          "display": "Iranian"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2122-0",
+          "display": "Iraqi"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2123-8",
+          "display": "Lebanese"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2124-6",
+          "display": "Palestinian"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2125-3",
+          "display": "Syrian"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2126-1",
+          "display": "Afghanistani"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+          "code": "2127-9",
+          "display": "Israeili"
+        } ]
+      }, {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "code": "2129-5",
+        "display": "Arab"
+      } ]
+    } ]
+  }
+}

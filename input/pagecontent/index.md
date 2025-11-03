@@ -13,25 +13,34 @@ This capability will be provided through the use of the Value Set Manager, an ex
 
 A _Value Set Package_ is all the expanded value sets required for an implementation guide, refreshed using specified code system versions, so that implementers can obtain stable, predictable expansions that are consistent with author intent.
 
-Value Set Packages are defined by IG/Publication authors as needed. For example, the US Core 6.1.0 Implementation Guide was initially published in June of 2023. Since that time, many of the code systems used by value sets in the implementation guide have been updated, including at least SNOMED, LOINC, and RxNORM. 
+Value Set Packages are defined by IG/Publication authors as needed. For example, the US Core 6.1.0 Implementation Guide was initially published in June of 2023. At that time, some of the code system versions available were:
+
+US Core 6.1.0 Initial Publication
+* SNOMED, US Edition, 2023-03
+* LOINC, 2.74, 2023-03
+* RxNorm, 05012023, 2023-05
+
+Since that time, many of the code systems used by value sets in the implementation guide have been updated, including at least SNOMED, LOINC, and RxNORM. 
 
 A _Value Set Package Definition_ is used to specify the code system versions (i.e. input expansion parameters) to be used. For example:
 
 US Core 6.1.0 2025 Refresh
-* SNOMED 2024-09
-* LOINC 2.78
-* RXNORM 2025-01
+* SNOMED, US Edition, 2025-03
+* LOINC 2.80, 2025-04
+* RXNORM 08042025, 2025-08
 * ...
-
-See the [Draft US Core 6.1.0 2025 Value Set Package Definition](Library-uscore-vsp-6-1-0-draft.html) for a detailed example of a draft Value Set Package Definition.
 
 This Value Set Package Definition is then _released_, a process that involves _pinning_ all the dependencies used by the implementation guide. If the version of a dependency is not set by the input expansion parameters, then the latest known version is recorded.
 
-See the [Released US Core 6.1.0 2025 Value Set Package Definition](Library-uscore-vsp-6-1-0-release.html) for a detailed example of a released Value Set Package Definition.
-
 With the released Value Set Package Definition, the Value Set Package can be _packaged_ by using a terminology server to expand all the value sets using the code system versions specified in the released definition. These expanded value sets can then be provided as a Bundle.
 
-See the [US Core 6.1.0 2025 Value Set Package](Bundle-uscore-vsp-6-1-0.html)
+### Contents
+
+* **[Background](background.html)**
+* **[Specification](specification.html)**
+* **[Examples](examples.html)**
+* **[Artifacts](artifacts.html)**
+* **[Changes](changes.html)**
 
 ### Dependencies
 
