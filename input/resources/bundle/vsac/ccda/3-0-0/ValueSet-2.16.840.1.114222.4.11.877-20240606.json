@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.114222.4.11.877-20240606",
+  "meta": {
+    "versionId": "16",
+    "lastUpdated": "2025-10-22T15:06:57.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-10-22"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.877",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.114222.4.11.877"
+  } ],
+  "version": "20240606",
+  "name": "DetailedEthnicity",
+  "title": "Detailed Ethnicity",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This value set includes all concepts from the CDC Race and Ethnicity (CDCREC) code system that may be used to represent a person’s ethnicity, as defined by the U.S. Bureau of the Census. It encompasses both standard ethnicity classifications and additional concepts used to indicate when ethnicity information is unknown, not provided, or declined by the individual.),(Data Element Scope: Concept codes that represent a person’s cultural heritage, origin, or ethnic background, as defined by the United States Census Bureau and captured in the CDC Race and Ethnicity (CDCREC) code system),(Inclusion Criteria: All descendant concepts from the concept \"2133-7 Ethnicity\", excluding that root concept, as derived from the Race and Ethnicity - CDC code system.),(Exclusion Criteria: Concepts that are not a descendant of \"2133-7 Ethnicity\", therefore, no concepts descendant from \"1000-9 Race\". Also the root concept \"Ethnicity\".)",
+  "compose": {
+    "include": [ {
+      "system": "urn:oid:2.16.840.1.113883.6.238",
+      "version": "1.3",
+      "filter": [ {
+        "property": "concept",
+        "op": "descendent-of",
+        "value": "2133-7"
+      } ]
+    } ],
+    "exclude": [ {
+      "system": "urn:oid:2.16.840.1.113883.6.238",
+      "version": "1.3",
+      "filter": [ {
+        "modifierExtension": [ {
+          "url": "vsacOpModifier",
+          "valueString": "childOf"
+        } ],
+        "property": "concept",
+        "op": "is-a",
+        "value": "2133-7"
+      } ]
+    } ]
+  }
+}

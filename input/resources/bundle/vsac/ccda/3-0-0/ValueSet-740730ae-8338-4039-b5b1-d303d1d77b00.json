@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "740730ae-8338-4039-b5b1-d303d1d77b00",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-17T15:39:34.598-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-08-19"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-05"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1099.30"
+  } ],
+  "version": "20240605",
+  "name": "CareTeamMemberFunction",
+  "title": "Care Team Member Function",
+  "status": "active",
+  "date": "2024-06-05T01:20:19-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This set of concepts describes the function performed on a patient-centered care team. This value set contains concepts that describe a functional role played by a member of a care team on a particular care team.),(Data Element Scope: A functional role on a patient's care team.),(Inclusion Criteria: The set of commonly played roles on a patient-centered care team.),(Exclusion Criteria: Functional roles on care teams that are not patient-centered. For example, hospital's may define teams of practitioners who fill roles that are relevant to the function of the hospital's operation. These roles would not be included when they are not roles that would be played on a patient-centered care team.)",
+  "compose": {
+    "include": [ {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.10267" ]
+    }, {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27" ]
+    } ]
+  }
+}

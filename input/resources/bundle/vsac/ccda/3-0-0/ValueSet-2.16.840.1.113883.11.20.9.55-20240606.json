@@ -1,0 +1,81 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.11.20.9.55-20240606",
+  "meta": {
+    "versionId": "16",
+    "lastUpdated": "2025-07-23T14:16:49.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2024-06-06"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.55",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.11.20.9.55"
+  } ],
+  "version": "20240606",
+  "name": "GoalAchievement",
+  "title": "Goal Achievement",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The Goal Achievement value set contains concepts that describe a patient's progression (or lack thereof) toward a goal.),(Data Element Scope: Used to capture the status of a patient's progress toward achieving a defined goal, including improvement, no change, or decline.),(Inclusion Criteria: The following concepts from SNOMED CT: Self(  390802008 | Goal achieved) and DescendentsAndSelf(390801001 | Goal not achieved).),(Exclusion Criteria: only as noted in inclusion criteria)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "390801001",
+        "display": "Goal not achieved (finding)"
+      }, {
+        "code": "390802008",
+        "display": "Goal achieved (finding)"
+      }, {
+        "code": "706905005",
+        "display": "Goal not attainable (finding)"
+      }, {
+        "code": "706906006",
+        "display": "No progress toward goal (finding)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-17T15:53:23-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "code": "390801001",
+      "display": "Goal not achieved (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "390802008",
+      "display": "Goal achieved (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "706905005",
+      "display": "Goal not attainable (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "706906006",
+      "display": "No progress toward goal (finding)"
+    } ]
+  }
+}

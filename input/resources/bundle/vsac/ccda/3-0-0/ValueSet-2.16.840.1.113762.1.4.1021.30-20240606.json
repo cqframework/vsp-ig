@@ -1,0 +1,131 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1021.30-20240606",
+  "meta": {
+    "versionId": "18",
+    "lastUpdated": "2025-08-20T18:44:38.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-08-20"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.30",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1021.30"
+  } ],
+  "version": "20240606",
+  "name": "AdministrationUnitDoseForm",
+  "title": "AdministrationUnitDoseForm",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "description": "Source: https://evsexplore.semantics.cancer.gov/evsexplore/hierarchy/ncit/C87300",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This value set includes concepts that represent dosing units used in drug administration where the unit describes a measurable quantity that is not based on discrete countable items (e.g., tablets or vials), but instead refers to continuous or non-standard units of administration.),(Data Element Scope: Used to standardize the terminology representing non-count-based dosing units for medications, particularly those administered via sprays, drops, inhalation, or topical application.),(Inclusion Criteria: Selected NCIt concepts with a Concept_In_Subset relationship to SPL Unit of Presentation Terminology (C87300) NCIt concepts with a Concept_In_Subset relationship to SPL Unit of Presentation Terminology (C87300) such as:\nCapful Dosing Unit\nActuation Dosing Unit\nDropperful Dosing Unit),(Exclusion Criteria: Exclude concepts that:\nRepresent standard measurement units (e.g., milliliters, grams, inches)\nRepresent countable physical forms (e.g., tablets, capsules, bars, packets, lozenges))",
+  "compose": {
+    "include": [ {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "concept": [ {
+        "code": "C102405",
+        "display": "Capful Dosing Unit"
+      }, {
+        "code": "C122629",
+        "display": "Actuation Dosing Unit"
+      }, {
+        "code": "C122631",
+        "display": "Dropperful Dosing Unit"
+      }, {
+        "code": "C25397",
+        "display": "Application Unit"
+      }, {
+        "code": "C44278",
+        "display": "Unit"
+      }, {
+        "code": "C48491",
+        "display": "Metric Drop"
+      }, {
+        "code": "C48501",
+        "display": "Inhalation Dosing Unit"
+      }, {
+        "code": "C48536",
+        "display": "Scoopful Dosing Unit"
+      }, {
+        "code": "C48537",
+        "display": "Spray Dosing Unit"
+      }, {
+        "code": "C65060",
+        "display": "Puff Dosing Unit"
+      }, {
+        "code": "C71204",
+        "display": "Nebule Dosing Unit"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-17T15:47:59-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C102405",
+      "display": "Capful Dosing Unit"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C122629",
+      "display": "Actuation Dosing Unit"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C122631",
+      "display": "Dropperful Dosing Unit"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C25397",
+      "display": "Application Unit"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C44278",
+      "display": "Unit"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C48491",
+      "display": "Metric Drop"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C48501",
+      "display": "Inhalation Dosing Unit"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C48536",
+      "display": "Scoopful Dosing Unit"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C48537",
+      "display": "Spray Dosing Unit"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C65060",
+      "display": "Puff Dosing Unit"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C71204",
+      "display": "Nebule Dosing Unit"
+    } ]
+  }
+}

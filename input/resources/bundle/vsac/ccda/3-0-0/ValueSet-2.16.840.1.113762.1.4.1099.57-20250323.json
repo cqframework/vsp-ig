@@ -1,0 +1,242 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1099.57-20250323",
+  "meta": {
+    "versionId": "26",
+    "lastUpdated": "2025-03-23T06:57:54.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "ADVault Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-03-23"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-03-23"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1099.57"
+  } ],
+  "version": "20250323",
+  "name": "AdvanceDirectivesContentType",
+  "title": "Advance Directives Content Type",
+  "status": "active",
+  "date": "2025-03-23T06:57:54-04:00",
+  "publisher": "ADVault",
+  "description": "Grouper created to permit Advance Directive entry Content Types to be expressed using LOINC.",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Concepts which are used to identify a type of entry content that is relevant as an Advance Directive including the appointment of healthcare agents, as well as other care experience preferences, treatment intervention preferences, health goals, and priorities.),(Data Element Scope: These concepts can be used as the range of answers to the question, what type of information is included in a person's advance directive? Or individual concepts from this value set can be used to code/find the actual wishes of the patient for each of these areas where future planning preferences can be expressed.),(Inclusion Criteria: ),(Exclusion Criteria: )",
+  "compose": {
+    "include": [ {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.69.5" ]
+    }, {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.35" ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-17T15:48:33-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    }, {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "code": "75773-2",
+      "display": "Goals, preferences, and priorities for medical treatment [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75775-7",
+      "display": "Decision to inform doctors and nurses about the role religion, faith, culture, or spirituality play in my life [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75776-5",
+      "display": "Preference on consulting a supportive and palliative care team to help treat physical, emotional, and spiritual discomfort and support family [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75777-3",
+      "display": "Information to tell doctors if my health deteriorates due to a terminal illness and I am unable to interact meaningfully with family, friends, or surroundings [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75778-1",
+      "display": "Information to tell doctors if I have a severe, irreversible brain injury or illness and can't dress, feed, or bathe myself, or communicate my medical wishes, but can be kept alive [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75779-9",
+      "display": "Thoughts on cardiopulmonary resuscitation (CPR) [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75780-7",
+      "display": "Preferred location to spend final days if possible to choose [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75781-5",
+      "display": "Thoughts on organ and tissue donations [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75782-3",
+      "display": "Thoughts regarding autopsy [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75786-4",
+      "display": "Powers granted to healthcare agent [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75787-2",
+      "display": "Advance directive - request for intubation"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75788-0",
+      "display": "Advance directive - request for tube feeding"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75789-8",
+      "display": "Advance directive - request for life support"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75790-6",
+      "display": "Advance directive - request for IV fluid and support"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75791-4",
+      "display": "Advance directive - request for antibiotics"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75792-2",
+      "display": "Advance directive - request for resuscitation that differs from cardiopulmonary resuscitation"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75793-0",
+      "display": "Other directives that have not otherwise been documented [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "77352-3",
+      "display": "Thoughts on artificial nutrition and hydration [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81329-5",
+      "display": "Thoughts on resuscitation [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81330-3",
+      "display": "Thoughts on intubation [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81331-1",
+      "display": "Thoughts on tube feeding [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81332-9",
+      "display": "Thoughts on IV fluid and support [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81333-7",
+      "display": "Thoughts on antibiotics [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81340-2",
+      "display": "Goals AndOr preferences in order of priority [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81349-3",
+      "display": "Thoughts on life-sustaining procedures if pregnant [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81350-1",
+      "display": "Thoughts on pain management [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81353-5",
+      "display": "Thoughts on hastening death [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81356-8",
+      "display": "Death arrangements [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81357-6",
+      "display": "Messages to be delivered after death [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81358-4",
+      "display": "Person(s) to notify upon death [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81359-2",
+      "display": "Near death thoughts and feelings to be shared [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81360-0",
+      "display": "My likes and joys [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81361-8",
+      "display": "Things that make me laugh [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81362-6",
+      "display": "My dislikes and fears [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81363-4",
+      "display": "Things that matter to me [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81364-2",
+      "display": "Religious or cultural beliefs [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81365-9",
+      "display": "Religious or cultural affiliation contact to notify [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81366-7",
+      "display": "Unfinished business [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81376-6",
+      "display": "Mental health treatment preferences [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81379-0",
+      "display": "Goals, preferences, and priorities upon death [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "95541-9",
+      "display": "Care experience preference"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75783-1",
+      "display": "Primary healthcare agent [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75784-9",
+      "display": "First alternate healthcare agent [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75785-6",
+      "display": "Second alternate healthcare agent [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81335-2",
+      "display": "Patient Healthcare agent"
+    }, {
+      "system": "http://loinc.org",
+      "code": "81343-6",
+      "display": "Healthcare agent advisor [Reported]"
+    } ]
+  }
+}

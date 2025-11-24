@@ -1,0 +1,2937 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OutcomeObservation",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-17T14:05:21.217-07:00"
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation\">Observation</a><a name=\"Observation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R5/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (should-text-ref-value, should-value, should-author)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">Observation</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:hl7-org:v3<br/>Elements defined in Ancestors:<a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ANY.html\" title=\"If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.\">@nullFlavor</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question\">realmCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.\">typeId</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question\">templateId</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">@classCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">@moodCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">@negationInd</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">id</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">code</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">derivationExpr</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">text</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">statusCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">effectiveTime</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">priorityCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">repeatNumber</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">languageCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">value</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">interpretationCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">methodCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\" title=\"Drawn from concept domain ActSite\">targetSiteCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">subject</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">specimen</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">performer</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">author</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">informant</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">participant</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">entryRelationship</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">reference</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">precondition</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">sdtcPrecondition2</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\" title=\"Relates an Observation to the ObservationRange class, where the expected range of values for a particular observation can be specified.\">referenceRange</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Observation.html\">sdtcInFulfillmentOf1</a><br/><span style=\"opacity: 0.5\">Base for all types and resources</span><br/><span style=\"font-weight:bold\">Instance of this type are validated by templateId</span><br/><span style=\"font-weight:bold\" title=\"The root class that contains instances of this class\">Logical Container: </span><a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ClinicalDocument.html\">ClinicalDocument (CDA Class)</a><br/><span style=\"font-weight:bold\">should-text-ref-value: </span>SHOULD contain text/reference/@value<br/><span style=\"font-weight:bold\">should-value: </span>SHOULD contain value<br/><span style=\"font-weight:bold\">should-author: </span>SHOULD contain author</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.templateId\">Slices for templateId</a><a name=\"Observation.templateId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by value:root</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.templateId:outcome-obs\" title=\"Slice outcome-obs\">templateId:outcome-obs</a><a name=\"Observation.templateId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.templateId:outcome-obs.root\">@root</a><a name=\"Observation.templateId.root\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-oid.html\" title=\"string\">oid</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-uuid.html\" title=\"string\">uuid</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ruid.html\" title=\"string\">ruid</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">2.16.840.1.113883.10.20.22.4.144</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">@extension</span><a name=\"Observation.templateId.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.classCode\">@classCode</a><a name=\"Observation.classCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">OBS</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.moodCode\">@moodCode</a><a name=\"Observation.moodCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">EVN</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.id\">id</a><a name=\"Observation.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.code\">code</a><a name=\"Observation.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-CD.html\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.text\">text</a><a name=\"Observation.text\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ED.html\">ED</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">SHOULD reference the portion of section narrative text corresponding to this entry</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.text.reference\">reference</a><a name=\"Observation.text.reference\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R5/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (value-starts-octothorpe)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-TEL.html\">TEL</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">value-starts-octothorpe: </span>If reference/@value is present, it SHALL begin with a '#' and SHALL point to its corresponding narrative</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.value\">value</a><a name=\"Observation.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ANY.html\">ANY</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-BL.html\">BL</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ED.html\">ED</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ST.html\">ST</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-CD.html\">CD</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-CV.html\">CV</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-CE.html\">CE</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-CO.html\">CO</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-SC.html\">SC</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-II.html\">II</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-TEL.html\">TEL</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-AD.html\">AD</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-EN.html\">EN</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-INT.html\">INT</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-REAL.html\">REAL</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-PQ.html\">PQ</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-MO.html\">MO</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-TS.html\">TS</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-IVL-PQ.html\">IVL_PQ</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-IVL-TS.html\">IVL_TS</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-PIVL-TS.html\">PIVL_TS</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-EIVL-TS.html\">EIVL_TS</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-SXPR-TS.html\">SXPR_TS</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-RTO-PQ-PQ.html\">RTO_PQ_PQ</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.author\">author</a><a name=\"Observation.author\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-AuthorParticipation.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Author\">AuthorParticipation</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Base for all types and resources</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.entryRelationship\">Slices for entryRelationship</a><a name=\"Observation.entryRelationship\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-EntryRelationship.html\">EntryRelationship</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\">Where an Outcome Observation needs to reference an Intervention Act already described in the CDA document instance, rather than repeating the full content of the Intervention Act, the Entry Reference template may be used to reference this entry.</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by value:typeCode, profile:act, profile:observation</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.entryRelationship:goal-reference\" title=\"Slice goal-reference\">entryRelationship:goal-reference</a><a name=\"Observation.entryRelationship\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R5/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (entry-ref-goal)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-EntryRelationship.html\">EntryRelationship</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The following entryRelationship represents the relationship between an Outcome Observation and a Goal Observation. Because the Goal Observation is already described in the CDA document instance's Goals section, rather than repeating the full content of the Goal Observation, the Entry Reference template can be used to reference this entry.<br/><span style=\"font-weight:bold\">entry-ref-goal: </span>This entryReference template **SHALL** reference an instance of a Goal Observation template.<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.entryRelationship:goal-reference.typeCode\">@typeCode</a><a name=\"Observation.entryRelationship.typeCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">GEVL</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.entryRelationship:goal-reference.act\">act</a><a name=\"Observation.entryRelationship.act\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-EntryReference.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Act\">EntryReference</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Base for all types and resources</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.entryRelationship:progressTowardGoalObservation\" title=\"Slice progressTowardGoalObservation\">entryRelationship:progressTowardGoalObservation</a><a name=\"Observation.entryRelationship\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-EntryRelationship.html\">EntryRelationship</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The following entryRelationship represents the relationship between an Outcome Observation and a Progress Toward Goal Observation (Outcome Observation SUPPORTS Progress Toward Goal Observation). In the Care Planning workflow, the judgment about how well the person is progressing towards the goal is based on the observations made about the status of the patient with respect to interventions performed in the pursuit of achieving that goal.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.entryRelationship:progressTowardGoalObservation.typeCode\">@typeCode</a><a name=\"Observation.entryRelationship.typeCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">SPRT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.entryRelationship:progressTowardGoalObservation.inversionInd\">@inversionInd</a><a name=\"Observation.entryRelationship.inversionInd\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-bl-simple.html\" title=\"boolean\">bl</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">true</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.entryRelationship:progressTowardGoalObservation.observation\">observation</a><a name=\"Observation.entryRelationship.observation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ProgressTowardGoalObservation.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Observation\">ProgressTowardGoalObservation</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Base for all types and resources</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.entryRelationship:intervention-reference\" title=\"Slice intervention-reference\">entryRelationship:intervention-reference</a><a name=\"Observation.entryRelationship\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R5/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (entry-ref-intervention)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-EntryRelationship.html\">EntryRelationship</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Where an Outcome Observation needs to reference an Intervention Act already described in the CDA document instance, rather than repeating the full content of the Intervention Act, the Entry Reference template may be used to reference this entry<br/><span style=\"font-weight:bold\">entry-ref-intervention: </span>This entryReference template **SHALL** reference an instance of a Goal Observation template.<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.entryRelationship:intervention-reference.typeCode\">@typeCode</a><a name=\"Observation.entryRelationship.typeCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">RSON</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.entryRelationship:intervention-reference.act\">act</a><a name=\"Observation.entryRelationship.act\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-EntryReference.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Act\">EntryReference</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Base for all types and resources</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.reference\">reference</a><a name=\"Observation.reference\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Reference.html\">Reference</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.reference.typeCode\">@typeCode</a><a name=\"Observation.reference.typeCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">REFR</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OutcomeObservation-definitions.html#Observation.reference.externalDocument\">externalDocument</a><a name=\"Observation.reference.externalDocument\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ExternalDocumentReference.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/ExternalDocument\">ExternalDocumentReference</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Base for all types and resources</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/logical-target",
+    "_valueBoolean": {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "not-applicable"
+      } ]
+    }
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+    "valueUri": "urn:hl7-org:v3"
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+    "valueString": "observation"
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/logical-container",
+    "valueUri": "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/type-profile-style",
+    "valueUri": "cda"
+  } ],
+  "url": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.10.20.22.4.144"
+  } ],
+  "version": "3.0.0",
+  "name": "OutcomeObservation",
+  "title": "Outcome Observation",
+  "status": "draft",
+  "date": "2024-05-18T00:16:25-05:00",
+  "publisher": "Health Level Seven",
+  "contact": [ {
+    "name": "HL7 International - Structured Documents",
+    "telecom": [ {
+      "system": "url",
+      "value": "http://www.hl7.org/Special/committees/structure"
+    } ]
+  } ],
+  "description": "This template represents the outcome of care resulting from the interventions used to treat the patient. In the Care Planning workflow, the judgment about how well the person is progressing towards the goal is based on the observations made about the status of the patient with respect to interventions performed in the pursuit of achieving that goal.\n\nOften thought of as an \"actual outcome\", the Outcome Observation may be related to goals, progression toward goals, and the associated interventions. For example, an observation outcome of a blood oxygen saturation level of 95% is related to the goal of \"Maintain Pulse Ox greater than 92\", which in turn is related to the health concern of respiratory insufficiency and the problem of pneumonia. The template makes use of the Entry Reference (templateId:2.16.840.1.113883.10.20.22.4.122) to reference the interventions and goals defined elsewhere in the Care Plan CDA instance.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "code": "US"
+    } ]
+  } ],
+  "fhirVersion": "5.0.0",
+  "mapping": [ {
+    "identity": "rim",
+    "uri": "http://hl7.org/v3",
+    "name": "RIM Mapping"
+  } ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
+  "baseDefinition": "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "short": "Base for all types and resources",
+      "definition": "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Base",
+        "min": 0,
+        "max": "*"
+      },
+      "constraint": [ {
+        "key": "should-text-ref-value",
+        "severity": "warning",
+        "human": "SHOULD contain text/reference/@value",
+        "expression": "text.reference.value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      }, {
+        "key": "should-value",
+        "severity": "warning",
+        "human": "SHOULD contain value",
+        "expression": "value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      }, {
+        "key": "should-author",
+        "severity": "warning",
+        "human": "SHOULD contain author",
+        "expression": "author.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      } ],
+      "isModifier": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Observation.nullFlavor",
+      "path": "Observation.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.realmCode",
+      "path": "Observation.realmCode",
+      "definition": "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.realmCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ]
+    }, {
+      "id": "Observation.typeId",
+      "path": "Observation.typeId",
+      "definition": "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.typeId",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.typeId.nullFlavor",
+      "path": "Observation.typeId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.typeId.assigningAuthorityName",
+      "path": "Observation.typeId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.typeId.displayable",
+      "path": "Observation.typeId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.typeId.root",
+      "path": "Observation.typeId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "Identifies the type as an HL7 Registered model",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "fixedString": "2.16.840.1.113883.1.3"
+    }, {
+      "id": "Observation.typeId.extension",
+      "path": "Observation.typeId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.templateId",
+      "path": "Observation.templateId",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "root"
+        } ],
+        "rules": "open"
+      },
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 1,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.templateId:outcome-obs",
+      "path": "Observation.templateId",
+      "sliceName": "outcome-obs",
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.templateId:outcome-obs.nullFlavor",
+      "path": "Observation.templateId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.templateId:outcome-obs.assigningAuthorityName",
+      "path": "Observation.templateId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.templateId:outcome-obs.displayable",
+      "path": "Observation.templateId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.templateId:outcome-obs.root",
+      "path": "Observation.templateId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "patternString": "2.16.840.1.113883.10.20.22.4.144"
+    }, {
+      "id": "Observation.templateId:outcome-obs.extension",
+      "path": "Observation.templateId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.classCode",
+      "path": "Observation.classCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "SHALL contain exactly one [1..1] @classCode=\"OBS\" (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:1098-31219).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Observation.classCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "OBS",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDAActClassObservation"
+      }
+    }, {
+      "id": "Observation.moodCode",
+      "path": "Observation.moodCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "SHALL contain exactly one [1..1] @moodCode=\"EVN\" (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:1098-31220).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Observation.moodCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "EVN",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-xActMoodDocumentObservation|2.0.0"
+      }
+    }, {
+      "id": "Observation.negationInd",
+      "path": "Observation.negationInd",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.negationInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.id",
+      "path": "Observation.id",
+      "comment": "SHALL contain at least one [1..*] id (CONF:1098-31223).",
+      "min": 1,
+      "max": "*",
+      "base": {
+        "path": "Observation.id",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "representation": [ "typeAttr" ],
+      "comment": "SHALL contain exactly one [1..1] code, which SHOULD be selected from CodeSystem LOINC (urn:oid:2.16.840.1.113883.6.1) (CONF:1098-32746).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Observation.code",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      } ],
+      "binding": {
+        "strength": "example",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ObservationType"
+      }
+    }, {
+      "id": "Observation.derivationExpr",
+      "path": "Observation.derivationExpr",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.derivationExpr",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ST"
+      } ]
+    }, {
+      "id": "Observation.text",
+      "path": "Observation.text",
+      "representation": [ "typeAttr" ],
+      "short": "SHOULD reference the portion of section narrative text corresponding to this entry",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.text",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Observation.text.nullFlavor",
+      "path": "Observation.text.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.text.compression",
+      "path": "Observation.text.compression",
+      "representation": [ "xmlAttr" ],
+      "label": "Compression",
+      "definition": "Indicates whether the raw byte data is compressed, and what compression algorithm was used.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.compression",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDACompressionAlgorithm"
+      }
+    }, {
+      "id": "Observation.text.integrityCheck",
+      "path": "Observation.text.integrityCheck",
+      "representation": [ "xmlAttr" ],
+      "label": "Integrity Check",
+      "definition": "The integrity check is a short binary value representing a cryptographically strong checksum that is calculated over the binary data. The purpose of this property, when communicated with a reference is for anyone to validate later whether the reference still resolved to the same data that the reference resolved to when the encapsulated data value with reference was created.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.integrityCheck",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "base64Binary",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bin" ]
+      } ]
+    }, {
+      "id": "Observation.text.integrityCheckAlgorithm",
+      "path": "Observation.text.integrityCheckAlgorithm",
+      "representation": [ "xmlAttr" ],
+      "label": "Integrity Check Algorithm",
+      "definition": "Specifies the algorithm used to compute the integrityCheck value. The cryptographically strong checksum algorithm Secure Hash Algorithm-1 (SHA-1) is currently the industry standard. It has superseded the MD5 algorithm only a couple of years ago, when certain flaws in the security of MD5 were discovered. Currently the SHA-1 hash algorithm is the default choice for the integrity check algorithm. Note that SHA-256 is also entering widespread usage.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.integrityCheckAlgorithm",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-IntegrityCheckAlgorithm|2.0.0"
+      }
+    }, {
+      "id": "Observation.text.language",
+      "path": "Observation.text.language",
+      "representation": [ "xmlAttr" ],
+      "label": "Language",
+      "definition": "For character based information the language property specifies the human language of the text.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.language",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ]
+    }, {
+      "id": "Observation.text.mediaType",
+      "path": "Observation.text.mediaType",
+      "representation": [ "xmlAttr" ],
+      "label": "Media Type",
+      "definition": "Identifies the type of the encapsulated data and identifies a method to interpret or render the data.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.mediaType",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "example",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-MediaType"
+      }
+    }, {
+      "id": "Observation.text.representation",
+      "path": "Observation.text.representation",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.representation",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/BinaryDataEncoding"
+      }
+    }, {
+      "id": "Observation.text.xmlText",
+      "path": "Observation.text.xmlText",
+      "representation": [ "xmlText" ],
+      "short": "Allows for mixed text content. If @representation='B64', this SHALL be a base64binary string.",
+      "definition": "Data that is primarily intended for human interpretation or for further machine processing is outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information as defined by a different standard (e.g., XML-signatures.)",
+      "comment": "This element is represented in XML as textual content. The actual name \"xmlText\" will not appear in a CDA instance.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.xmlText",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.text.reference",
+      "path": "Observation.text.reference",
+      "label": "Reference",
+      "definition": "A telecommunication address (TEL), such as a URL for HTTP or FTP, which will resolve to precisely the same binary data that could as well have been provided as inline data.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.reference",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/TEL"
+      } ],
+      "constraint": [ {
+        "key": "value-starts-octothorpe",
+        "severity": "error",
+        "human": "If reference/@value is present, it SHALL begin with a '#' and SHALL point to its corresponding narrative",
+        "expression": "value.exists() implies value.startsWith('#')",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      } ]
+    }, {
+      "id": "Observation.text.thumbnail",
+      "path": "Observation.text.thumbnail",
+      "label": "Thumbnail",
+      "definition": "An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.thumbnail",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Observation.statusCode",
+      "path": "Observation.statusCode",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.statusCode",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActStatus"
+      }
+    }, {
+      "id": "Observation.effectiveTime",
+      "path": "Observation.effectiveTime",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.effectiveTime",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
+      } ]
+    }, {
+      "id": "Observation.priorityCode",
+      "path": "Observation.priorityCode",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.priorityCode",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      } ],
+      "binding": {
+        "strength": "example",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActPriority"
+      }
+    }, {
+      "id": "Observation.repeatNumber",
+      "path": "Observation.repeatNumber",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.repeatNumber",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT"
+      } ]
+    }, {
+      "id": "Observation.languageCode",
+      "path": "Observation.languageCode",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.languageCode",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/fhir/ValueSet/all-languages"
+      }
+    }, {
+      "id": "Observation.value",
+      "path": "Observation.value",
+      "representation": [ "typeAttr" ],
+      "comment": "SHOULD contain zero or one [0..1] value (CONF:1098-32747).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.value",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ANY"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/BL"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ST"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CV"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CO"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/SC"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/TEL"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/AD"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/EN"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/INT"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/REAL"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/PQ"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/MO"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/TS"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"
+      }, {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ"
+      } ]
+    }, {
+      "id": "Observation.interpretationCode",
+      "path": "Observation.interpretationCode",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.interpretationCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDAObservationInterpretation"
+      }
+    }, {
+      "id": "Observation.methodCode",
+      "path": "Observation.methodCode",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.methodCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      } ],
+      "binding": {
+        "strength": "example",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ObservationMethod"
+      }
+    }, {
+      "id": "Observation.targetSiteCode",
+      "path": "Observation.targetSiteCode",
+      "definition": "Drawn from concept domain ActSite",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.targetSiteCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      } ]
+    }, {
+      "id": "Observation.subject",
+      "path": "Observation.subject",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.subject",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Subject"
+      } ]
+    }, {
+      "id": "Observation.specimen",
+      "path": "Observation.specimen",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.specimen",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Specimen"
+      } ]
+    }, {
+      "id": "Observation.performer",
+      "path": "Observation.performer",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.performer",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Performer2"
+      } ]
+    }, {
+      "id": "Observation.author",
+      "path": "Observation.author",
+      "short": "Base for all types and resources",
+      "definition": "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "comment": "SHOULD contain zero or more [0..*] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:1098-31553).",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.author",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Author",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/AuthorParticipation" ]
+      } ],
+      "isModifier": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Observation.informant",
+      "path": "Observation.informant",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.informant",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Informant"
+      } ]
+    }, {
+      "id": "Observation.participant",
+      "path": "Observation.participant",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.participant",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Participant2"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship",
+      "path": "Observation.entryRelationship",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "typeCode"
+        }, {
+          "type": "profile",
+          "path": "act"
+        }, {
+          "type": "profile",
+          "path": "observation"
+        } ],
+        "rules": "open"
+      },
+      "short": "Where an Outcome Observation needs to reference an Intervention Act already described in the CDA document instance, rather than repeating the full content of the Intervention Act, the Entry Reference template may be used to reference this entry.",
+      "min": 1,
+      "max": "*",
+      "base": {
+        "path": "Observation.entryRelationship",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference",
+      "path": "Observation.entryRelationship",
+      "sliceName": "goal-reference",
+      "short": "The following entryRelationship represents the relationship between an Outcome Observation and a Goal Observation. Because the Goal Observation is already described in the CDA document instance's Goals section, rather than repeating the full content of the Goal Observation, the Entry Reference template can be used to reference this entry.",
+      "comment": "SHOULD contain zero or more [0..*] entryRelationship (CONF:1098-31224) such that it",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.entryRelationship",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"
+      } ],
+      "constraint": [ {
+        "key": "entry-ref-goal",
+        "severity": "error",
+        "human": "This entryReference template **SHALL** reference an instance of a Goal Observation template.",
+        "expression": "%resource.descendants().ofType(CDA.Observation).where(templateId.exists($this.root = '2.16.840.1.113883.10.20.22.4.121' and $this.extension = '2022-06-01') and id.exists($this.root = %context.act.id.first().root and $this.extension ~ %context.act.id.first().extension))",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.nullFlavor",
+      "path": "Observation.entryRelationship.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.realmCode",
+      "path": "Observation.entryRelationship.realmCode",
+      "definition": "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.realmCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.typeId",
+      "path": "Observation.entryRelationship.typeId",
+      "definition": "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.typeId",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.typeId.nullFlavor",
+      "path": "Observation.entryRelationship.typeId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.typeId.assigningAuthorityName",
+      "path": "Observation.entryRelationship.typeId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.typeId.displayable",
+      "path": "Observation.entryRelationship.typeId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.typeId.root",
+      "path": "Observation.entryRelationship.typeId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "Identifies the type as an HL7 Registered model",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "fixedString": "2.16.840.1.113883.1.3"
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.typeId.extension",
+      "path": "Observation.entryRelationship.typeId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.templateId",
+      "path": "Observation.entryRelationship.templateId",
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.typeCode",
+      "path": "Observation.entryRelationship.typeCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "SHALL contain exactly one [1..1] @typeCode=\"GEVL\" Evaluates goal (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31225).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.typeCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "GEVL",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship"
+      }
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.inversionInd",
+      "path": "Observation.entryRelationship.inversionInd",
+      "representation": [ "xmlAttr" ],
+      "definition": "The entryRelationship.inversionInd can be set to \"true\" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.inversionInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.contextConductionInd",
+      "path": "Observation.entryRelationship.contextConductionInd",
+      "representation": [ "xmlAttr" ],
+      "definition": "The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at \"true\", whereas here the value is defaulted to \"true\", and can be changed to \"false\" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.contextConductionInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ],
+      "defaultValueBoolean": true
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.negationInd",
+      "path": "Observation.entryRelationship.negationInd",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.negationInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.sequenceNumber",
+      "path": "Observation.entryRelationship.sequenceNumber",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.sequenceNumber",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/INT"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.seperatableInd",
+      "path": "Observation.entryRelationship.seperatableInd",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.seperatableInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/BL"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.act",
+      "path": "Observation.entryRelationship.act",
+      "short": "Base for all types and resources",
+      "definition": "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "comment": "SHALL contain exactly one [1..1] Entry Reference (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.122) (CONF:1098-32465).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.act",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Act",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/EntryReference" ]
+      } ],
+      "constraint": [ {
+        "key": "should-text-ref-value",
+        "severity": "warning",
+        "human": "SHOULD contain text/reference/@value",
+        "expression": "text.reference.value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/EntryReference"
+      } ],
+      "isModifier": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.encounter",
+      "path": "Observation.entryRelationship.encounter",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.encounter",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Encounter"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.observation",
+      "path": "Observation.entryRelationship.observation",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.observation",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Observation"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.observationMedia",
+      "path": "Observation.entryRelationship.observationMedia",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.observationMedia",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.organizer",
+      "path": "Observation.entryRelationship.organizer",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.organizer",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Organizer"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.procedure",
+      "path": "Observation.entryRelationship.procedure",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.procedure",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Procedure"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.regionOfInterest",
+      "path": "Observation.entryRelationship.regionOfInterest",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.regionOfInterest",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.substanceAdministration",
+      "path": "Observation.entryRelationship.substanceAdministration",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.substanceAdministration",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.supply",
+      "path": "Observation.entryRelationship.supply",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.supply",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Supply"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation",
+      "path": "Observation.entryRelationship",
+      "sliceName": "progressTowardGoalObservation",
+      "short": "The following entryRelationship represents the relationship between an Outcome Observation and a Progress Toward Goal Observation (Outcome Observation SUPPORTS Progress Toward Goal Observation). In the Care Planning workflow, the judgment about how well the person is progressing towards the goal is based on the observations made about the status of the patient with respect to interventions performed in the pursuit of achieving that goal.",
+      "comment": "SHOULD contain zero or one [0..1] entryRelationship (CONF:1098-31427) such that it",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.entryRelationship",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.nullFlavor",
+      "path": "Observation.entryRelationship.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.realmCode",
+      "path": "Observation.entryRelationship.realmCode",
+      "definition": "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.realmCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.typeId",
+      "path": "Observation.entryRelationship.typeId",
+      "definition": "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.typeId",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.typeId.nullFlavor",
+      "path": "Observation.entryRelationship.typeId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.typeId.assigningAuthorityName",
+      "path": "Observation.entryRelationship.typeId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.typeId.displayable",
+      "path": "Observation.entryRelationship.typeId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.typeId.root",
+      "path": "Observation.entryRelationship.typeId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "Identifies the type as an HL7 Registered model",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "fixedString": "2.16.840.1.113883.1.3"
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.typeId.extension",
+      "path": "Observation.entryRelationship.typeId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.templateId",
+      "path": "Observation.entryRelationship.templateId",
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.typeCode",
+      "path": "Observation.entryRelationship.typeCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "SHALL contain exactly one [1..1] @typeCode=\"SPRT\" Has support (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31428).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.typeCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "SPRT",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship"
+      }
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.inversionInd",
+      "path": "Observation.entryRelationship.inversionInd",
+      "representation": [ "xmlAttr" ],
+      "definition": "The entryRelationship.inversionInd can be set to \"true\" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.",
+      "comment": "SHALL contain exactly one [1..1] @inversionInd=\"true\" (CONF:1098-31429).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.inversionInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ],
+      "fixedBoolean": true
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.contextConductionInd",
+      "path": "Observation.entryRelationship.contextConductionInd",
+      "representation": [ "xmlAttr" ],
+      "definition": "The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at \"true\", whereas here the value is defaulted to \"true\", and can be changed to \"false\" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.contextConductionInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ],
+      "defaultValueBoolean": true
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.negationInd",
+      "path": "Observation.entryRelationship.negationInd",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.negationInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.sequenceNumber",
+      "path": "Observation.entryRelationship.sequenceNumber",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.sequenceNumber",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/INT"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.seperatableInd",
+      "path": "Observation.entryRelationship.seperatableInd",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.seperatableInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/BL"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.act",
+      "path": "Observation.entryRelationship.act",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.act",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Act"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.encounter",
+      "path": "Observation.entryRelationship.encounter",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.encounter",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Encounter"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.observation",
+      "path": "Observation.entryRelationship.observation",
+      "short": "Base for all types and resources",
+      "definition": "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "comment": "SHALL contain exactly one [1..1] Progress Toward Goal Observation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.110) (CONF:1098-31430).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.observation",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/ProgressTowardGoalObservation" ]
+      } ],
+      "constraint": [ {
+        "key": "should-text-ref-value",
+        "severity": "warning",
+        "human": "SHOULD contain text/reference/@value",
+        "expression": "text.reference.value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/ProgressTowardGoalObservation"
+      } ],
+      "isModifier": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.observationMedia",
+      "path": "Observation.entryRelationship.observationMedia",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.observationMedia",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.organizer",
+      "path": "Observation.entryRelationship.organizer",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.organizer",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Organizer"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.procedure",
+      "path": "Observation.entryRelationship.procedure",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.procedure",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Procedure"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.regionOfInterest",
+      "path": "Observation.entryRelationship.regionOfInterest",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.regionOfInterest",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.substanceAdministration",
+      "path": "Observation.entryRelationship.substanceAdministration",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.substanceAdministration",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.supply",
+      "path": "Observation.entryRelationship.supply",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.supply",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Supply"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference",
+      "path": "Observation.entryRelationship",
+      "sliceName": "intervention-reference",
+      "short": "Where an Outcome Observation needs to reference an Intervention Act already described in the CDA document instance, rather than repeating the full content of the Intervention Act, the Entry Reference template may be used to reference this entry",
+      "comment": "MAY contain zero or more [0..*] entryRelationship (CONF:1098-31688) such that it",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.entryRelationship",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"
+      } ],
+      "constraint": [ {
+        "key": "entry-ref-intervention",
+        "severity": "error",
+        "human": "This entryReference template **SHALL** reference an instance of a Goal Observation template.",
+        "expression": "%resource.descendants().ofType(CDA.Observation).where(templateId.exists($this.root = '2.16.840.1.113883.10.20.22.4.131' and $this.extension = '2015-08-01') and id.exists($this.root = %context.act.id.first().root and $this.extension ~ %context.act.id.first().extension))",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.nullFlavor",
+      "path": "Observation.entryRelationship.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.realmCode",
+      "path": "Observation.entryRelationship.realmCode",
+      "definition": "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.realmCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.typeId",
+      "path": "Observation.entryRelationship.typeId",
+      "definition": "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.typeId",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.typeId.nullFlavor",
+      "path": "Observation.entryRelationship.typeId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.typeId.assigningAuthorityName",
+      "path": "Observation.entryRelationship.typeId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.typeId.displayable",
+      "path": "Observation.entryRelationship.typeId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.typeId.root",
+      "path": "Observation.entryRelationship.typeId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "Identifies the type as an HL7 Registered model",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "fixedString": "2.16.840.1.113883.1.3"
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.typeId.extension",
+      "path": "Observation.entryRelationship.typeId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.templateId",
+      "path": "Observation.entryRelationship.templateId",
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.typeCode",
+      "path": "Observation.entryRelationship.typeCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "SHALL contain exactly one [1..1] @typeCode=\"RSON\" Has reason (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31689).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.typeCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "RSON",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship"
+      }
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.inversionInd",
+      "path": "Observation.entryRelationship.inversionInd",
+      "representation": [ "xmlAttr" ],
+      "definition": "The entryRelationship.inversionInd can be set to \"true\" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.inversionInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.contextConductionInd",
+      "path": "Observation.entryRelationship.contextConductionInd",
+      "representation": [ "xmlAttr" ],
+      "definition": "The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at \"true\", whereas here the value is defaulted to \"true\", and can be changed to \"false\" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.contextConductionInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ],
+      "defaultValueBoolean": true
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.negationInd",
+      "path": "Observation.entryRelationship.negationInd",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.negationInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.sequenceNumber",
+      "path": "Observation.entryRelationship.sequenceNumber",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.sequenceNumber",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/INT"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.seperatableInd",
+      "path": "Observation.entryRelationship.seperatableInd",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.seperatableInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/BL"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.act",
+      "path": "Observation.entryRelationship.act",
+      "short": "Base for all types and resources",
+      "definition": "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "comment": "SHALL contain exactly one [1..1] Entry Reference (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.122) (CONF:1098-31690).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.act",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Act",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/EntryReference" ]
+      } ],
+      "constraint": [ {
+        "key": "should-text-ref-value",
+        "severity": "warning",
+        "human": "SHOULD contain text/reference/@value",
+        "expression": "text.reference.value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/EntryReference"
+      } ],
+      "isModifier": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.encounter",
+      "path": "Observation.entryRelationship.encounter",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.encounter",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Encounter"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.observation",
+      "path": "Observation.entryRelationship.observation",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.observation",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Observation"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.observationMedia",
+      "path": "Observation.entryRelationship.observationMedia",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.observationMedia",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.organizer",
+      "path": "Observation.entryRelationship.organizer",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.organizer",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Organizer"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.procedure",
+      "path": "Observation.entryRelationship.procedure",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.procedure",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Procedure"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.regionOfInterest",
+      "path": "Observation.entryRelationship.regionOfInterest",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.regionOfInterest",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.substanceAdministration",
+      "path": "Observation.entryRelationship.substanceAdministration",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.substanceAdministration",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.supply",
+      "path": "Observation.entryRelationship.supply",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.supply",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Supply"
+      } ]
+    }, {
+      "id": "Observation.reference",
+      "path": "Observation.reference",
+      "comment": "MAY contain zero or more [0..*] reference (CONF:1098-32763).",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.reference",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Reference"
+      } ]
+    }, {
+      "id": "Observation.reference.nullFlavor",
+      "path": "Observation.reference.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.reference.realmCode",
+      "path": "Observation.reference.realmCode",
+      "definition": "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.realmCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ]
+    }, {
+      "id": "Observation.reference.typeId",
+      "path": "Observation.reference.typeId",
+      "definition": "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.typeId",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.reference.typeId.nullFlavor",
+      "path": "Observation.reference.typeId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.reference.typeId.assigningAuthorityName",
+      "path": "Observation.reference.typeId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.reference.typeId.displayable",
+      "path": "Observation.reference.typeId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.reference.typeId.root",
+      "path": "Observation.reference.typeId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "Identifies the type as an HL7 Registered model",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "fixedString": "2.16.840.1.113883.1.3"
+    }, {
+      "id": "Observation.reference.typeId.extension",
+      "path": "Observation.reference.typeId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.reference.templateId",
+      "path": "Observation.reference.templateId",
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.reference.typeCode",
+      "path": "Observation.reference.typeCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "The reference, if present, SHALL contain exactly one [1..1] @typeCode=\"REFR\" Refers to (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-32764).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Reference.typeCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "REFR",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-xActRelationshipExternalReference"
+      }
+    }, {
+      "id": "Observation.reference.seperatableInd",
+      "path": "Observation.reference.seperatableInd",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Reference.seperatableInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/BL"
+      } ]
+    }, {
+      "id": "Observation.reference.externalAct",
+      "path": "Observation.reference.externalAct",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Reference.externalAct",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ExternalAct"
+      } ]
+    }, {
+      "id": "Observation.reference.externalObservation",
+      "path": "Observation.reference.externalObservation",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Reference.externalObservation",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ExternalObservation"
+      } ]
+    }, {
+      "id": "Observation.reference.externalProcedure",
+      "path": "Observation.reference.externalProcedure",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Reference.externalProcedure",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ExternalProcedure"
+      } ]
+    }, {
+      "id": "Observation.reference.externalDocument",
+      "path": "Observation.reference.externalDocument",
+      "short": "Base for all types and resources",
+      "definition": "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "comment": "The reference, if present, SHALL contain exactly one [1..1] External Document Reference (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.115:2014-06-09) (CONF:1098-32765).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Reference.externalDocument",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ExternalDocument",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/ExternalDocumentReference" ]
+      } ],
+      "constraint": [ {
+        "key": "should-setId",
+        "severity": "warning",
+        "human": "SHOULD contain setId",
+        "expression": "setId.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/ExternalDocumentReference"
+      }, {
+        "key": "should-versionNumber",
+        "severity": "warning",
+        "human": "SHOULD contain versionNumber",
+        "expression": "versionNumber.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/ExternalDocumentReference"
+      } ],
+      "isModifier": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Observation.precondition",
+      "path": "Observation.precondition",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.precondition",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Precondition"
+      } ]
+    }, {
+      "id": "Observation.sdtcPrecondition2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "precondition2"
+      } ],
+      "path": "Observation.sdtcPrecondition2",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.sdtcPrecondition2",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Precondition2"
+      } ]
+    }, {
+      "id": "Observation.referenceRange",
+      "path": "Observation.referenceRange",
+      "definition": "Relates an Observation to the ObservationRange class, where the expected range of values for a particular observation can be specified.",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.referenceRange",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"
+      } ]
+    }, {
+      "id": "Observation.referenceRange.nullFlavor",
+      "path": "Observation.referenceRange.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.referenceRange.realmCode",
+      "path": "Observation.referenceRange.realmCode",
+      "definition": "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.realmCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ]
+    }, {
+      "id": "Observation.referenceRange.typeId",
+      "path": "Observation.referenceRange.typeId",
+      "definition": "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.typeId",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.referenceRange.typeId.nullFlavor",
+      "path": "Observation.referenceRange.typeId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Observation.referenceRange.typeId.assigningAuthorityName",
+      "path": "Observation.referenceRange.typeId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.referenceRange.typeId.displayable",
+      "path": "Observation.referenceRange.typeId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Observation.referenceRange.typeId.root",
+      "path": "Observation.referenceRange.typeId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "Identifies the type as an HL7 Registered model",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "fixedString": "2.16.840.1.113883.1.3"
+    }, {
+      "id": "Observation.referenceRange.typeId.extension",
+      "path": "Observation.referenceRange.typeId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Observation.referenceRange.templateId",
+      "path": "Observation.referenceRange.templateId",
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Observation.referenceRange.typeCode",
+      "path": "Observation.referenceRange.typeCode",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Observation.referenceRange.typeCode",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "REFV",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDAActRelationshipType"
+      }
+    }, {
+      "id": "Observation.referenceRange.observationRange",
+      "path": "Observation.referenceRange.observationRange",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Observation.referenceRange.observationRange",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ObservationRange"
+      } ]
+    }, {
+      "id": "Observation.sdtcInFulfillmentOf1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "inFulfillmentOf1"
+      } ],
+      "path": "Observation.sdtcInFulfillmentOf1",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Observation.sdtcInFulfillmentOf1",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf1"
+      } ]
+    } ]
+  },
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "constraint": [ {
+        "key": "should-text-ref-value",
+        "severity": "warning",
+        "human": "SHOULD contain text/reference/@value",
+        "expression": "text.reference.value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      }, {
+        "key": "should-value",
+        "severity": "warning",
+        "human": "SHOULD contain value",
+        "expression": "value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      }, {
+        "key": "should-author",
+        "severity": "warning",
+        "human": "SHOULD contain author",
+        "expression": "author.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      } ]
+    }, {
+      "id": "Observation.templateId",
+      "path": "Observation.templateId",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "root"
+        } ],
+        "rules": "open"
+      },
+      "min": 1
+    }, {
+      "id": "Observation.templateId:outcome-obs",
+      "path": "Observation.templateId",
+      "sliceName": "outcome-obs",
+      "min": 1,
+      "max": "1"
+    }, {
+      "id": "Observation.templateId:outcome-obs.root",
+      "path": "Observation.templateId.root",
+      "min": 1,
+      "patternString": "2.16.840.1.113883.10.20.22.4.144"
+    }, {
+      "id": "Observation.templateId:outcome-obs.extension",
+      "path": "Observation.templateId.extension",
+      "max": "0"
+    }, {
+      "id": "Observation.classCode",
+      "path": "Observation.classCode",
+      "comment": "SHALL contain exactly one [1..1] @classCode=\"OBS\" (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:1098-31219).",
+      "fixedCode": "OBS"
+    }, {
+      "id": "Observation.moodCode",
+      "path": "Observation.moodCode",
+      "comment": "SHALL contain exactly one [1..1] @moodCode=\"EVN\" (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:1098-31220).",
+      "fixedCode": "EVN"
+    }, {
+      "id": "Observation.id",
+      "path": "Observation.id",
+      "comment": "SHALL contain at least one [1..*] id (CONF:1098-31223).",
+      "min": 1
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "comment": "SHALL contain exactly one [1..1] code, which SHOULD be selected from CodeSystem LOINC (urn:oid:2.16.840.1.113883.6.1) (CONF:1098-32746)."
+    }, {
+      "id": "Observation.text",
+      "path": "Observation.text",
+      "short": "SHOULD reference the portion of section narrative text corresponding to this entry"
+    }, {
+      "id": "Observation.text.reference",
+      "path": "Observation.text.reference",
+      "constraint": [ {
+        "key": "value-starts-octothorpe",
+        "severity": "error",
+        "human": "If reference/@value is present, it SHALL begin with a '#' and SHALL point to its corresponding narrative",
+        "expression": "value.exists() implies value.startsWith('#')",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      } ]
+    }, {
+      "id": "Observation.value",
+      "path": "Observation.value",
+      "comment": "SHOULD contain zero or one [0..1] value (CONF:1098-32747).",
+      "max": "1"
+    }, {
+      "id": "Observation.author",
+      "path": "Observation.author",
+      "comment": "SHOULD contain zero or more [0..*] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:1098-31553).",
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Author",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/AuthorParticipation" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship",
+      "path": "Observation.entryRelationship",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "typeCode"
+        }, {
+          "type": "profile",
+          "path": "act"
+        }, {
+          "type": "profile",
+          "path": "observation"
+        } ],
+        "rules": "open"
+      },
+      "short": "Where an Outcome Observation needs to reference an Intervention Act already described in the CDA document instance, rather than repeating the full content of the Intervention Act, the Entry Reference template may be used to reference this entry.",
+      "min": 1
+    }, {
+      "id": "Observation.entryRelationship:goal-reference",
+      "path": "Observation.entryRelationship",
+      "sliceName": "goal-reference",
+      "short": "The following entryRelationship represents the relationship between an Outcome Observation and a Goal Observation. Because the Goal Observation is already described in the CDA document instance's Goals section, rather than repeating the full content of the Goal Observation, the Entry Reference template can be used to reference this entry.",
+      "comment": "SHOULD contain zero or more [0..*] entryRelationship (CONF:1098-31224) such that it",
+      "min": 0,
+      "max": "*",
+      "constraint": [ {
+        "key": "entry-ref-goal",
+        "severity": "error",
+        "human": "This entryReference template **SHALL** reference an instance of a Goal Observation template.",
+        "expression": "%resource.descendants().ofType(CDA.Observation).where(templateId.exists($this.root = '2.16.840.1.113883.10.20.22.4.121' and $this.extension = '2022-06-01') and id.exists($this.root = %context.act.id.first().root and $this.extension ~ %context.act.id.first().extension))",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.typeCode",
+      "path": "Observation.entryRelationship.typeCode",
+      "comment": "SHALL contain exactly one [1..1] @typeCode=\"GEVL\" Evaluates goal (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31225).",
+      "fixedCode": "GEVL"
+    }, {
+      "id": "Observation.entryRelationship:goal-reference.act",
+      "path": "Observation.entryRelationship.act",
+      "comment": "SHALL contain exactly one [1..1] Entry Reference (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.122) (CONF:1098-32465).",
+      "min": 1,
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Act",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/EntryReference" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation",
+      "path": "Observation.entryRelationship",
+      "sliceName": "progressTowardGoalObservation",
+      "short": "The following entryRelationship represents the relationship between an Outcome Observation and a Progress Toward Goal Observation (Outcome Observation SUPPORTS Progress Toward Goal Observation). In the Care Planning workflow, the judgment about how well the person is progressing towards the goal is based on the observations made about the status of the patient with respect to interventions performed in the pursuit of achieving that goal.",
+      "comment": "SHOULD contain zero or one [0..1] entryRelationship (CONF:1098-31427) such that it",
+      "min": 0,
+      "max": "1"
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.typeCode",
+      "path": "Observation.entryRelationship.typeCode",
+      "comment": "SHALL contain exactly one [1..1] @typeCode=\"SPRT\" Has support (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31428).",
+      "fixedCode": "SPRT"
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.inversionInd",
+      "path": "Observation.entryRelationship.inversionInd",
+      "comment": "SHALL contain exactly one [1..1] @inversionInd=\"true\" (CONF:1098-31429).",
+      "min": 1,
+      "fixedBoolean": true
+    }, {
+      "id": "Observation.entryRelationship:progressTowardGoalObservation.observation",
+      "path": "Observation.entryRelationship.observation",
+      "comment": "SHALL contain exactly one [1..1] Progress Toward Goal Observation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.110) (CONF:1098-31430).",
+      "min": 1,
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/ProgressTowardGoalObservation" ]
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference",
+      "path": "Observation.entryRelationship",
+      "sliceName": "intervention-reference",
+      "short": "Where an Outcome Observation needs to reference an Intervention Act already described in the CDA document instance, rather than repeating the full content of the Intervention Act, the Entry Reference template may be used to reference this entry",
+      "comment": "MAY contain zero or more [0..*] entryRelationship (CONF:1098-31688) such that it",
+      "min": 0,
+      "max": "*",
+      "constraint": [ {
+        "key": "entry-ref-intervention",
+        "severity": "error",
+        "human": "This entryReference template **SHALL** reference an instance of a Goal Observation template.",
+        "expression": "%resource.descendants().ofType(CDA.Observation).where(templateId.exists($this.root = '2.16.840.1.113883.10.20.22.4.131' and $this.extension = '2015-08-01') and id.exists($this.root = %context.act.id.first().root and $this.extension ~ %context.act.id.first().extension))",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation"
+      } ]
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.typeCode",
+      "path": "Observation.entryRelationship.typeCode",
+      "comment": "SHALL contain exactly one [1..1] @typeCode=\"RSON\" Has reason (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31689).",
+      "fixedCode": "RSON"
+    }, {
+      "id": "Observation.entryRelationship:intervention-reference.act",
+      "path": "Observation.entryRelationship.act",
+      "comment": "SHALL contain exactly one [1..1] Entry Reference (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.122) (CONF:1098-31690).",
+      "min": 1,
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Act",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/EntryReference" ]
+      } ]
+    }, {
+      "id": "Observation.reference",
+      "path": "Observation.reference",
+      "comment": "MAY contain zero or more [0..*] reference (CONF:1098-32763)."
+    }, {
+      "id": "Observation.reference.typeCode",
+      "path": "Observation.reference.typeCode",
+      "comment": "The reference, if present, SHALL contain exactly one [1..1] @typeCode=\"REFR\" Refers to (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-32764).",
+      "fixedCode": "REFR"
+    }, {
+      "id": "Observation.reference.externalDocument",
+      "path": "Observation.reference.externalDocument",
+      "comment": "The reference, if present, SHALL contain exactly one [1..1] External Document Reference (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.115:2014-06-09) (CONF:1098-32765).",
+      "min": 1,
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ExternalDocument",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/ExternalDocumentReference" ]
+      } ]
+    } ]
+  }
+}

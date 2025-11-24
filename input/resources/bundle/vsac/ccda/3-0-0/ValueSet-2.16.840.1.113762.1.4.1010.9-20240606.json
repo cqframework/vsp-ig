@@ -1,0 +1,107 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1010.9-20240606",
+  "meta": {
+    "versionId": "50",
+    "lastUpdated": "2025-08-19T20:23:01.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-08-19"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.9",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1010.9"
+  } ],
+  "version": "20240606",
+  "name": "SubstanceOtherThanClinicalDrug",
+  "title": "Substance Other Than Clinical Drug",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This value set has substances that are not represented by RXNORM  drug concepts or FDA UNII substance concepts. This value set is meant to be quite broad and includes many substances that may never be prescribed or be a reactant. It is intended to be a final \"catch-all\" value set for concepts not found in RXNORM and does not remove codes that overlap with RxNorm so this value set should be used last when searching.),(Data Element Scope: Substance elements),(Inclusion Criteria: Descendants of (105590001|Substance| OR 41355003|Ultraviolet radiation | OR 84489001 |Mold) and other specific codes as needed\nThe product code 424369009 | Product containing beta-galactosidase (medicinal product) was specifically included in a prior version.),(Exclusion Criteria: Concepts that are best represented using RxNorm)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "descendent-of",
+        "value": "105590001"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "41355003"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "84489001"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "424369009"
+      } ]
+    } ],
+    "exclude": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "410942007"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "736948000"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "736610007"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "736951007"
+      } ]
+    } ]
+  }
+}

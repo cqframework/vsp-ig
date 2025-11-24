@@ -1,0 +1,59 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1095.52-20200919",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2024-04-22T09:56:16.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "AND Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-24"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2020-09-19"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.52",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1095.52"
+  } ],
+  "version": "20200919",
+  "name": "ParenteralNutritionManagementSNOMEDCT",
+  "title": "Parenteral Nutrition Management SNOMED CT",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-09-19T01:00:31-04:00",
+  "publisher": "AND Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: These SNOMED CT terms represent management of parenteral nutrition therapy; this includes initiate, modify, discontinue, and maintain parenteral nutrition.),(Data Element Scope: Nutrition intervention to provide nutrients intravenously and/or via hemo or peritoneal dialysis.),(Inclusion Criteria: Terms which include management of parenteral nutrition.),(Exclusion Criteria: All other methods of nutrition care are excluded.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "408914003"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "25156005"
+      } ]
+    } ]
+  }
+}

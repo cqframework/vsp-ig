@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.88.12.3221.6.8-20240606",
+  "meta": {
+    "versionId": "23",
+    "lastUpdated": "2025-08-18T15:12:21.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-08-18"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.3221.6.8",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.88.12.3221.6.8"
+  } ],
+  "version": "20240606",
+  "name": "Severity",
+  "title": "Severity",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Concepts used to represent the level of severity in structured data elements associated with clinical observations, conditions, or findings.),(Data Element Scope: Concepts used to indicate the severity of a clinical finding or condition as mild, moderate, or severe.),(Inclusion Criteria: SNOMED CT Qualifier Value concepts specifically representing:\n255604002 – Mild\n6736007 – Moderate\n24484000 – Severe),(Exclusion Criteria: All other SNOMED CT severity qualifiers, such as:\n\"Very mild\", \"Very severe\", or\nNon-severity qualifiers or non-qualifier concepts (e.g., related to duration, certainty, or pattern))",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "24484000",
+        "display": "Severe (severity modifier) (qualifier value)"
+      }, {
+        "code": "255604002",
+        "display": "Mild (qualifier value)"
+      }, {
+        "code": "6736007",
+        "display": "Moderate (severity modifier) (qualifier value)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-17T15:51:44-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "code": "24484000",
+      "display": "Severe (severity modifier) (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "255604002",
+      "display": "Mild (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "6736007",
+      "display": "Moderate (severity modifier) (qualifier value)"
+    } ]
+  }
+}

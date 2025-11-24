@@ -1,0 +1,2529 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PlannedCoverage",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-17T14:05:21.217-07:00"
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act\">Act</a><a name=\"Act\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R5/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (should-text-ref-value)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">Act</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:hl7-org:v3<br/>Elements defined in Ancestors:<a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ANY.html\" title=\"If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.\">@nullFlavor</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question\">realmCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.\">typeId</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question\">templateId</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">@classCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">@moodCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">@negationInd</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">id</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">code</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">text</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">statusCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">effectiveTime</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">priorityCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">languageCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">subject</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">specimen</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">performer</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">author</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">informant</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">participant</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">entryRelationship</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">reference</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">precondition</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">sdtcPrecondition2</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">sdtcInFulfillmentOf1</a><br/><span style=\"opacity: 0.5\">Base for all types and resources</span><br/><span style=\"font-weight:bold\">Instance of this type are validated by templateId</span><br/><span style=\"font-weight:bold\" title=\"The root class that contains instances of this class\">Logical Container: </span><a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ClinicalDocument.html\">ClinicalDocument (CDA Class)</a><br/><span style=\"font-weight:bold\">should-text-ref-value: </span>SHOULD contain text/reference/@value</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.templateId\">Slices for templateId</a><a name=\"Act.templateId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by value:root, value:extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.templateId:planned-coverage\" title=\"Slice planned-coverage\">templateId:planned-coverage</a><a name=\"Act.templateId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.templateId:planned-coverage.root\">@root</a><a name=\"Act.templateId.root\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-oid.html\" title=\"string\">oid</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-uuid.html\" title=\"string\">uuid</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ruid.html\" title=\"string\">ruid</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">2.16.840.1.113883.10.20.22.4.129</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.templateId:planned-coverage.extension\">@extension</a><a name=\"Act.templateId.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-st-simple.html\" title=\"string\">st</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">2024-05-01</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.classCode\">@classCode</a><a name=\"Act.classCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">ACT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.moodCode\">@moodCode</a><a name=\"Act.moodCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">INT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.id\">id</a><a name=\"Act.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.code\">code</a><a name=\"Act.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-CD.html\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Payment sources</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.code.code\">@code</a><a name=\"Act.code.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">52556-8</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.code.codeSystem\">@codeSystem</a><a name=\"Act.code.codeSystem\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-oid.html\" title=\"string\">oid</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-uuid.html\" title=\"string\">uuid</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ruid.html\" title=\"string\">ruid</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">LOINC<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">2.16.840.1.113883.6.1</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.text\">text</a><a name=\"Act.text\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ED.html\">ED</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">SHOULD reference the portion of section narrative text corresponding to this entry</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.text.reference\">reference</a><a name=\"Act.text.reference\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R5/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (value-starts-octothorpe)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-TEL.html\">TEL</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">value-starts-octothorpe: </span>If reference/@value is present, it SHALL begin with a '#' and SHALL point to its corresponding narrative</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.statusCode\">statusCode</a><a name=\"Act.statusCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-CS.html\">CS</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.statusCode.code\">@code</a><a name=\"Act.statusCode.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">active</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.author\">author</a><a name=\"Act.author\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-AuthorParticipation.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Author\">AuthorParticipation</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Base for all types and resources</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.entryRelationship\">Slices for entryRelationship</a><a name=\"Act.entryRelationship\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-EntryRelationship.html\">EntryRelationship</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by exists:act</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.entryRelationship:entryRelationship1\" title=\"Slice entryRelationship1\">entryRelationship:entryRelationship1</a><a name=\"Act.entryRelationship\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-EntryRelationship.html\">EntryRelationship</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.entryRelationship:entryRelationship1.typeCode\">@typeCode</a><a name=\"Act.entryRelationship.typeCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">COMP</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0241.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.entryRelationship:entryRelationship1.act\">act</a><a name=\"Act.entryRelationship.act\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Act.html\">Act</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.entryRelationship:entryRelationship1.act.classCode\">@classCode</a><a name=\"Act.entryRelationship.act.classCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">ACT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.entryRelationship:entryRelationship1.act.moodCode\">@moodCode</a><a name=\"Act.entryRelationship.act.moodCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">INT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.entryRelationship:entryRelationship1.act.id\">id</a><a name=\"Act.entryRelationship.act.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">These act/identifiers are unique identifiers for the policy or program providing the coverage.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.entryRelationship:entryRelationship1.act.code\">code</a><a name=\"Act.entryRelationship.act.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-CD.html\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Binding: </span><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.3591/expansion\" title=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591\">Payer Type <img src=\"external.png\" alt=\".\"/></a> (<a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02401.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.entryRelationship:entryRelationship1.act.statusCode\">statusCode</a><a name=\"Act.entryRelationship.act.statusCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-CS.html\">CS</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck024000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PlannedCoverage-definitions.html#Act.entryRelationship:entryRelationship1.act.statusCode.code\">@code</a><a name=\"Act.entryRelationship.act.statusCode.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">active</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/logical-target",
+    "_valueBoolean": {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "not-applicable"
+      } ]
+    }
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/logical-container",
+    "valueUri": "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+    "valueUri": "urn:hl7-org:v3"
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+    "valueString": "act"
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/type-profile-style",
+    "valueUri": "cda"
+  } ],
+  "url": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedCoverage",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:hl7ii:2.16.840.1.113883.10.20.22.4.129:2024-05-01"
+  } ],
+  "version": "3.0.0",
+  "name": "PlannedCoverage",
+  "title": "Planned Coverage",
+  "status": "draft",
+  "date": "2024-05-18T00:16:25-05:00",
+  "publisher": "Health Level Seven",
+  "contact": [ {
+    "name": "HL7 International - Structured Documents",
+    "telecom": [ {
+      "system": "url",
+      "value": "http://www.hl7.org/Special/committees/structure"
+    } ]
+  } ],
+  "description": "This template represents the insurance coverage intended to cover an act or procedure.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "code": "US"
+    } ]
+  } ],
+  "fhirVersion": "5.0.0",
+  "mapping": [ {
+    "identity": "rim",
+    "uri": "http://hl7.org/v3",
+    "name": "RIM Mapping"
+  } ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7.org/cda/stds/core/StructureDefinition/Act",
+  "baseDefinition": "http://hl7.org/cda/stds/core/StructureDefinition/Act",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [ {
+      "id": "Act",
+      "path": "Act",
+      "short": "Base for all types and resources",
+      "definition": "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Base",
+        "min": 0,
+        "max": "*"
+      },
+      "constraint": [ {
+        "key": "should-text-ref-value",
+        "severity": "warning",
+        "human": "SHOULD contain text/reference/@value",
+        "expression": "text.reference.value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedCoverage"
+      } ],
+      "isModifier": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Act.nullFlavor",
+      "path": "Act.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Act.realmCode",
+      "path": "Act.realmCode",
+      "definition": "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.realmCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ]
+    }, {
+      "id": "Act.typeId",
+      "path": "Act.typeId",
+      "definition": "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.typeId",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Act.typeId.nullFlavor",
+      "path": "Act.typeId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Act.typeId.assigningAuthorityName",
+      "path": "Act.typeId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.typeId.displayable",
+      "path": "Act.typeId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Act.typeId.root",
+      "path": "Act.typeId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "Identifies the type as an HL7 Registered model",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "fixedString": "2.16.840.1.113883.1.3"
+    }, {
+      "id": "Act.typeId.extension",
+      "path": "Act.typeId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.templateId",
+      "path": "Act.templateId",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "root"
+        }, {
+          "type": "value",
+          "path": "extension"
+        } ],
+        "rules": "open"
+      },
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 1,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Act.templateId:planned-coverage",
+      "path": "Act.templateId",
+      "sliceName": "planned-coverage",
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Act.templateId:planned-coverage.nullFlavor",
+      "path": "Act.templateId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Act.templateId:planned-coverage.assigningAuthorityName",
+      "path": "Act.templateId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.templateId:planned-coverage.displayable",
+      "path": "Act.templateId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Act.templateId:planned-coverage.root",
+      "path": "Act.templateId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "patternString": "2.16.840.1.113883.10.20.22.4.129"
+    }, {
+      "id": "Act.templateId:planned-coverage.extension",
+      "path": "Act.templateId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ],
+      "patternString": "2024-05-01"
+    }, {
+      "id": "Act.classCode",
+      "path": "Act.classCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "SHALL contain exactly one [1..1] @classCode=\"ACT\" act (CodeSystem: HL7ActCode urn:oid:2.16.840.1.113883.5.4) (CONF:1098-31945).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Act.classCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "ACT",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-xActClassDocumentEntryAct|2.0.0"
+      }
+    }, {
+      "id": "Act.moodCode",
+      "path": "Act.moodCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "SHALL contain exactly one [1..1] @moodCode=\"INT\" Intent (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:1098-31946).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Act.moodCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "INT",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-xDocumentActMood|2.0.0"
+      }
+    }, {
+      "id": "Act.negationInd",
+      "path": "Act.negationInd",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.negationInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Act.id",
+      "path": "Act.id",
+      "comment": "SHALL contain at least one [1..*] id (CONF:1098-31950).",
+      "min": 1,
+      "max": "*",
+      "base": {
+        "path": "Act.id",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Act.code",
+      "path": "Act.code",
+      "short": "Payment sources",
+      "comment": "SHALL contain exactly one [1..1] code (CONF:1098-31951).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Act.code",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      } ],
+      "binding": {
+        "strength": "example",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActCode"
+      }
+    }, {
+      "id": "Act.code.nullFlavor",
+      "path": "Act.code.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Act.code.code",
+      "path": "Act.code.code",
+      "representation": [ "xmlAttr" ],
+      "label": "Code",
+      "definition": "The plain code symbol defined by the code system. For example, \"784.0\" is the code symbol of the ICD-9 code \"784.0\" for headache.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "CD.code",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "patternCode": "52556-8"
+    }, {
+      "id": "Act.code.codeSystem",
+      "path": "Act.code.codeSystem",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System",
+      "short": "LOINC",
+      "definition": "Specifies the code system that defines the code.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "CD.codeSystem",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "patternString": "2.16.840.1.113883.6.1"
+    }, {
+      "id": "Act.code.codeSystemName",
+      "path": "Act.code.codeSystemName",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System Name",
+      "definition": "The common name of the coding system.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.codeSystemName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.code.codeSystemVersion",
+      "path": "Act.code.codeSystemVersion",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System Version",
+      "definition": "If applicable, a version descriptor defined specifically for the given code system.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.codeSystemVersion",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.code.displayName",
+      "path": "Act.code.displayName",
+      "representation": [ "xmlAttr" ],
+      "label": "Display Name",
+      "definition": "A name or title for the code, under which the sending system shows the code value to its users.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.displayName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.code.sdtcValueSet",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "valueSet"
+      } ],
+      "path": "Act.code.sdtcValueSet",
+      "representation": [ "xmlAttr" ],
+      "definition": "The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.valueSet",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid" ]
+      } ]
+    }, {
+      "id": "Act.code.sdtcValueSetVersion",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "valueSetVersion"
+      } ],
+      "path": "Act.code.sdtcValueSetVersion",
+      "representation": [ "xmlAttr" ],
+      "definition": "The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.sdtcValueSetVersion",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.code.originalText",
+      "path": "Act.code.originalText",
+      "label": "Original Text",
+      "definition": "The text or phrase used as the basis for the coding.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.originalText",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Act.code.qualifier",
+      "path": "Act.code.qualifier",
+      "label": "Qualifier",
+      "definition": "Specifies additional codes that increase the specificity of the the primary code.",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "CD.qualifier",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CR"
+      } ]
+    }, {
+      "id": "Act.code.translation",
+      "path": "Act.code.translation",
+      "representation": [ "typeAttr" ],
+      "label": "Translation",
+      "definition": "A set of other concept descriptors that translate this concept descriptor into other code systems.",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "CD.translation",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      } ]
+    }, {
+      "id": "Act.text",
+      "path": "Act.text",
+      "short": "SHOULD reference the portion of section narrative text corresponding to this entry",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.text",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Act.text.nullFlavor",
+      "path": "Act.text.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Act.text.compression",
+      "path": "Act.text.compression",
+      "representation": [ "xmlAttr" ],
+      "label": "Compression",
+      "definition": "Indicates whether the raw byte data is compressed, and what compression algorithm was used.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.compression",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDACompressionAlgorithm"
+      }
+    }, {
+      "id": "Act.text.integrityCheck",
+      "path": "Act.text.integrityCheck",
+      "representation": [ "xmlAttr" ],
+      "label": "Integrity Check",
+      "definition": "The integrity check is a short binary value representing a cryptographically strong checksum that is calculated over the binary data. The purpose of this property, when communicated with a reference is for anyone to validate later whether the reference still resolved to the same data that the reference resolved to when the encapsulated data value with reference was created.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.integrityCheck",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "base64Binary",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bin" ]
+      } ]
+    }, {
+      "id": "Act.text.integrityCheckAlgorithm",
+      "path": "Act.text.integrityCheckAlgorithm",
+      "representation": [ "xmlAttr" ],
+      "label": "Integrity Check Algorithm",
+      "definition": "Specifies the algorithm used to compute the integrityCheck value. The cryptographically strong checksum algorithm Secure Hash Algorithm-1 (SHA-1) is currently the industry standard. It has superseded the MD5 algorithm only a couple of years ago, when certain flaws in the security of MD5 were discovered. Currently the SHA-1 hash algorithm is the default choice for the integrity check algorithm. Note that SHA-256 is also entering widespread usage.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.integrityCheckAlgorithm",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-IntegrityCheckAlgorithm|2.0.0"
+      }
+    }, {
+      "id": "Act.text.language",
+      "path": "Act.text.language",
+      "representation": [ "xmlAttr" ],
+      "label": "Language",
+      "definition": "For character based information the language property specifies the human language of the text.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.language",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ]
+    }, {
+      "id": "Act.text.mediaType",
+      "path": "Act.text.mediaType",
+      "representation": [ "xmlAttr" ],
+      "label": "Media Type",
+      "definition": "Identifies the type of the encapsulated data and identifies a method to interpret or render the data.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.mediaType",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "example",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-MediaType"
+      }
+    }, {
+      "id": "Act.text.representation",
+      "path": "Act.text.representation",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.representation",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/BinaryDataEncoding"
+      }
+    }, {
+      "id": "Act.text.xmlText",
+      "path": "Act.text.xmlText",
+      "representation": [ "xmlText" ],
+      "short": "Allows for mixed text content. If @representation='B64', this SHALL be a base64binary string.",
+      "definition": "Data that is primarily intended for human interpretation or for further machine processing is outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information as defined by a different standard (e.g., XML-signatures.)",
+      "comment": "This element is represented in XML as textual content. The actual name \"xmlText\" will not appear in a CDA instance.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.xmlText",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.text.reference",
+      "path": "Act.text.reference",
+      "label": "Reference",
+      "definition": "A telecommunication address (TEL), such as a URL for HTTP or FTP, which will resolve to precisely the same binary data that could as well have been provided as inline data.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.reference",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/TEL"
+      } ],
+      "constraint": [ {
+        "key": "value-starts-octothorpe",
+        "severity": "error",
+        "human": "If reference/@value is present, it SHALL begin with a '#' and SHALL point to its corresponding narrative",
+        "expression": "value.exists() implies value.startsWith('#')",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedCoverage"
+      } ]
+    }, {
+      "id": "Act.text.thumbnail",
+      "path": "Act.text.thumbnail",
+      "label": "Thumbnail",
+      "definition": "An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.thumbnail",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Act.statusCode",
+      "path": "Act.statusCode",
+      "comment": "SHALL contain exactly one [1..1] statusCode (CONF:1098-31954).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Act.statusCode",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActStatus"
+      }
+    }, {
+      "id": "Act.statusCode.nullFlavor",
+      "path": "Act.statusCode.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Act.statusCode.code",
+      "path": "Act.statusCode.code",
+      "representation": [ "xmlAttr" ],
+      "label": "Code",
+      "definition": "The plain code symbol defined by the code system. For example, \"784.0\" is the code symbol of the ICD-9 code \"784.0\" for headache.",
+      "comment": "This statusCode SHALL contain exactly one [1..1] @code=\"active\" Active (CodeSystem: HL7ActCode urn:oid:2.16.840.1.113883.5.4) (CONF:1098-31955).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "CD.code",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "active"
+    }, {
+      "id": "Act.statusCode.codeSystem",
+      "path": "Act.statusCode.codeSystem",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System",
+      "definition": "Specifies the code system that defines the code.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.codeSystem",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ]
+    }, {
+      "id": "Act.statusCode.codeSystemName",
+      "path": "Act.statusCode.codeSystemName",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System Name",
+      "definition": "The common name of the coding system.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.codeSystemName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.statusCode.codeSystemVersion",
+      "path": "Act.statusCode.codeSystemVersion",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System Version",
+      "definition": "If applicable, a version descriptor defined specifically for the given code system.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.codeSystemVersion",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.statusCode.displayName",
+      "path": "Act.statusCode.displayName",
+      "representation": [ "xmlAttr" ],
+      "label": "Display Name",
+      "definition": "A name or title for the code, under which the sending system shows the code value to its users.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.displayName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.statusCode.sdtcValueSet",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "valueSet"
+      } ],
+      "path": "Act.statusCode.sdtcValueSet",
+      "representation": [ "xmlAttr" ],
+      "definition": "The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.valueSet",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid" ]
+      } ]
+    }, {
+      "id": "Act.statusCode.sdtcValueSetVersion",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "valueSetVersion"
+      } ],
+      "path": "Act.statusCode.sdtcValueSetVersion",
+      "representation": [ "xmlAttr" ],
+      "definition": "The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.sdtcValueSetVersion",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.statusCode.originalText",
+      "path": "Act.statusCode.originalText",
+      "label": "Original Text",
+      "definition": "The text or phrase used as the basis for the coding.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.originalText",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Act.statusCode.qualifier",
+      "path": "Act.statusCode.qualifier",
+      "label": "Qualifier",
+      "definition": "Specifies additional codes that increase the specificity of the the primary code.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.qualifier",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CR"
+      } ]
+    }, {
+      "id": "Act.statusCode.translation",
+      "path": "Act.statusCode.translation",
+      "representation": [ "typeAttr" ],
+      "label": "Translation",
+      "definition": "A set of other concept descriptors that translate this concept descriptor into other code systems.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.translation",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      } ]
+    }, {
+      "id": "Act.effectiveTime",
+      "path": "Act.effectiveTime",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.effectiveTime",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
+      } ]
+    }, {
+      "id": "Act.priorityCode",
+      "path": "Act.priorityCode",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.priorityCode",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      } ],
+      "binding": {
+        "strength": "example",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActPriority"
+      }
+    }, {
+      "id": "Act.languageCode",
+      "path": "Act.languageCode",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.languageCode",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/fhir/ValueSet/all-languages"
+      }
+    }, {
+      "id": "Act.subject",
+      "path": "Act.subject",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.subject",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Subject"
+      } ]
+    }, {
+      "id": "Act.specimen",
+      "path": "Act.specimen",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.specimen",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Specimen"
+      } ]
+    }, {
+      "id": "Act.performer",
+      "path": "Act.performer",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.performer",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Performer2"
+      } ]
+    }, {
+      "id": "Act.author",
+      "path": "Act.author",
+      "short": "Base for all types and resources",
+      "definition": "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "comment": "MAY contain zero or more [0..*] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:1098-32178).",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.author",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Author",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/AuthorParticipation" ]
+      } ],
+      "isModifier": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Act.informant",
+      "path": "Act.informant",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.informant",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Informant"
+      } ]
+    }, {
+      "id": "Act.participant",
+      "path": "Act.participant",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.participant",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Participant2"
+      } ]
+    }, {
+      "id": "Act.entryRelationship",
+      "path": "Act.entryRelationship",
+      "slicing": {
+        "discriminator": [ {
+          "type": "exists",
+          "path": "act"
+        } ],
+        "rules": "open"
+      },
+      "min": 1,
+      "max": "*",
+      "base": {
+        "path": "Act.entryRelationship",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1",
+      "path": "Act.entryRelationship",
+      "sliceName": "entryRelationship1",
+      "comment": "SHALL contain exactly one [1..1] entryRelationship (CONF:1098-31967) such that it",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Act.entryRelationship",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.nullFlavor",
+      "path": "Act.entryRelationship.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.realmCode",
+      "path": "Act.entryRelationship.realmCode",
+      "definition": "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.realmCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.typeId",
+      "path": "Act.entryRelationship.typeId",
+      "definition": "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.typeId",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.typeId.nullFlavor",
+      "path": "Act.entryRelationship.typeId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.typeId.assigningAuthorityName",
+      "path": "Act.entryRelationship.typeId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.typeId.displayable",
+      "path": "Act.entryRelationship.typeId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.typeId.root",
+      "path": "Act.entryRelationship.typeId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "Identifies the type as an HL7 Registered model",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "fixedString": "2.16.840.1.113883.1.3"
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.typeId.extension",
+      "path": "Act.entryRelationship.typeId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.templateId",
+      "path": "Act.entryRelationship.templateId",
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.typeCode",
+      "path": "Act.entryRelationship.typeCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "SHALL contain exactly one [1..1] @typeCode=\"COMP\" has component (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31968).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.typeCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "COMP",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.inversionInd",
+      "path": "Act.entryRelationship.inversionInd",
+      "representation": [ "xmlAttr" ],
+      "definition": "The entryRelationship.inversionInd can be set to \"true\" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.inversionInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.contextConductionInd",
+      "path": "Act.entryRelationship.contextConductionInd",
+      "representation": [ "xmlAttr" ],
+      "definition": "The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at \"true\", whereas here the value is defaulted to \"true\", and can be changed to \"false\" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.contextConductionInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ],
+      "defaultValueBoolean": true
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.negationInd",
+      "path": "Act.entryRelationship.negationInd",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.negationInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.sequenceNumber",
+      "path": "Act.entryRelationship.sequenceNumber",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.sequenceNumber",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/INT"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.seperatableInd",
+      "path": "Act.entryRelationship.seperatableInd",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.seperatableInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/BL"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act",
+      "path": "Act.entryRelationship.act",
+      "comment": "SHALL contain exactly one [1..1] act (CONF:1098-31969).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.act",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Act"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.nullFlavor",
+      "path": "Act.entryRelationship.act.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.realmCode",
+      "path": "Act.entryRelationship.act.realmCode",
+      "definition": "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.realmCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.typeId",
+      "path": "Act.entryRelationship.act.typeId",
+      "definition": "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.typeId",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.typeId.nullFlavor",
+      "path": "Act.entryRelationship.act.typeId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.typeId.assigningAuthorityName",
+      "path": "Act.entryRelationship.act.typeId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.typeId.displayable",
+      "path": "Act.entryRelationship.act.typeId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.typeId.root",
+      "path": "Act.entryRelationship.act.typeId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "Identifies the type as an HL7 Registered model",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "fixedString": "2.16.840.1.113883.1.3"
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.typeId.extension",
+      "path": "Act.entryRelationship.act.typeId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.templateId",
+      "path": "Act.entryRelationship.act.templateId",
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.classCode",
+      "path": "Act.entryRelationship.act.classCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "This act SHALL contain exactly one [1..1] @classCode=\"ACT\" ACT (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:1098-31970).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Act.classCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "ACT",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-xActClassDocumentEntryAct|2.0.0"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.moodCode",
+      "path": "Act.entryRelationship.act.moodCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "This act SHALL contain exactly one [1..1] @moodCode=\"INT\" intent (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:1098-31971).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Act.moodCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "INT",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-xDocumentActMood|2.0.0"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.negationInd",
+      "path": "Act.entryRelationship.act.negationInd",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.negationInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.id",
+      "path": "Act.entryRelationship.act.id",
+      "short": "These act/identifiers are unique identifiers for the policy or program providing the coverage.",
+      "comment": "This act SHALL contain at least one [1..*] id (CONF:1098-31972).",
+      "min": 1,
+      "max": "*",
+      "base": {
+        "path": "Act.id",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.code",
+      "path": "Act.entryRelationship.act.code",
+      "comment": "This act SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Payer urn:oid:2.16.840.1.114222.4.11.3591 DYNAMIC (CONF:1098-31973).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Act.code",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.text",
+      "path": "Act.entryRelationship.act.text",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.text",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode",
+      "path": "Act.entryRelationship.act.statusCode",
+      "comment": "This act SHALL contain exactly one [1..1] statusCode (CONF:1098-31974).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Act.statusCode",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActStatus"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.nullFlavor",
+      "path": "Act.entryRelationship.act.statusCode.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.code",
+      "path": "Act.entryRelationship.act.statusCode.code",
+      "representation": [ "xmlAttr" ],
+      "label": "Code",
+      "definition": "The plain code symbol defined by the code system. For example, \"784.0\" is the code symbol of the ICD-9 code \"784.0\" for headache.",
+      "comment": "This statusCode SHALL contain exactly one [1..1] @code=\"active\" Active (CodeSystem: HL7ActStatus urn:oid:2.16.840.1.113883.5.14) (CONF:1098-31975).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "CD.code",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "active"
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.codeSystem",
+      "path": "Act.entryRelationship.act.statusCode.codeSystem",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System",
+      "definition": "Specifies the code system that defines the code.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.codeSystem",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.codeSystemName",
+      "path": "Act.entryRelationship.act.statusCode.codeSystemName",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System Name",
+      "definition": "The common name of the coding system.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.codeSystemName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.codeSystemVersion",
+      "path": "Act.entryRelationship.act.statusCode.codeSystemVersion",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System Version",
+      "definition": "If applicable, a version descriptor defined specifically for the given code system.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.codeSystemVersion",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.displayName",
+      "path": "Act.entryRelationship.act.statusCode.displayName",
+      "representation": [ "xmlAttr" ],
+      "label": "Display Name",
+      "definition": "A name or title for the code, under which the sending system shows the code value to its users.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.displayName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.sdtcValueSet",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "valueSet"
+      } ],
+      "path": "Act.entryRelationship.act.statusCode.sdtcValueSet",
+      "representation": [ "xmlAttr" ],
+      "definition": "The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.valueSet",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.sdtcValueSetVersion",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "valueSetVersion"
+      } ],
+      "path": "Act.entryRelationship.act.statusCode.sdtcValueSetVersion",
+      "representation": [ "xmlAttr" ],
+      "definition": "The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.sdtcValueSetVersion",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.originalText",
+      "path": "Act.entryRelationship.act.statusCode.originalText",
+      "label": "Original Text",
+      "definition": "The text or phrase used as the basis for the coding.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.originalText",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.qualifier",
+      "path": "Act.entryRelationship.act.statusCode.qualifier",
+      "label": "Qualifier",
+      "definition": "Specifies additional codes that increase the specificity of the the primary code.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.qualifier",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CR"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.translation",
+      "path": "Act.entryRelationship.act.statusCode.translation",
+      "representation": [ "typeAttr" ],
+      "label": "Translation",
+      "definition": "A set of other concept descriptors that translate this concept descriptor into other code systems.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.translation",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.effectiveTime",
+      "path": "Act.entryRelationship.act.effectiveTime",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.effectiveTime",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.priorityCode",
+      "path": "Act.entryRelationship.act.priorityCode",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.priorityCode",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      } ],
+      "binding": {
+        "strength": "example",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActPriority"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.languageCode",
+      "path": "Act.entryRelationship.act.languageCode",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.languageCode",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/fhir/ValueSet/all-languages"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.subject",
+      "path": "Act.entryRelationship.act.subject",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Act.subject",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Subject"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.specimen",
+      "path": "Act.entryRelationship.act.specimen",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.specimen",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Specimen"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.performer",
+      "path": "Act.entryRelationship.act.performer",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.performer",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Performer2"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.author",
+      "path": "Act.entryRelationship.act.author",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.author",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Author"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.informant",
+      "path": "Act.entryRelationship.act.informant",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.informant",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Informant"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.participant",
+      "path": "Act.entryRelationship.act.participant",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.participant",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Participant2"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.entryRelationship",
+      "path": "Act.entryRelationship.act.entryRelationship",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.entryRelationship",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.reference",
+      "path": "Act.entryRelationship.act.reference",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.reference",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Reference"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.precondition",
+      "path": "Act.entryRelationship.act.precondition",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.precondition",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Precondition"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.sdtcPrecondition2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "precondition2"
+      } ],
+      "path": "Act.entryRelationship.act.sdtcPrecondition2",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.sdtcPrecondition2",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Precondition2"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.sdtcInFulfillmentOf1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "inFulfillmentOf1"
+      } ],
+      "path": "Act.entryRelationship.act.sdtcInFulfillmentOf1",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.sdtcInFulfillmentOf1",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf1"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.encounter",
+      "path": "Act.entryRelationship.encounter",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.encounter",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Encounter"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.observation",
+      "path": "Act.entryRelationship.observation",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.observation",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Observation"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.observationMedia",
+      "path": "Act.entryRelationship.observationMedia",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.observationMedia",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.organizer",
+      "path": "Act.entryRelationship.organizer",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.organizer",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Organizer"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.procedure",
+      "path": "Act.entryRelationship.procedure",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.procedure",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Procedure"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.regionOfInterest",
+      "path": "Act.entryRelationship.regionOfInterest",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.regionOfInterest",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.substanceAdministration",
+      "path": "Act.entryRelationship.substanceAdministration",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.substanceAdministration",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"
+      } ]
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.supply",
+      "path": "Act.entryRelationship.supply",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "EntryRelationship.supply",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Supply"
+      } ]
+    }, {
+      "id": "Act.reference",
+      "path": "Act.reference",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.reference",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Reference"
+      } ]
+    }, {
+      "id": "Act.precondition",
+      "path": "Act.precondition",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.precondition",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Precondition"
+      } ]
+    }, {
+      "id": "Act.sdtcPrecondition2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "precondition2"
+      } ],
+      "path": "Act.sdtcPrecondition2",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.sdtcPrecondition2",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Precondition2"
+      } ]
+    }, {
+      "id": "Act.sdtcInFulfillmentOf1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "inFulfillmentOf1"
+      } ],
+      "path": "Act.sdtcInFulfillmentOf1",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Act.sdtcInFulfillmentOf1",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf1"
+      } ]
+    } ]
+  },
+  "differential": {
+    "element": [ {
+      "id": "Act",
+      "path": "Act",
+      "constraint": [ {
+        "key": "should-text-ref-value",
+        "severity": "warning",
+        "human": "SHOULD contain text/reference/@value",
+        "expression": "text.reference.value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedCoverage"
+      } ]
+    }, {
+      "id": "Act.templateId",
+      "path": "Act.templateId",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "root"
+        }, {
+          "type": "value",
+          "path": "extension"
+        } ],
+        "rules": "open"
+      },
+      "min": 1
+    }, {
+      "id": "Act.templateId:planned-coverage",
+      "path": "Act.templateId",
+      "sliceName": "planned-coverage",
+      "min": 1,
+      "max": "1"
+    }, {
+      "id": "Act.templateId:planned-coverage.root",
+      "path": "Act.templateId.root",
+      "min": 1,
+      "patternString": "2.16.840.1.113883.10.20.22.4.129"
+    }, {
+      "id": "Act.templateId:planned-coverage.extension",
+      "path": "Act.templateId.extension",
+      "min": 1,
+      "patternString": "2024-05-01"
+    }, {
+      "id": "Act.classCode",
+      "path": "Act.classCode",
+      "comment": "SHALL contain exactly one [1..1] @classCode=\"ACT\" act (CodeSystem: HL7ActCode urn:oid:2.16.840.1.113883.5.4) (CONF:1098-31945).",
+      "fixedCode": "ACT"
+    }, {
+      "id": "Act.moodCode",
+      "path": "Act.moodCode",
+      "comment": "SHALL contain exactly one [1..1] @moodCode=\"INT\" Intent (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:1098-31946).",
+      "fixedCode": "INT"
+    }, {
+      "id": "Act.id",
+      "path": "Act.id",
+      "comment": "SHALL contain at least one [1..*] id (CONF:1098-31950).",
+      "min": 1
+    }, {
+      "id": "Act.code",
+      "path": "Act.code",
+      "short": "Payment sources",
+      "comment": "SHALL contain exactly one [1..1] code (CONF:1098-31951)."
+    }, {
+      "id": "Act.code.code",
+      "path": "Act.code.code",
+      "min": 1,
+      "patternCode": "52556-8"
+    }, {
+      "id": "Act.code.codeSystem",
+      "path": "Act.code.codeSystem",
+      "short": "LOINC",
+      "min": 1,
+      "patternString": "2.16.840.1.113883.6.1"
+    }, {
+      "id": "Act.text",
+      "path": "Act.text",
+      "short": "SHOULD reference the portion of section narrative text corresponding to this entry"
+    }, {
+      "id": "Act.text.reference",
+      "path": "Act.text.reference",
+      "constraint": [ {
+        "key": "value-starts-octothorpe",
+        "severity": "error",
+        "human": "If reference/@value is present, it SHALL begin with a '#' and SHALL point to its corresponding narrative",
+        "expression": "value.exists() implies value.startsWith('#')",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedCoverage"
+      } ]
+    }, {
+      "id": "Act.statusCode",
+      "path": "Act.statusCode",
+      "comment": "SHALL contain exactly one [1..1] statusCode (CONF:1098-31954).",
+      "min": 1
+    }, {
+      "id": "Act.statusCode.code",
+      "path": "Act.statusCode.code",
+      "comment": "This statusCode SHALL contain exactly one [1..1] @code=\"active\" Active (CodeSystem: HL7ActCode urn:oid:2.16.840.1.113883.5.4) (CONF:1098-31955).",
+      "min": 1,
+      "fixedCode": "active"
+    }, {
+      "id": "Act.author",
+      "path": "Act.author",
+      "comment": "MAY contain zero or more [0..*] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:1098-32178).",
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Author",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/AuthorParticipation" ]
+      } ]
+    }, {
+      "id": "Act.entryRelationship",
+      "path": "Act.entryRelationship",
+      "slicing": {
+        "discriminator": [ {
+          "type": "exists",
+          "path": "act"
+        } ],
+        "rules": "open"
+      },
+      "min": 1
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1",
+      "path": "Act.entryRelationship",
+      "sliceName": "entryRelationship1",
+      "comment": "SHALL contain exactly one [1..1] entryRelationship (CONF:1098-31967) such that it",
+      "min": 1,
+      "max": "1"
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.typeCode",
+      "path": "Act.entryRelationship.typeCode",
+      "comment": "SHALL contain exactly one [1..1] @typeCode=\"COMP\" has component (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31968).",
+      "fixedCode": "COMP"
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act",
+      "path": "Act.entryRelationship.act",
+      "comment": "SHALL contain exactly one [1..1] act (CONF:1098-31969).",
+      "min": 1
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.classCode",
+      "path": "Act.entryRelationship.act.classCode",
+      "comment": "This act SHALL contain exactly one [1..1] @classCode=\"ACT\" ACT (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:1098-31970).",
+      "fixedCode": "ACT"
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.moodCode",
+      "path": "Act.entryRelationship.act.moodCode",
+      "comment": "This act SHALL contain exactly one [1..1] @moodCode=\"INT\" intent (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:1098-31971).",
+      "fixedCode": "INT"
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.id",
+      "path": "Act.entryRelationship.act.id",
+      "short": "These act/identifiers are unique identifiers for the policy or program providing the coverage.",
+      "comment": "This act SHALL contain at least one [1..*] id (CONF:1098-31972).",
+      "min": 1
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.code",
+      "path": "Act.entryRelationship.act.code",
+      "comment": "This act SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Payer urn:oid:2.16.840.1.114222.4.11.3591 DYNAMIC (CONF:1098-31973).",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+      }
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode",
+      "path": "Act.entryRelationship.act.statusCode",
+      "comment": "This act SHALL contain exactly one [1..1] statusCode (CONF:1098-31974).",
+      "min": 1
+    }, {
+      "id": "Act.entryRelationship:entryRelationship1.act.statusCode.code",
+      "path": "Act.entryRelationship.act.statusCode.code",
+      "comment": "This statusCode SHALL contain exactly one [1..1] @code=\"active\" Active (CodeSystem: HL7ActStatus urn:oid:2.16.840.1.113883.5.14) (CONF:1098-31975).",
+      "min": 1,
+      "fixedCode": "active"
+    } ]
+  }
+}

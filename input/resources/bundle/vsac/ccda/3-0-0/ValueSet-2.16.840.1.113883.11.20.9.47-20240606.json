@@ -1,0 +1,95 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.11.20.9.47-20240606",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2024-06-06T01:23:01.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-07-09"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.47",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.11.20.9.47"
+  } ],
+  "version": "20240606",
+  "name": "ADLResultType",
+  "title": "ADL Result Type",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This value set includes Basic ADL and IADL activities.),(Data Element Scope: @Code in Self-Care Activities (ADL and IADL) observation: identifier urn:oid:2.16.840.1.113883.10.20.22.4.128 (open)),(Inclusion Criteria: Selected LOINC codes),(Exclusion Criteria: only those selected)",
+  "compose": {
+    "include": [ {
+      "system": "http://loinc.org",
+      "concept": [ {
+        "code": "28408-3",
+        "display": "Toileting [QAM]"
+      }, {
+        "code": "28409-1",
+        "display": "Dressing [QAM]"
+      }, {
+        "code": "28413-3",
+        "display": "Ambulation [QAM]"
+      }, {
+        "code": "46008-9",
+        "display": "Bathing during assessment period [CMS Assessment]"
+      }, {
+        "code": "46482-6",
+        "display": "Transferring [OASIS]"
+      }, {
+        "code": "46484-2",
+        "display": "Feeding or eating [OASIS]"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-17T15:56:10-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "code": "28408-3",
+      "display": "Toileting [QAM]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "28409-1",
+      "display": "Dressing [QAM]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "28413-3",
+      "display": "Ambulation [QAM]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "46008-9",
+      "display": "Bathing during assessment period [CMS Assessment]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "46482-6",
+      "display": "Transferring [OASIS]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "46484-2",
+      "display": "Feeding or eating [OASIS]"
+    } ]
+  }
+}

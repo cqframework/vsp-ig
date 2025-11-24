@@ -1,0 +1,88 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.11.20.9.37-20240606",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2025-08-18T17:50:20.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-08-18"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.37",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.11.20.9.37"
+  } ],
+  "version": "20240606",
+  "name": "TargetSiteQualifiers",
+  "title": "TargetSite Qualifiers",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Concepts representing topographical anatomical directional modifiers: left, right, medial, anterior, and posterior.),(Data Element Scope: Qualifier values used to describe the orientation or side of a clinical finding, procedure, or anatomical site.),(Inclusion Criteria: SNOMED CT qualifier concepts for left, right, medial, anterior, and posterior.),(Exclusion Criteria: Concepts unrelated to anatomical direction, such as severity, timing, or full anatomical structures.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "24028007",
+        "display": "Right (qualifier value)"
+      }, {
+        "code": "255549009",
+        "display": "Anterior (qualifier value)"
+      }, {
+        "code": "255551008",
+        "display": "Posterior (qualifier value)"
+      }, {
+        "code": "255561001",
+        "display": "Medial (qualifier value)"
+      }, {
+        "code": "7771000",
+        "display": "Left (qualifier value)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-17T15:55:45-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "code": "24028007",
+      "display": "Right (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "255549009",
+      "display": "Anterior (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "255551008",
+      "display": "Posterior (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "255561001",
+      "display": "Medial (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "7771000",
+      "display": "Left (qualifier value)"
+    } ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.11.20.9.58-20230715",
+  "meta": {
+    "versionId": "24",
+    "lastUpdated": "2025-08-19T19:47:22.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2024-06-05"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2023-07-15"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.58",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.11.20.9.58"
+  } ],
+  "version": "20230715",
+  "name": "WoundCharacteristic",
+  "title": "Wound Characteristic",
+  "status": "active",
+  "date": "2023-07-15T01:01:22-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "description": "added additional descendants of Wound Finding and revised inclusion criteria",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Concepts representing general characteristics or types of wounds),(Data Element Scope: condition),(Inclusion Criteria: Selected concepts descending primarily from 225552003 'Wound finding' also including Skin Eschar),(Exclusion Criteria: Selected concepts not considered common for describing general characteristics of wounds.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "descendent-of",
+        "value": "225552003"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "225553008"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "239163008"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "286613000"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "310639000"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "409590008"
+      } ]
+    } ],
+    "exclude": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "416462003"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "53181008"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "descendent-of",
+        "value": "276461005"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "298011007"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "298005009"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "298013005"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "1255253003"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "276461005"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "398985007"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "420109006"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "840639002"
+      } ]
+    } ]
+  }
+}

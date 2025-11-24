@@ -1,0 +1,1768 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MentalStatusOrganizer",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-17T14:05:21.217-07:00"
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer\">Organizer</a><a name=\"Organizer\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R5/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (should-sdtctext-ref-value, should-effectiveTime)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">Organizer</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:hl7-org:v3<br/>Elements defined in Ancestors:<a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ANY.html\" title=\"If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.\">@nullFlavor</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question\">realmCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.\">typeId</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question\">templateId</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">@classCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">@moodCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">id</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">code</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">sdtcText</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">statusCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">effectiveTime</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">subject</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">specimen</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">performer</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">author</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">informant</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">participant</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">reference</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">precondition</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">sdtcPrecondition2</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Organizer.html\">component</a><br/><span style=\"opacity: 0.5\">Base for all types and resources</span><br/><span style=\"font-weight:bold\">Instance of this type are validated by templateId</span><br/><span style=\"font-weight:bold\" title=\"The root class that contains instances of this class\">Logical Container: </span><a href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ClinicalDocument.html\">ClinicalDocument (CDA Class)</a><br/><span style=\"font-weight:bold\">should-sdtctext-ref-value: </span>SHOULD contain text/reference/@value<br/><span style=\"font-weight:bold\">should-effectiveTime: </span>SHOULD contain effectiveTime</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.templateId\">Slices for templateId</a><a name=\"Organizer.templateId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by value:root, value:extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.templateId:mental-status-org\" title=\"Slice mental-status-org\">templateId:mental-status-org</a><a name=\"Organizer.templateId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.templateId:mental-status-org.root\">@root</a><a name=\"Organizer.templateId.root\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-oid.html\" title=\"string\">oid</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-uuid.html\" title=\"string\">uuid</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ruid.html\" title=\"string\">ruid</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">2.16.840.1.113883.10.20.22.4.75</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.templateId:mental-status-org.extension\">@extension</a><a name=\"Organizer.templateId.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-st-simple.html\" title=\"string\">st</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">2015-08-01</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.classCode\">@classCode</a><a name=\"Organizer.classCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">CLUSTER</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.moodCode\">@moodCode</a><a name=\"Organizer.moodCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.id\">id</a><a name=\"Organizer.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.code\">code</a><a name=\"Organizer.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R5/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (1198-14698)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-CD.html\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The code selected indicates the category that groups the contained mental status observations (e.g., communication, learning and applying knowledge).<br/><span style=\"font-weight:bold\">1198-14698: </span>**SHOULD** be selected from ICF (codeSystem 2.16.840.1.113883.6.254) *OR* LOINC (codeSystem 2.16.840.1.113883.6.1) (CONF:1198-14698).</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.code.code\">@code</a><a name=\"Organizer.code.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.sdtcText\">sdtcText</a><a name=\"Organizer.sdtcText\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-ED.html\">ED</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">SHOULD reference the portion of section narrative text corresponding to this entry</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.sdtcText.reference\">reference</a><a name=\"Organizer.sdtcText.reference\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R5/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (value-starts-octothorpe)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-TEL.html\">TEL</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">value-starts-octothorpe: </span>If reference/@value is present, it SHALL begin with a '#' and SHALL point to its corresponding narrative</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.statusCode\">statusCode</a><a name=\"Organizer.statusCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-CS.html\">CS</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.statusCode.code\">@code</a><a name=\"Organizer.statusCode.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">completed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.effectiveTime\">effectiveTime</a><a name=\"Organizer.effectiveTime\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-IVL-TS.html\">IVL_TS</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The effectiveTime is an interval that spans the effectiveTimes of the contained mental status observations. Because all contained mental status observations have a required time stamp, it is not required that this effectiveTime be populated.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.component\">Slices for component</a><a name=\"Organizer.component\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-OrganizerComponent.html\">OrganizerComponent</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by profile:observation</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.component:mentalStatus\" title=\"Slice mentalStatus\">component:mentalStatus</a><a name=\"Organizer.component\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-OrganizerComponent.html\">OrganizerComponent</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MentalStatusOrganizer-definitions.html#Organizer.component:mentalStatus.observation\">observation</a><a name=\"Organizer.component.observation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-MentalStatusObservation.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Observation\">MentalStatusObservation</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Base for all types and resources</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/logical-target",
+    "_valueBoolean": {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "not-applicable"
+      } ]
+    }
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+    "valueUri": "urn:hl7-org:v3"
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+    "valueString": "organizer"
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/logical-container",
+    "valueUri": "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"
+  }, {
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/type-profile-style",
+    "valueUri": "cda"
+  } ],
+  "url": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusOrganizer",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:hl7ii:2.16.840.1.113883.10.20.22.4.75:2015-08-01"
+  } ],
+  "version": "3.0.0",
+  "name": "MentalStatusOrganizer",
+  "title": "Mental Status Organizer",
+  "status": "draft",
+  "date": "2024-05-18T00:16:25-05:00",
+  "publisher": "Health Level Seven",
+  "contact": [ {
+    "name": "HL7 International - Structured Documents",
+    "telecom": [ {
+      "system": "url",
+      "value": "http://www.hl7.org/Special/committees/structure"
+    } ]
+  } ],
+  "description": "The Mental Status Organizer template may be used to group related Mental Status Observations (e.g., results of mental tests) and associated Assessment Scale Observations into subcategories and/or groupings by time. Subcategories can be things such as Mood and Affect, Behavior, Thought Process, Perception, Cognition, etc.",
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "code": "US"
+    } ]
+  } ],
+  "fhirVersion": "5.0.0",
+  "mapping": [ {
+    "identity": "rim",
+    "uri": "http://hl7.org/v3",
+    "name": "RIM Mapping"
+  } ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7.org/cda/stds/core/StructureDefinition/Organizer",
+  "baseDefinition": "http://hl7.org/cda/stds/core/StructureDefinition/Organizer",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [ {
+      "id": "Organizer",
+      "path": "Organizer",
+      "short": "Base for all types and resources",
+      "definition": "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Base",
+        "min": 0,
+        "max": "*"
+      },
+      "constraint": [ {
+        "key": "should-sdtctext-ref-value",
+        "severity": "warning",
+        "human": "SHOULD contain text/reference/@value",
+        "expression": "sdtcText.reference.value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusOrganizer"
+      }, {
+        "key": "should-effectiveTime",
+        "severity": "warning",
+        "human": "SHOULD contain effectiveTime",
+        "expression": "effectiveTime.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusOrganizer"
+      } ],
+      "isModifier": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Organizer.nullFlavor",
+      "path": "Organizer.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Organizer.realmCode",
+      "path": "Organizer.realmCode",
+      "definition": "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.realmCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ]
+    }, {
+      "id": "Organizer.typeId",
+      "path": "Organizer.typeId",
+      "definition": "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.typeId",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Organizer.typeId.nullFlavor",
+      "path": "Organizer.typeId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Organizer.typeId.assigningAuthorityName",
+      "path": "Organizer.typeId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.typeId.displayable",
+      "path": "Organizer.typeId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.typeId.root",
+      "path": "Organizer.typeId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "Identifies the type as an HL7 Registered model",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "fixedString": "2.16.840.1.113883.1.3"
+    }, {
+      "id": "Organizer.typeId.extension",
+      "path": "Organizer.typeId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.templateId",
+      "path": "Organizer.templateId",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "root"
+        }, {
+          "type": "value",
+          "path": "extension"
+        } ],
+        "rules": "open"
+      },
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 1,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Organizer.templateId:mental-status-org",
+      "path": "Organizer.templateId",
+      "sliceName": "mental-status-org",
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Organizer.templateId:mental-status-org.nullFlavor",
+      "path": "Organizer.templateId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Organizer.templateId:mental-status-org.assigningAuthorityName",
+      "path": "Organizer.templateId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.templateId:mental-status-org.displayable",
+      "path": "Organizer.templateId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.templateId:mental-status-org.root",
+      "path": "Organizer.templateId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "patternString": "2.16.840.1.113883.10.20.22.4.75"
+    }, {
+      "id": "Organizer.templateId:mental-status-org.extension",
+      "path": "Organizer.templateId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ],
+      "patternString": "2015-08-01"
+    }, {
+      "id": "Organizer.classCode",
+      "path": "Organizer.classCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "SHALL contain exactly one [1..1] @classCode=\"CLUSTER\" Cluster (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:1198-14369).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Organizer.classCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "CLUSTER",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-xActClassDocumentEntryOrganizer|2.0.0"
+      }
+    }, {
+      "id": "Organizer.moodCode",
+      "path": "Organizer.moodCode",
+      "representation": [ "xmlAttr" ],
+      "comment": "SHALL contain exactly one [1..1] @moodCode=\"EVN\" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1198-14371).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Organizer.moodCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "EVN",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDAActMood"
+      }
+    }, {
+      "id": "Organizer.id",
+      "path": "Organizer.id",
+      "comment": "SHALL contain at least one [1..*] id (CONF:1198-14377).",
+      "min": 1,
+      "max": "*",
+      "base": {
+        "path": "Organizer.id",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Organizer.code",
+      "path": "Organizer.code",
+      "short": "The code selected indicates the category that groups the contained mental status observations (e.g., communication, learning and applying knowledge).",
+      "comment": "SHALL contain exactly one [1..1] code (CONF:1198-14378).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Organizer.code",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      } ],
+      "constraint": [ {
+        "key": "1198-14698",
+        "severity": "warning",
+        "human": "**SHOULD** be selected from ICF (codeSystem 2.16.840.1.113883.6.254) *OR* LOINC (codeSystem 2.16.840.1.113883.6.1) (CONF:1198-14698).",
+        "expression": "codeSystem.exists() implies (codeSystem = '2.16.840.1.113883.6.254' or codeSystem = '2.16.840.1.113883.6.1')",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusOrganizer"
+      } ],
+      "binding": {
+        "strength": "example",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActCode"
+      }
+    }, {
+      "id": "Organizer.code.nullFlavor",
+      "path": "Organizer.code.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Organizer.code.code",
+      "path": "Organizer.code.code",
+      "representation": [ "xmlAttr" ],
+      "label": "Code",
+      "definition": "The plain code symbol defined by the code system. For example, \"784.0\" is the code symbol of the ICD-9 code \"784.0\" for headache.",
+      "comment": "This code SHALL contain exactly one [1..1] @code (CONF:1198-14697).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "CD.code",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.code.codeSystem",
+      "path": "Organizer.code.codeSystem",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System",
+      "definition": "Specifies the code system that defines the code.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.codeSystem",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ]
+    }, {
+      "id": "Organizer.code.codeSystemName",
+      "path": "Organizer.code.codeSystemName",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System Name",
+      "definition": "The common name of the coding system.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.codeSystemName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.code.codeSystemVersion",
+      "path": "Organizer.code.codeSystemVersion",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System Version",
+      "definition": "If applicable, a version descriptor defined specifically for the given code system.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.codeSystemVersion",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.code.displayName",
+      "path": "Organizer.code.displayName",
+      "representation": [ "xmlAttr" ],
+      "label": "Display Name",
+      "definition": "A name or title for the code, under which the sending system shows the code value to its users.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.displayName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.code.sdtcValueSet",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "valueSet"
+      } ],
+      "path": "Organizer.code.sdtcValueSet",
+      "representation": [ "xmlAttr" ],
+      "definition": "The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.valueSet",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid" ]
+      } ]
+    }, {
+      "id": "Organizer.code.sdtcValueSetVersion",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "valueSetVersion"
+      } ],
+      "path": "Organizer.code.sdtcValueSetVersion",
+      "representation": [ "xmlAttr" ],
+      "definition": "The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.sdtcValueSetVersion",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.code.originalText",
+      "path": "Organizer.code.originalText",
+      "label": "Original Text",
+      "definition": "The text or phrase used as the basis for the coding.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.originalText",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Organizer.code.qualifier",
+      "path": "Organizer.code.qualifier",
+      "label": "Qualifier",
+      "definition": "Specifies additional codes that increase the specificity of the the primary code.",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "CD.qualifier",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CR"
+      } ]
+    }, {
+      "id": "Organizer.code.translation",
+      "path": "Organizer.code.translation",
+      "representation": [ "typeAttr" ],
+      "label": "Translation",
+      "definition": "A set of other concept descriptors that translate this concept descriptor into other code systems.",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "CD.translation",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      } ]
+    }, {
+      "id": "Organizer.sdtcText",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "text"
+      } ],
+      "path": "Organizer.sdtcText",
+      "short": "SHOULD reference the portion of section narrative text corresponding to this entry",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Organizer.sdtcText",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Organizer.sdtcText.nullFlavor",
+      "path": "Organizer.sdtcText.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Organizer.sdtcText.compression",
+      "path": "Organizer.sdtcText.compression",
+      "representation": [ "xmlAttr" ],
+      "label": "Compression",
+      "definition": "Indicates whether the raw byte data is compressed, and what compression algorithm was used.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.compression",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDACompressionAlgorithm"
+      }
+    }, {
+      "id": "Organizer.sdtcText.integrityCheck",
+      "path": "Organizer.sdtcText.integrityCheck",
+      "representation": [ "xmlAttr" ],
+      "label": "Integrity Check",
+      "definition": "The integrity check is a short binary value representing a cryptographically strong checksum that is calculated over the binary data. The purpose of this property, when communicated with a reference is for anyone to validate later whether the reference still resolved to the same data that the reference resolved to when the encapsulated data value with reference was created.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.integrityCheck",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "base64Binary",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bin" ]
+      } ]
+    }, {
+      "id": "Organizer.sdtcText.integrityCheckAlgorithm",
+      "path": "Organizer.sdtcText.integrityCheckAlgorithm",
+      "representation": [ "xmlAttr" ],
+      "label": "Integrity Check Algorithm",
+      "definition": "Specifies the algorithm used to compute the integrityCheck value. The cryptographically strong checksum algorithm Secure Hash Algorithm-1 (SHA-1) is currently the industry standard. It has superseded the MD5 algorithm only a couple of years ago, when certain flaws in the security of MD5 were discovered. Currently the SHA-1 hash algorithm is the default choice for the integrity check algorithm. Note that SHA-256 is also entering widespread usage.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.integrityCheckAlgorithm",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-IntegrityCheckAlgorithm|2.0.0"
+      }
+    }, {
+      "id": "Organizer.sdtcText.language",
+      "path": "Organizer.sdtcText.language",
+      "representation": [ "xmlAttr" ],
+      "label": "Language",
+      "definition": "For character based information the language property specifies the human language of the text.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.language",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.sdtcText.mediaType",
+      "path": "Organizer.sdtcText.mediaType",
+      "representation": [ "xmlAttr" ],
+      "label": "Media Type",
+      "definition": "Identifies the type of the encapsulated data and identifies a method to interpret or render the data.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.mediaType",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "example",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-MediaType"
+      }
+    }, {
+      "id": "Organizer.sdtcText.representation",
+      "path": "Organizer.sdtcText.representation",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.representation",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/BinaryDataEncoding"
+      }
+    }, {
+      "id": "Organizer.sdtcText.xmlText",
+      "path": "Organizer.sdtcText.xmlText",
+      "representation": [ "xmlText" ],
+      "short": "Allows for mixed text content. If @representation='B64', this SHALL be a base64binary string.",
+      "definition": "Data that is primarily intended for human interpretation or for further machine processing is outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information as defined by a different standard (e.g., XML-signatures.)",
+      "comment": "This element is represented in XML as textual content. The actual name \"xmlText\" will not appear in a CDA instance.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.xmlText",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.sdtcText.reference",
+      "path": "Organizer.sdtcText.reference",
+      "label": "Reference",
+      "definition": "A telecommunication address (TEL), such as a URL for HTTP or FTP, which will resolve to precisely the same binary data that could as well have been provided as inline data.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.reference",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/TEL"
+      } ],
+      "constraint": [ {
+        "key": "value-starts-octothorpe",
+        "severity": "error",
+        "human": "If reference/@value is present, it SHALL begin with a '#' and SHALL point to its corresponding narrative",
+        "expression": "value.exists() implies value.startsWith('#')",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusOrganizer"
+      } ]
+    }, {
+      "id": "Organizer.sdtcText.thumbnail",
+      "path": "Organizer.sdtcText.thumbnail",
+      "label": "Thumbnail",
+      "definition": "An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ED.thumbnail",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Organizer.statusCode",
+      "path": "Organizer.statusCode",
+      "comment": "SHALL contain exactly one [1..1] statusCode (CONF:1198-14372).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "Organizer.statusCode",
+        "min": 1,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActStatus"
+      }
+    }, {
+      "id": "Organizer.statusCode.nullFlavor",
+      "path": "Organizer.statusCode.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Organizer.statusCode.code",
+      "path": "Organizer.statusCode.code",
+      "representation": [ "xmlAttr" ],
+      "label": "Code",
+      "definition": "The plain code symbol defined by the code system. For example, \"784.0\" is the code symbol of the ICD-9 code \"784.0\" for headache.",
+      "comment": "This statusCode SHALL contain exactly one [1..1] @code=\"completed\" Completed (CodeSystem: HL7ActStatus urn:oid:2.16.840.1.113883.5.14 STATIC) (CONF:1198-19093).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "CD.code",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "fixedCode": "completed"
+    }, {
+      "id": "Organizer.statusCode.codeSystem",
+      "path": "Organizer.statusCode.codeSystem",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System",
+      "definition": "Specifies the code system that defines the code.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.codeSystem",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ]
+    }, {
+      "id": "Organizer.statusCode.codeSystemName",
+      "path": "Organizer.statusCode.codeSystemName",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System Name",
+      "definition": "The common name of the coding system.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.codeSystemName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.statusCode.codeSystemVersion",
+      "path": "Organizer.statusCode.codeSystemVersion",
+      "representation": [ "xmlAttr" ],
+      "label": "Code System Version",
+      "definition": "If applicable, a version descriptor defined specifically for the given code system.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.codeSystemVersion",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.statusCode.displayName",
+      "path": "Organizer.statusCode.displayName",
+      "representation": [ "xmlAttr" ],
+      "label": "Display Name",
+      "definition": "A name or title for the code, under which the sending system shows the code value to its users.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.displayName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.statusCode.sdtcValueSet",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "valueSet"
+      } ],
+      "path": "Organizer.statusCode.sdtcValueSet",
+      "representation": [ "xmlAttr" ],
+      "definition": "The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.valueSet",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid" ]
+      } ]
+    }, {
+      "id": "Organizer.statusCode.sdtcValueSetVersion",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "valueSetVersion"
+      } ],
+      "path": "Organizer.statusCode.sdtcValueSetVersion",
+      "representation": [ "xmlAttr" ],
+      "definition": "The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "CD.sdtcValueSetVersion",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.statusCode.originalText",
+      "path": "Organizer.statusCode.originalText",
+      "label": "Original Text",
+      "definition": "The text or phrase used as the basis for the coding.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.originalText",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      } ]
+    }, {
+      "id": "Organizer.statusCode.qualifier",
+      "path": "Organizer.statusCode.qualifier",
+      "label": "Qualifier",
+      "definition": "Specifies additional codes that increase the specificity of the the primary code.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.qualifier",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CR"
+      } ]
+    }, {
+      "id": "Organizer.statusCode.translation",
+      "path": "Organizer.statusCode.translation",
+      "representation": [ "typeAttr" ],
+      "label": "Translation",
+      "definition": "A set of other concept descriptors that translate this concept descriptor into other code systems.",
+      "min": 0,
+      "max": "0",
+      "base": {
+        "path": "CD.translation",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      } ]
+    }, {
+      "id": "Organizer.effectiveTime",
+      "path": "Organizer.effectiveTime",
+      "short": "The effectiveTime is an interval that spans the effectiveTimes of the contained mental status observations. Because all contained mental status observations have a required time stamp, it is not required that this effectiveTime be populated.",
+      "comment": "SHOULD contain zero or one [0..1] effectiveTime (CONF:1198-32424).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Organizer.effectiveTime",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
+      } ]
+    }, {
+      "id": "Organizer.subject",
+      "path": "Organizer.subject",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "Organizer.subject",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Subject"
+      } ]
+    }, {
+      "id": "Organizer.specimen",
+      "path": "Organizer.specimen",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Organizer.specimen",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Specimen"
+      } ]
+    }, {
+      "id": "Organizer.performer",
+      "path": "Organizer.performer",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Organizer.performer",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Performer2"
+      } ]
+    }, {
+      "id": "Organizer.author",
+      "path": "Organizer.author",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Organizer.author",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Author"
+      } ]
+    }, {
+      "id": "Organizer.informant",
+      "path": "Organizer.informant",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Organizer.informant",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Informant"
+      } ]
+    }, {
+      "id": "Organizer.participant",
+      "path": "Organizer.participant",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Organizer.participant",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Participant2"
+      } ]
+    }, {
+      "id": "Organizer.reference",
+      "path": "Organizer.reference",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Organizer.reference",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Reference"
+      } ]
+    }, {
+      "id": "Organizer.precondition",
+      "path": "Organizer.precondition",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Organizer.precondition",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Precondition"
+      } ]
+    }, {
+      "id": "Organizer.sdtcPrecondition2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "precondition2"
+      } ],
+      "path": "Organizer.sdtcPrecondition2",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "Organizer.sdtcPrecondition2",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Precondition2"
+      } ]
+    }, {
+      "id": "Organizer.component",
+      "path": "Organizer.component",
+      "slicing": {
+        "discriminator": [ {
+          "type": "profile",
+          "path": "observation"
+        } ],
+        "rules": "open"
+      },
+      "min": 1,
+      "max": "*",
+      "base": {
+        "path": "Organizer.component",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/OrganizerComponent"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus",
+      "path": "Organizer.component",
+      "sliceName": "mentalStatus",
+      "comment": "SHALL contain at least one [1..*] component (CONF:1198-14373) such that it",
+      "min": 1,
+      "max": "*",
+      "base": {
+        "path": "Organizer.component",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/OrganizerComponent"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.nullFlavor",
+      "path": "Organizer.component.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Organizer.component:mentalStatus.realmCode",
+      "path": "Organizer.component.realmCode",
+      "definition": "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.realmCode",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.typeId",
+      "path": "Organizer.component.typeId",
+      "definition": "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "InfrastructureRoot.typeId",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.typeId.nullFlavor",
+      "path": "Organizer.component.typeId.nullFlavor",
+      "representation": [ "xmlAttr" ],
+      "label": "Exceptional Value Detail",
+      "definition": "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "ANY.nullFlavor",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor"
+      }
+    }, {
+      "id": "Organizer.component:mentalStatus.typeId.assigningAuthorityName",
+      "path": "Organizer.component.typeId.assigningAuthorityName",
+      "representation": [ "xmlAttr" ],
+      "label": "Assigning Authority Name",
+      "definition": "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.assigningAuthorityName",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.typeId.displayable",
+      "path": "Organizer.component.typeId.displayable",
+      "representation": [ "xmlAttr" ],
+      "label": "Displayable",
+      "definition": "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "II.displayable",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.typeId.root",
+      "path": "Organizer.component.typeId.root",
+      "representation": [ "xmlAttr" ],
+      "label": "Root",
+      "definition": "Identifies the type as an HL7 Registered model",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.root",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/oid", "http://hl7.org/cda/stds/core/StructureDefinition/uuid", "http://hl7.org/cda/stds/core/StructureDefinition/ruid" ]
+      } ],
+      "fixedString": "2.16.840.1.113883.1.3"
+    }, {
+      "id": "Organizer.component:mentalStatus.typeId.extension",
+      "path": "Organizer.component.typeId.extension",
+      "representation": [ "xmlAttr" ],
+      "label": "Extension",
+      "definition": "A character string as a unique identifier within the scope of the identifier root.",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "II.extension",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "string",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/st-simple" ]
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.templateId",
+      "path": "Organizer.component.templateId",
+      "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min": 0,
+      "max": "*",
+      "base": {
+        "path": "InfrastructureRoot.templateId",
+        "min": 0,
+        "max": "*"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.typeCode",
+      "path": "Organizer.component.typeCode",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.typeCode",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "code",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/cs-simple" ]
+      } ],
+      "defaultValueCode": "COMP",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActRelationshipHasComponent"
+      }
+    }, {
+      "id": "Organizer.component:mentalStatus.contextConductionInd",
+      "path": "Organizer.component.contextConductionInd",
+      "representation": [ "xmlAttr" ],
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.contextConductionInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "boolean",
+        "profile": [ "http://hl7.org/cda/stds/core/StructureDefinition/bl-simple" ]
+      } ],
+      "fixedBoolean": true
+    }, {
+      "id": "Organizer.component:mentalStatus.sequenceNumber",
+      "path": "Organizer.component.sequenceNumber",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.sequenceNumber",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/INT"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.sdtcPriorityNumber",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri": "urn:hl7-org:sdtc"
+      }, {
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString": "priorityNumber"
+      } ],
+      "path": "Organizer.component.sdtcPriorityNumber",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.sdtcPriorityNumber",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/INT"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.seperatableInd",
+      "path": "Organizer.component.seperatableInd",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.seperatableInd",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/BL"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.act",
+      "path": "Organizer.component.act",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.act",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Act"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.encounter",
+      "path": "Organizer.component.encounter",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.encounter",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Encounter"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.observation",
+      "path": "Organizer.component.observation",
+      "short": "Base for all types and resources",
+      "definition": "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "comment": "SHALL contain exactly one [1..1] Mental Status Observation (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.74:2015-08-01) (CONF:1198-14381).",
+      "min": 1,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.observation",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusObservation" ]
+      } ],
+      "constraint": [ {
+        "key": "should-text-ref-value",
+        "severity": "warning",
+        "human": "SHOULD contain text/reference/@value",
+        "expression": "text.reference.value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusObservation"
+      }, {
+        "key": "should-author",
+        "severity": "warning",
+        "human": "SHOULD contain author",
+        "expression": "author.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusObservation"
+      } ],
+      "isModifier": false,
+      "mapping": [ {
+        "identity": "rim",
+        "map": "n/a"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.observationMedia",
+      "path": "Organizer.component.observationMedia",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.observationMedia",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.organizer",
+      "path": "Organizer.component.organizer",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.organizer",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Organizer"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.procedure",
+      "path": "Organizer.component.procedure",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.procedure",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Procedure"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.regionOfInterest",
+      "path": "Organizer.component.regionOfInterest",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.regionOfInterest",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.substanceAdministration",
+      "path": "Organizer.component.substanceAdministration",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.substanceAdministration",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"
+      } ]
+    }, {
+      "id": "Organizer.component:mentalStatus.supply",
+      "path": "Organizer.component.supply",
+      "min": 0,
+      "max": "1",
+      "base": {
+        "path": "OrganizerComponent.supply",
+        "min": 0,
+        "max": "1"
+      },
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Supply"
+      } ]
+    } ]
+  },
+  "differential": {
+    "element": [ {
+      "id": "Organizer",
+      "path": "Organizer",
+      "constraint": [ {
+        "key": "should-sdtctext-ref-value",
+        "severity": "warning",
+        "human": "SHOULD contain text/reference/@value",
+        "expression": "sdtcText.reference.value.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusOrganizer"
+      }, {
+        "key": "should-effectiveTime",
+        "severity": "warning",
+        "human": "SHOULD contain effectiveTime",
+        "expression": "effectiveTime.exists()",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusOrganizer"
+      } ]
+    }, {
+      "id": "Organizer.templateId",
+      "path": "Organizer.templateId",
+      "slicing": {
+        "discriminator": [ {
+          "type": "value",
+          "path": "root"
+        }, {
+          "type": "value",
+          "path": "extension"
+        } ],
+        "rules": "open"
+      },
+      "min": 1
+    }, {
+      "id": "Organizer.templateId:mental-status-org",
+      "path": "Organizer.templateId",
+      "sliceName": "mental-status-org",
+      "min": 1,
+      "max": "1"
+    }, {
+      "id": "Organizer.templateId:mental-status-org.root",
+      "path": "Organizer.templateId.root",
+      "min": 1,
+      "patternString": "2.16.840.1.113883.10.20.22.4.75"
+    }, {
+      "id": "Organizer.templateId:mental-status-org.extension",
+      "path": "Organizer.templateId.extension",
+      "min": 1,
+      "patternString": "2015-08-01"
+    }, {
+      "id": "Organizer.classCode",
+      "path": "Organizer.classCode",
+      "comment": "SHALL contain exactly one [1..1] @classCode=\"CLUSTER\" Cluster (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:1198-14369).",
+      "fixedCode": "CLUSTER"
+    }, {
+      "id": "Organizer.moodCode",
+      "path": "Organizer.moodCode",
+      "comment": "SHALL contain exactly one [1..1] @moodCode=\"EVN\" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1198-14371)."
+    }, {
+      "id": "Organizer.id",
+      "path": "Organizer.id",
+      "comment": "SHALL contain at least one [1..*] id (CONF:1198-14377).",
+      "min": 1
+    }, {
+      "id": "Organizer.code",
+      "path": "Organizer.code",
+      "short": "The code selected indicates the category that groups the contained mental status observations (e.g., communication, learning and applying knowledge).",
+      "comment": "SHALL contain exactly one [1..1] code (CONF:1198-14378).",
+      "min": 1,
+      "constraint": [ {
+        "key": "1198-14698",
+        "severity": "warning",
+        "human": "**SHOULD** be selected from ICF (codeSystem 2.16.840.1.113883.6.254) *OR* LOINC (codeSystem 2.16.840.1.113883.6.1) (CONF:1198-14698).",
+        "expression": "codeSystem.exists() implies (codeSystem = '2.16.840.1.113883.6.254' or codeSystem = '2.16.840.1.113883.6.1')",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusOrganizer"
+      } ]
+    }, {
+      "id": "Organizer.code.code",
+      "path": "Organizer.code.code",
+      "comment": "This code SHALL contain exactly one [1..1] @code (CONF:1198-14697).",
+      "min": 1
+    }, {
+      "id": "Organizer.sdtcText",
+      "path": "Organizer.sdtcText",
+      "short": "SHOULD reference the portion of section narrative text corresponding to this entry"
+    }, {
+      "id": "Organizer.sdtcText.reference",
+      "path": "Organizer.sdtcText.reference",
+      "constraint": [ {
+        "key": "value-starts-octothorpe",
+        "severity": "error",
+        "human": "If reference/@value is present, it SHALL begin with a '#' and SHALL point to its corresponding narrative",
+        "expression": "value.exists() implies value.startsWith('#')",
+        "source": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusOrganizer"
+      } ]
+    }, {
+      "id": "Organizer.statusCode",
+      "path": "Organizer.statusCode",
+      "comment": "SHALL contain exactly one [1..1] statusCode (CONF:1198-14372)."
+    }, {
+      "id": "Organizer.statusCode.code",
+      "path": "Organizer.statusCode.code",
+      "comment": "This statusCode SHALL contain exactly one [1..1] @code=\"completed\" Completed (CodeSystem: HL7ActStatus urn:oid:2.16.840.1.113883.5.14 STATIC) (CONF:1198-19093).",
+      "min": 1,
+      "fixedCode": "completed"
+    }, {
+      "id": "Organizer.effectiveTime",
+      "path": "Organizer.effectiveTime",
+      "short": "The effectiveTime is an interval that spans the effectiveTimes of the contained mental status observations. Because all contained mental status observations have a required time stamp, it is not required that this effectiveTime be populated.",
+      "comment": "SHOULD contain zero or one [0..1] effectiveTime (CONF:1198-32424)."
+    }, {
+      "id": "Organizer.component",
+      "path": "Organizer.component",
+      "slicing": {
+        "discriminator": [ {
+          "type": "profile",
+          "path": "observation"
+        } ],
+        "rules": "open"
+      },
+      "min": 1
+    }, {
+      "id": "Organizer.component:mentalStatus",
+      "path": "Organizer.component",
+      "sliceName": "mentalStatus",
+      "comment": "SHALL contain at least one [1..*] component (CONF:1198-14373) such that it",
+      "min": 1,
+      "max": "*"
+    }, {
+      "id": "Organizer.component:mentalStatus.observation",
+      "path": "Organizer.component.observation",
+      "comment": "SHALL contain exactly one [1..1] Mental Status Observation (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.74:2015-08-01) (CONF:1198-14381).",
+      "min": 1,
+      "type": [ {
+        "code": "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
+        "profile": [ "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusObservation" ]
+      } ]
+    } ]
+  }
+}

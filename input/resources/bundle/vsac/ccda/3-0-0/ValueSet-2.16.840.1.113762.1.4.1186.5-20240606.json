@@ -1,0 +1,103 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1186.5-20240606",
+  "meta": {
+    "versionId": "20",
+    "lastUpdated": "2025-07-22T18:36:20.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-07-22"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.5",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1186.5"
+  } ],
+  "version": "20240606",
+  "name": "CommonRefutationsForSubstanceCausesForAllergyAndIntoleranceDocumentation",
+  "title": "Common refutations for substance causes for allergy and intolerance documentation",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "description": "This set was initially developed in 2018. Annual updates to the value set definition have retained inactivated codes and added the suggested VSAC remaps. NO NEW ENVIRONMENTAL SUBSTANCE REFUTATIONS HAVE BEEN ADDED SINCE 2021.",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Refutation of associations between substances and reactions),(Data Element Scope: Reactant element of allergy or intolerance record),(Inclusion Criteria: SNOMED CT situation concepts asserting that a substance or class of substances does not cause adverse reactions in the patient),(Exclusion Criteria: Substances; actual conditions caused by exposure (reactions, allergies))",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "1003774007",
+        "display": "No known Hevea brasiliensis latex allergy (situation)"
+      }, {
+        "code": "1631000175102",
+        "display": "Patient not asked (contextual qualifier) (qualifier value)"
+      }, {
+        "code": "409137002",
+        "display": "No known drug allergy (situation)"
+      }, {
+        "code": "428607008",
+        "display": "No known environmental allergy (situation)"
+      }, {
+        "code": "429625007",
+        "display": "No known food allergy (situation)"
+      }, {
+        "code": "716184000",
+        "display": "No known latex allergy (situation)"
+      }, {
+        "code": "716186003",
+        "display": "No known allergy (situation)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-17T15:55:20-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "code": "1003774007",
+      "display": "No known Hevea brasiliensis latex allergy (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "1631000175102",
+      "display": "Patient not asked (contextual qualifier) (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "409137002",
+      "display": "No known drug allergy (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "428607008",
+      "display": "No known environmental allergy (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "429625007",
+      "display": "No known food allergy (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "716184000",
+      "display": "No known latex allergy (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "716186003",
+      "display": "No known allergy (situation)"
+    } ]
+  }
+}

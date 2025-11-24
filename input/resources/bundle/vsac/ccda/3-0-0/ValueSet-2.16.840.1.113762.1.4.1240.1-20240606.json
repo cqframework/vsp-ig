@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1240.1-20240606",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2025-07-31T13:52:37.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-07-31"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.1",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1240.1"
+  } ],
+  "version": "20240606",
+  "name": "MentalStatusObservation",
+  "title": "Mental Status Observation",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Represents clinical observations related to a person's cognitive or mental status, including findings such as orientation, memory, attention, and perception.),(Data Element Scope: Used to document specific findings about a patient's cognitive function as observed or assessed during clinical encounters. This may include both normal and abnormal cognitive states relevant to overall mental status.),(Inclusion Criteria: Includes SNOMED CT concepts that are descendants of 373930000 |Cognitive function finding|, encompassing a range of mental and cognitive observations such as confusion, alertness, memory deficits, attention issues, and disorientation.),(Exclusion Criteria: Does not include psychiatric diagnoses (e.g., schizophrenia), mood or behavioral findings not directly related to cognitive function, procedural codes, or assessment tools (e.g., MMSE total scores).)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "descendent-of",
+        "value": "373930000"
+      } ]
+    } ]
+  }
+}

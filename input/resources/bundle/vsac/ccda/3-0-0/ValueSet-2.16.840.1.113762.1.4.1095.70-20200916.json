@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1095.70-20200916",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-04-25T11:04:49.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "AND Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-24"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2020-09-16"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.70",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1095.70"
+  } ],
+  "version": "20200916",
+  "name": "NutritionEducationSNOMEDCT",
+  "title": "Nutrition Education SNOMED CT",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-09-16T01:00:30-04:00",
+  "publisher": "AND Steward",
+  "description": "Includes all concepts in SNOMED CT for nutrition education. Select relevant concepts depending on the use case.",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: These nutrition education concepts are used for improving the client's knowledge and skills.),(Data Element Scope: Nutrition education as represented by these concepts is used to improve the understanding of nutrition as it relates to prevention and/or treatment of health.),(Inclusion Criteria: Items included are used to improve understanding of nutrition and it's relationship to health.),(Exclusion Criteria: Nutrition counseling interventions)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "61310001"
+      } ]
+    } ]
+  }
+}

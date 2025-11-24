@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1021.47-20240606",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2024-06-06T01:23:01.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-07-15"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.47",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1021.47"
+  } ],
+  "version": "20240606",
+  "name": "DeviceLatexSafety",
+  "title": "Device Latex Safety",
+  "status": "retired",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: When available, data on latex use in manufacturing of the device or it's packaging allows for clinical judgement for the use of that device in individuals with latex sensitivity.),(Data Element Scope: Data provides information on the use or latex in the manufacturing of the device or the container or packing of the device.),(Inclusion Criteria: Devices that include any material made from or containing natural latex in its native liquid or colloidal state. Natural latex is an extract of the rubber tree (H. brasiliensis) and contains the allergens responsible for latex hyper-sensitivity reactions. Products that may contain NRL are medical gloves and condoms. See 21 CFR 801.437 for full regulatory definition.),(Exclusion Criteria: Natural rubber latex was not used as materials in the manufacture of the medical product and container and the device labeling contains this information. This set is only applicable to devices not subject to the requirements under 21 CFR 801.437. Not all medical products that are NOT made with natural rubber latex will be marked.)",
+  "compose": {
+    "include": [ {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "concept": [ {
+        "code": "C101673",
+        "display": "Labeled as Containing Natural Rubber Latex"
+      }, {
+        "code": "C106038",
+        "display": "Not Made with Natural Rubber Latex"
+      }, {
+        "code": "C106043",
+        "display": "Natural Rubber"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-17T15:46:27-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C101673",
+      "display": "Labeled as Containing Natural Rubber Latex"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C106038",
+      "display": "Not Made with Natural Rubber Latex"
+    }, {
+      "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "code": "C106043",
+      "display": "Natural Rubber"
+    } ]
+  }
+}

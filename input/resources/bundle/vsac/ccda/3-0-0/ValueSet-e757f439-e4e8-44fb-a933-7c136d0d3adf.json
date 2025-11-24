@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "e757f439-e4e8-44fb-a933-7c136d0d3adf",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-17T15:39:30.146-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-07-25"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-07-25"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.4.1",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.11.20.4.1"
+  } ],
+  "version": "20250725",
+  "name": "DischargeSummaryDocumentTypeCode",
+  "title": "DischargeSummaryDocumentTypeCode",
+  "status": "active",
+  "date": "2025-07-25T01:14:40-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "description": "Search.loinc query: Component:(Discharge Summary note) Class:Doc.Ontology",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Kind of discharge summary document classified by author role),(Data Element Scope: ),(Inclusion Criteria: A list of LOINC terms, intended to identify Discharge Summary Notes where component contains \"Discharge Summary Note\", Timing = \"Patient\", Property = Find\" , scale = \"Doc\"),(Exclusion Criteria: )",
+  "compose": {
+    "include": [ {
+      "system": "http://loinc.org",
+      "version": "2.80",
+      "filter": [ {
+        "property": "concept",
+        "op": "in",
+        "value": "59258-4,68773-1,68815-0,68831-7,68612-1,68653-5,95133-5,87256-4,85849-8,97690-2,97704-1,97714-0,101891-0,94530-3,94465-2,94515-4,94521-2,78420-7,84257-5,85442-2,84254-2,84310-2,84328-4,83932-4,83921-7,85176-6,85192-3,68805-1,68572-7,68709-5,78263-1,99483-0,99490-5,28655-9,100721-0,100727-7,100728-5,100731-9,101005-7,85514-8,85223-6,83523-1,84013-2,84017-3,84040-5,84139-5,88645-7,84262-5,84331-8,85154-3,93903-3,94529-5,78419-9,78421-5,99488-9,99489-7,100718-6,100723-6,100725-1,100726-9,100729-3,101007-3,97700-9,97701-7,97703-3,97725-6,89214-1,89218-2,94516-2,94517-0,94519-6,94524-6,77417-4,77409-1,78264-9,100722-8,78585-7,96378-5,85875-3,34106-5,59259-2,68795-4,68856-4,68558-6,68578-4,68591-7,68733-5,68768-1,68663-4,68674-1,68738-4,68749-1,85433-1,83956-3,84024-9,85243-4,84132-0,101890-2,101889-4,83968-8,29761-4,57058-0,34745-0,18842-5,94522-0,94525-3,78418-1,87235-8,85878-7,94526-1,94527-9,94464-5,94520-4,94523-8,68823-4,68841-6,68626-1,68642-8,68688-1,68779-8,68697-2,68719-4,34105-7,85520-5,88641-6,88693-7,85434-9,84321-9,84367-2,83898-7,84393-8,83961-3,83993-6,85240-0,84018-1,83551-2,100719-4,100730-1,97663-9,80811-3,101006-5,97702-5,97719-9,83712-0,85440-6,84248-4,83810-2,85200-4,84179-1,101135-2,100720-2,100724-4,84278-1,11490-0"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.11.20.9.60-20240606",
+  "meta": {
+    "versionId": "16",
+    "lastUpdated": "2025-08-11T19:53:57.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-08-11"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.60",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.11.20.9.60"
+  } ],
+  "version": "20240606",
+  "name": "PriorityLevel",
+  "title": "Priority Level",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "description": "updated exclusion criteria",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Concepts representing priority classifications used to indicate the urgency or sequence in which healthcare activities, services, or cases should be addressed.),(Data Element Scope: Concepts from the SNOMED CT qualifier value hierarchy that categorize the relative priority of healthcare activities, including normal, high, and delayed priority.),(Inclusion Criteria: SNOMED CT qualifier value concepts specifically denoting general priority levels:\n394848005 | Normal priority |\n394849002 | High priority |\n441808003 | Delayed priority |),(Exclusion Criteria: only concepts identified; excludes scheduled - priority and other priority-related concepts outside of the three specified general categories, including numeric triage scores, workflow-specific priorities, and domain-specific urgency classifications.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "394848005",
+        "display": "Normal priority (qualifier value)"
+      }, {
+        "code": "394849002",
+        "display": "High priority (qualifier value)"
+      }, {
+        "code": "441808003",
+        "display": "Delayed priority (qualifier value)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-17T15:47:47-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "code": "394848005",
+      "display": "Normal priority (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "394849002",
+      "display": "High priority (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "441808003",
+      "display": "Delayed priority (qualifier value)"
+    } ]
+  }
+}

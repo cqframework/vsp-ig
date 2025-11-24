@@ -1,0 +1,103 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.11.20.9.35-20230715",
+  "meta": {
+    "versionId": "28",
+    "lastUpdated": "2025-08-11T20:00:31.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Nursing Informatics Group Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-11-14"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2023-07-15"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.35",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.11.20.9.35"
+  } ],
+  "version": "20230715",
+  "name": "PressureUlcerStage",
+  "title": "Pressure Ulcer Stage",
+  "status": "active",
+  "date": "2023-07-15T01:01:22-04:00",
+  "publisher": "Nursing Informatics Group Steward",
+  "description": "Revised clinical focus statement",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Pressure Injury (ulcer) stages),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: )",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "1163215007",
+        "display": "Pressure injury (disorder)"
+      }, {
+        "code": "1163217004",
+        "display": "Pressure injury stage I (disorder)"
+      }, {
+        "code": "1163220007",
+        "display": "Pressure injury stage II (disorder)"
+      }, {
+        "code": "1163222004",
+        "display": "Pressure injury stage III (disorder)"
+      }, {
+        "code": "1163224003",
+        "display": "Pressure injury stage IV (disorder)"
+      }, {
+        "code": "1163226001",
+        "display": "Unstageable pressure injury (disorder)"
+      }, {
+        "code": "723071003",
+        "display": "Pressure injury of deep tissue (disorder)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-17T15:49:19-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "code": "1163215007",
+      "display": "Pressure injury (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "1163217004",
+      "display": "Pressure injury stage I (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "1163220007",
+      "display": "Pressure injury stage II (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "1163222004",
+      "display": "Pressure injury stage III (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "1163224003",
+      "display": "Pressure injury stage IV (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "1163226001",
+      "display": "Unstageable pressure injury (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "723071003",
+      "display": "Pressure injury of deep tissue (disorder)"
+    } ]
+  }
+}
