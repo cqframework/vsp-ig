@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "a8ecef3d-5bd6-4d01-b632-e52017f5f9a8",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "AND Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-05-21"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-05-21"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.2",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1095.2"
+  } ],
+  "version": "20250521",
+  "name": "FoodAndNutrientDeliverySNOMEDCT",
+  "title": "Food and Nutrient Delivery SNOMED CT",
+  "status": "active",
+  "date": "2025-05-21T01:03:59-04:00",
+  "publisher": "AND Steward",
+  "description": "Individualized approach for food/nutrient provision",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Provision of individually prescribed recommended intake of energy and/or selected fooods or nutrients based on curent reference standards.),(Data Element Scope: Delivery of food and nutrients via all routes (oral, enteral, parenteral, IV fluids).),(Inclusion Criteria: SNOMED-CT codes for food and nutrient delivery per the Nutrition Care Process.),(Exclusion Criteria: Procedures for nutrition education, nutrition counseling, coordination of care, population-based nutrition action.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "182922004"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "418995006"
+      } ]
+    } ],
+    "exclude": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "in",
+        "value": "37041007,386261001,765024005,765063003"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "7af3c80a-d204-4b38-9692-e6881c574c20",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-08-16"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-08-16"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20.2.3",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.1.11.20.2.3"
+  } ],
+  "version": "20250816",
+  "name": "ReferralDocumentType",
+  "title": "ReferralDocumentType",
+  "status": "active",
+  "date": "2025-08-16T01:15:26-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "description": "search.loinc.com: component:(referral note) scale:(DOC) -deprecated\n\nFrom the csv export, create a comma-separated list of the codes only and paste into the \"value\" field with operator of \"in\"",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: A LOINC concept that indicates the focus of the referral note),(Data Element Scope: C-CDA r2.1 @code in ReferralNote(V2)\n[ClinicalDocument: identifier urn:hl7ii:2.16.840.1.113883.10.20.22.1.14:2015- 08-01 (open)] DYNAMIC),(Inclusion Criteria: LOINC document concepts for referral notes),(Exclusion Criteria: only those in the inclusion criteria)",
+  "compose": {
+    "include": [ {
+      "system": "http://loinc.org",
+      "version": "2.80",
+      "filter": [ {
+        "property": "concept",
+        "op": "in",
+        "value": "57175-2,95747-2,69438-0,57158-8,57166-1,57163-8,78483-5,57160-4,77427-3,57155-4,57174-5,57133-1,78674-9,78673-1,78670-7,84259-1,85226-9,78330-8,57149-7,57172-9,78501-4,57141-4,57137-2,57151-3,83797-1,95754-8,78329-0,86664-0,89225-7,57164-6,57152-1,103807-4,77432-3,82358-3,57165-3,57173-7,83971-2,57136-4,57145-5,89234-9,87250-7,57154-7,57178-6,57159-6,57147-1,84287-2,57153-9,78484-3,57142-2,84031-4,57150-5,80577-0,77405-9,84271-6,57169-5,57162-0,78331-6,57167-9,78671-5,57135-6,57170-3,78677-2,78332-4,57144-8,80806-3,103805-8,57179-4,85199-8,57168-7,57157-0,78675-6,57138-0,57177-8,78700-2,57148-9,83964-7,103547-6,57143-0,57156-2,85205-3,57146-3,57134-9,78672-3,57171-1,57176-0,57139-8,80419-5,78676-4"
+      } ]
+    } ]
+  }
+}

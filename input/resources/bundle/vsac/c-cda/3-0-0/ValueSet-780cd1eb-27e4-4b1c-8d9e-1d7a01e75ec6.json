@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "id": "780cd1eb-27e4-4b1c-8d9e-1d7a01e75ec6",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "ADVault Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-08"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2023-08-15"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.23",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1115.23"
+  } ],
+  "version": "20230815",
+  "name": "ADConditionsAndPrognosisScenarios",
+  "title": "AD Conditions and Prognosis Scenarios",
+  "status": "active",
+  "date": "2023-08-15T01:01:06-04:00",
+  "publisher": "ADVault",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: These are clinical scenarios where the condition and prognosis is relevant for considering a person's Advance Directives. They are future possible scenarios that may or may not come to pass for the individual, but which the individual my want to have their preferences documented to be prepared.),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: )",
+  "compose": {
+    "include": [ {
+      "system": "http://loinc.org",
+      "concept": [ {
+        "code": "75777-3",
+        "display": "Information to tell doctors if my health deteriorates due to a terminal illness and I am unable to interact meaningfully with family, friends, or surroundings [Reported]"
+      }, {
+        "code": "75778-1",
+        "display": "Information to tell doctors if I have a severe, irreversible brain injury or illness and can't dress, feed, or bathe myself, or communicate my medical wishes, but can be kept alive [Reported]"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-24T12:20:25-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "code": "75777-3",
+      "display": "Information to tell doctors if my health deteriorates due to a terminal illness and I am unable to interact meaningfully with family, friends, or surroundings [Reported]"
+    }, {
+      "system": "http://loinc.org",
+      "code": "75778-1",
+      "display": "Information to tell doctors if I have a severe, irreversible brain injury or illness and can't dress, feed, or bathe myself, or communicate my medical wishes, but can be kept alive [Reported]"
+    } ]
+  }
+}

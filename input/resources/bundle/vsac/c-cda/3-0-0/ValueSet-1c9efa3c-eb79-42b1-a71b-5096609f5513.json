@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "id": "1c9efa3c-eb79-42b1-a71b-5096609f5513",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "AND Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-24"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2020-09-16"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.20",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1095.20"
+  } ],
+  "version": "20200916",
+  "name": "EnteralNutritionManagementSNOMEDCT",
+  "title": "Enteral Nutrition Management SNOMED CT",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-09-16T01:00:30-04:00",
+  "publisher": "AND Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Management of nutrition care as provided via the gastrointestinal tract via a tube distal to the oral cavity.),(Data Element Scope: Included are terms used to manage enteral nutrition care as an individualized intervention in a nutrition care plan.),(Inclusion Criteria: Set includes all enteral feeding management plus additional terms for insertion.),(Exclusion Criteria: Excluded are any terms which pertain to oral or parenteral nutriton delivery.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "408909002"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "450351008"
+      } ]
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "450352001"
+      } ]
+    } ]
+  }
+}
