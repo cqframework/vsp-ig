@@ -1,0 +1,277 @@
+{
+  "resourceType": "ValueSet",
+  "id": "4e45600a-2a25-4b87-9c16-97e4a97fed41",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2024-06-06"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.50",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.11.20.9.50"
+  } ],
+  "version": "20240606",
+  "name": "SensoryStatusProblemType",
+  "title": "Sensory Status Problem Type",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: A value set of SNOMED-CT observable codes representing observations of sensory functions.),(Data Element Scope: Used to record the specific sensory or speech domain in a clinical observation, identifying the type of sensory issue being assessed or reported),(Inclusion Criteria: Concepts representing the function that can be observed representing sensory functions.),(Exclusion Criteria: only codes selected based on inclusion criteria)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "10625003",
+        "display": "Adaptation to odor, function (observable entity)"
+      }, {
+        "code": "128542002",
+        "display": "Speech hearing function (observable entity)"
+      }, {
+        "code": "13191003",
+        "display": "Transformer action, function (observable entity)"
+      }, {
+        "code": "16476001",
+        "display": "Bone conduction, function (observable entity)"
+      }, {
+        "code": "22382001",
+        "display": "Stereognosis, function (observable entity)"
+      }, {
+        "code": "247297002",
+        "display": "Localization of sound source (observable entity)"
+      }, {
+        "code": "247310003",
+        "display": "Lateralization of sound (observable entity)"
+      }, {
+        "code": "247311004",
+        "display": "Light touch, function (observable entity)"
+      }, {
+        "code": "247312006",
+        "display": "Firm touch, function (observable entity)"
+      }, {
+        "code": "247313001",
+        "display": "Firm pressure touch, function (observable entity)"
+      }, {
+        "code": "247314007",
+        "display": "Light pressure touch, function (observable entity)"
+      }, {
+        "code": "247315008",
+        "display": "Discrimination between sharp and blunt, function (observable entity)"
+      }, {
+        "code": "285567008",
+        "display": "Ability to perform functions for speech (observable entity)"
+      }, {
+        "code": "286204007",
+        "display": "Ability to perform mechanics of speech (observable entity)"
+      }, {
+        "code": "286253007",
+        "display": "Ability to make speech sounds (observable entity)"
+      }, {
+        "code": "286300001",
+        "display": "Ability to use particular speech sounds (observable entity)"
+      }, {
+        "code": "286325005",
+        "display": "Ability to produce voice (observable entity)"
+      }, {
+        "code": "304290007",
+        "display": "Discrimination between rough and smooth, function (observable entity)"
+      }, {
+        "code": "364019009",
+        "display": "Ability to hear (observable entity)"
+      }, {
+        "code": "373713005",
+        "display": "Sensory perception function (observable entity)"
+      }, {
+        "code": "397611008",
+        "display": "Odor identification sense, function (observable entity)"
+      }, {
+        "code": "397624008",
+        "display": "Touch sensation, function (observable entity)"
+      }, {
+        "code": "397627001",
+        "display": "Taste, function (observable entity)"
+      }, {
+        "code": "397677003",
+        "display": "Odor detection sense, function (observable entity)"
+      }, {
+        "code": "397686008",
+        "display": "Sense of smell, function (observable entity)"
+      }, {
+        "code": "397701006",
+        "display": "Acmesthesia, function (observable entity)"
+      }, {
+        "code": "405183003",
+        "display": "Sensory function status: vision (observable entity)"
+      }, {
+        "code": "43410000",
+        "display": "Auditory localization, function (observable entity)"
+      }, {
+        "code": "47078008",
+        "display": "Hearing, function (observable entity)"
+      }, {
+        "code": "66824009",
+        "display": "Sound discrimination, function (observable entity)"
+      }, {
+        "code": "69744008",
+        "display": "Stereophonic hearing, function (observable entity)"
+      }, {
+        "code": "9077000",
+        "display": "Air conduction, function (observable entity)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-24T12:20:42-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "code": "10625003",
+      "display": "Adaptation to odor, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "128542002",
+      "display": "Speech hearing function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "13191003",
+      "display": "Transformer action, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "16476001",
+      "display": "Bone conduction, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "22382001",
+      "display": "Stereognosis, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "247297002",
+      "display": "Localization of sound source (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "247310003",
+      "display": "Lateralization of sound (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "247311004",
+      "display": "Light touch, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "247312006",
+      "display": "Firm touch, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "247313001",
+      "display": "Firm pressure touch, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "247314007",
+      "display": "Light pressure touch, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "247315008",
+      "display": "Discrimination between sharp and blunt, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "285567008",
+      "display": "Ability to perform functions for speech (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "286204007",
+      "display": "Ability to perform mechanics of speech (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "286253007",
+      "display": "Ability to make speech sounds (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "286300001",
+      "display": "Ability to use particular speech sounds (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "286325005",
+      "display": "Ability to produce voice (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "304290007",
+      "display": "Discrimination between rough and smooth, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "364019009",
+      "display": "Ability to hear (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "373713005",
+      "display": "Sensory perception function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "397611008",
+      "display": "Odor identification sense, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "397624008",
+      "display": "Touch sensation, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "397627001",
+      "display": "Taste, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "397677003",
+      "display": "Odor detection sense, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "397686008",
+      "display": "Sense of smell, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "397701006",
+      "display": "Acmesthesia, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "405183003",
+      "display": "Sensory function status: vision (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "43410000",
+      "display": "Auditory localization, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "47078008",
+      "display": "Hearing, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "66824009",
+      "display": "Sound discrimination, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "69744008",
+      "display": "Stereophonic hearing, function (observable entity)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "9077000",
+      "display": "Air conduction, function (observable entity)"
+    } ]
+  }
+}

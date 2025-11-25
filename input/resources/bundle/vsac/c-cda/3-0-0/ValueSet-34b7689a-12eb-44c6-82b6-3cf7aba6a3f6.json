@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "34b7689a-12eb-44c6-82b6-3cf7aba6a3f6",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-10-10"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-03-31"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.31",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.11.20.9.31"
+  } ],
+  "version": "20250331",
+  "name": "ConsultDocumentType",
+  "title": "ConsultDocumentType",
+  "status": "active",
+  "date": "2025-03-31T01:08:24-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "description": "Search.loinc query 2025: Component:(Consultation note) -confirmatory Class:Doc.Ontology NOT status:Deprecated",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: A classification of a document by the author's specialty, role, setting, or some combination of these properties to find documents that are consider a consultation.),(Data Element Scope: document code),(Inclusion Criteria: Active consultation notes in document ontology),(Exclusion Criteria: confirmatory notes)",
+  "compose": {
+    "include": [ {
+      "system": "http://loinc.org",
+      "version": "2.80",
+      "filter": [ {
+        "property": "concept",
+        "op": "in",
+        "value": "68837-4,34099-2,64076-3,83722-9,104121-9,84312-8,83967-0,94814-1,84126-2,89447-7,34812-8,34102-4,34758-3,95761-3,34797-1,94461-1,34849-0,78251-6,68874-7,34761-7,68852-3,68570-1,93024-8,11488-4,34798-9,84152-8,85232-7,94319-1,78738-2,60570-9,34791-4,68633-7,94528-7,87627-6,81191-9,34807-8,68716-0,68575-0,34855-7,68757-4,68897-8,83888-8,80801-4,86451-2,64056-5,68639-4,79428-9,83621-3,84394-6,78496-7,101038-8,85890-2,103794-4,82356-7,78567-5,80664-6,68746-7,101350-7,34833-4,90006-8,68551-1,95132-7,90715-4,34816-9,68566-9,84115-5,68727-7,34756-7,101047-9,85882-9,101888-6,85517-1,94808-3,83578-5,68619-6,85238-4,72555-6,83570-2,34826-8,104066-6,103799-3,101887-8,34764-1,34820-1,83720-3,83868-0,90354-2,78406-6,94806-7,83873-0,34879-7,83909-2,34777-3,34803-7,90771-7,93413-3,94807-5,34853-2,75465-5,80736-2,84231-0,83926-6,89032-7,34810-2,51846-4,101052-9,90712-1,78498-3,89551-6,34837-5,90709-7,101886-0,80575-4,83931-6,34828-4,78253-2,103545-0,68892-9,78250-8,104582-2,81196-8,34749-2,68597-4,34831-8,88640-8,88351-2,92912-5,84173-4,34822-7,84303-7,84071-0,90714-7,83992-8,34824-3,101031-3,78726-7,84213-8,83653-6,68846-5,68670-9,68685-7,84292-2,83996-9,103549-2,84358-1,84324-3,103968-4,68821-8,89031-9,89446-9,85222-8,34800-3,85871-2,68869-7,101043-8,75424-2,84190-8,78405-8,82359-1,68787-1,68802-8,85237-6,94462-9,34104-0,87233-3,89033-5,80673-7,34839-1,83912-6,68648-5,64068-0,84398-7,84142-9,68864-8,34776-5,78252-4,85174-1,64080-5,34851-6,84280-7,78732-5,78568-3,90343-5,83685-8,51854-8,34779-9,92915-8,34795-5,34100-8,34101-6,94463-7,51845-6,68694-9,90012-6,77429-9,34845-8,103793-6,34781-5,68469-6,83984-5,84145-2,81193-5,104583-0,34103-2,81192-7,83941-5,34783-1,34847-4,85519-7,68681-6,68651-9,34814-4,80666-1,84131-2,93955-3,80396-5,85208-7,104584-8,85884-5,89227-3,68586-7,84349-0,85899-3,68661-8,90717-0,34760-9,78254-0,68765-7,84241-9,34788-0,85886-0,34805-2,91986-0,85866-2,68590-9,90710-5,64072-2,34841-7,73575-3,101048-7,68812-7,68705-3,83960-5,101032-1,68879-6,95806-6,89216-6,34785-6,68486-0,84035-5,92910-9,83609-8,84352-4,87254-9,96737-2,88644-0,77403-4"
+      } ]
+    } ]
+  }
+}

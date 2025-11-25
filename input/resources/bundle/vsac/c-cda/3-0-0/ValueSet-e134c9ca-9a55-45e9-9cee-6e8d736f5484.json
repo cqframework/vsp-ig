@@ -1,0 +1,110 @@
+{
+  "resourceType": "ValueSet",
+  "id": "e134c9ca-9a55-45e9-9cee-6e8d736f5484",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-07-31"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.19717",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.1.11.19717"
+  } ],
+  "version": "20240606",
+  "name": "NoImmunizationReason",
+  "title": "No Immunization Reason",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "description": "added inclusion criteria",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Rationale for not administering indicated immunization),(Data Element Scope: ),(Inclusion Criteria: All descendant codes from ActNoImmunizationReason in code system ActReason),(Exclusion Criteria: )",
+  "compose": {
+    "include": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "concept": [ {
+        "code": "IMMUNE",
+        "display": "immunity"
+      }, {
+        "code": "MEDPREC",
+        "display": "medical precaution"
+      }, {
+        "code": "OSTOCK",
+        "display": "product out of stock"
+      }, {
+        "code": "PATOBJ",
+        "display": "patient objection"
+      }, {
+        "code": "PHILISOP",
+        "display": "philosophical objection"
+      }, {
+        "code": "RELIG",
+        "display": "religious objection"
+      }, {
+        "code": "VACEFF",
+        "display": "vaccine efficacy concerns"
+      }, {
+        "code": "VACSAF",
+        "display": "vaccine safety concerns"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-24T12:21:19-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code": "IMMUNE",
+      "display": "immunity"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code": "MEDPREC",
+      "display": "medical precaution"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code": "OSTOCK",
+      "display": "product out of stock"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code": "PATOBJ",
+      "display": "patient objection"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code": "PHILISOP",
+      "display": "philosophical objection"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code": "RELIG",
+      "display": "religious objection"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code": "VACEFF",
+      "display": "vaccine efficacy concerns"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code": "VACSAF",
+      "display": "vaccine safety concerns"
+    } ]
+  }
+}
