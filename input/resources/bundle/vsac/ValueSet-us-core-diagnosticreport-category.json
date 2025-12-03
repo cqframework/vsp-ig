@@ -3,7 +3,7 @@
   "id": "us-core-diagnosticreport-category",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-10-15T10:04:03.001-06:00"
+    "lastUpdated": "2025-11-26T10:27:38.209-07:00"
   },
   "text": {
     "status": "generated",
@@ -51,7 +51,7 @@
     } ]
   },
   "expansion": {
-    "timestamp": "2025-10-15T10:31:31-06:00",
+    "timestamp": "2025-11-26T13:44:42-07:00",
     "parameter": [ {
       "name": "naive",
       "valueBoolean": true
