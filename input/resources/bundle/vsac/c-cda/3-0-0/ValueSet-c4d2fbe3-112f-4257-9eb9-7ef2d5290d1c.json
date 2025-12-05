@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "c4d2fbe3-112f-4257-9eb9-7ef2d5290d1c",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2024-06-06"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.1",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1010.1"
+  } ],
+  "version": "20240606",
+  "name": "SubstanceReactantForIntolerance",
+  "title": "Substance Reactant for Intolerance",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "description": "Built for C-CDA 2.x\nThe intention is that instance content will be determined from the concepts in this grouping value set but values will be determined by searching through the grouped value sets in priority order, and when a concept matching the intension (by preferred name or any synonym), only that particular concept identifer will be included, and not any additional similar or matching identifiers. In this way overlaps in concept representation will be resolved. The drug class value set aligns with work based on informative analysis of common reactants associated with intolerances. This will not be a full list of all drug classes. Does not include vaccines",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: A substance or other type of agent (eg. Sunshine) that may be associated with an intolerance reaction event or a propensity to such an event. These concepts are expected to be at a more general level of abstraction (ingredients versus more specific formulations). This value set is quite general and includes concepts that may never cause an adverse event, particularly the included SNOMED CT concepts. This code system-specific value sets in this grouping value set are intended to provide broad coverage of all kinds of agents, but the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and drawn from the available code systems in the following priority order: SNOMED CT drug class then RXNORM, then non-drug SNOMED CT. This overarching grouping value set is intended to support identification of drug classes, individual medication ingredients, foods, general substances and environmental entities.),(Data Element Scope: Drug and substance elements),(Inclusion Criteria: Any concept that could at some point cause an allergy or intolerance. Intended to include following value sets: Medication Clinical Drug (RxNorm), Clinical Drug Class (SNOMED CT), Substance Other Than Clinical Drug (SNOMED CT).),(Exclusion Criteria: Things that can not be reactants)",
+  "compose": {
+    "include": [ {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.7" ]
+    }, {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.9" ]
+    }, {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1114.14" ]
+    } ]
+  }
+}

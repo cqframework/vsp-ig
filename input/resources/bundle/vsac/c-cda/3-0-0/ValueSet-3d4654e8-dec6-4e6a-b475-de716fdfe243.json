@@ -1,0 +1,418 @@
+{
+  "resourceType": "ValueSet",
+  "id": "3d4654e8-dec6-4e6a-b475-de716fdfe243",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2024-06-06"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.78",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.1.11.78"
+  } ],
+  "version": "20240606",
+  "name": "ObservationInterpretationHL7",
+  "title": "Observation Interpretation (HL7)",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "description": "removed two codes that were not in the original code system version.",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Codes specifying a rough qualitative interpretation of the observation, such as \"normal\", \"abnormal\", \"below normal\", \"change up\", \"resistant\", \"susceptible\", etc.),(Data Element Scope: ),(Inclusion Criteria: all reportable codes in the code system ObservationInterpretation),(Exclusion Criteria: Collector codes in the code system)",
+  "compose": {
+    "include": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "concept": [ {
+        "code": "<",
+        "display": "Off scale low"
+      }, {
+        "code": ">",
+        "display": "Off scale high"
+      }, {
+        "code": "A",
+        "display": "Abnormal"
+      }, {
+        "code": "AA",
+        "display": "Critical abnormal"
+      }, {
+        "code": "AC",
+        "display": "Anti-complementary substances present"
+      }, {
+        "code": "B",
+        "display": "Better"
+      }, {
+        "code": "CAR",
+        "display": "Carrier"
+      }, {
+        "code": "Carrier",
+        "display": "Carrier"
+      }, {
+        "code": "D",
+        "display": "Significant change down"
+      }, {
+        "code": "DET",
+        "display": "Detected"
+      }, {
+        "code": "E",
+        "display": "Equivocal"
+      }, {
+        "code": "EX",
+        "display": "outside threshold"
+      }, {
+        "code": "EXP",
+        "display": "Expected"
+      }, {
+        "code": "H",
+        "display": "High"
+      }, {
+        "code": "H>",
+        "display": "Significantly high"
+      }, {
+        "code": "HH",
+        "display": "Critical high"
+      }, {
+        "code": "HM",
+        "display": "Hold for Medical Review"
+      }, {
+        "code": "HU",
+        "display": "Significantly high"
+      }, {
+        "code": "HX",
+        "display": "above high threshold"
+      }, {
+        "code": "I",
+        "display": "Intermediate"
+      }, {
+        "code": "IE",
+        "display": "Insufficient evidence"
+      }, {
+        "code": "IND",
+        "display": "Indeterminate"
+      }, {
+        "code": "L",
+        "display": "Low"
+      }, {
+        "code": "L<",
+        "display": "Significantly low"
+      }, {
+        "code": "LL",
+        "display": "Critical low"
+      }, {
+        "code": "LU",
+        "display": "Significantly low"
+      }, {
+        "code": "LX",
+        "display": "below low threshold"
+      }, {
+        "code": "MS",
+        "display": "moderately susceptible"
+      }, {
+        "code": "N",
+        "display": "Normal"
+      }, {
+        "code": "NCL",
+        "display": "No CLSI defined breakpoint"
+      }, {
+        "code": "ND",
+        "display": "Not detected"
+      }, {
+        "code": "NEG",
+        "display": "Negative"
+      }, {
+        "code": "NR",
+        "display": "Non-reactive"
+      }, {
+        "code": "NS",
+        "display": "Non-susceptible"
+      }, {
+        "code": "OBX",
+        "display": "Interpretation qualifiers in separate OBX segments"
+      }, {
+        "code": "ObservationInterpretationDetection",
+        "display": "ObservationInterpretationDetection"
+      }, {
+        "code": "ObservationInterpretationExpectation",
+        "display": "ObservationInterpretationExpectation"
+      }, {
+        "code": "POS",
+        "display": "Positive"
+      }, {
+        "code": "QCF",
+        "display": "Quality control failure"
+      }, {
+        "code": "R",
+        "display": "Resistant"
+      }, {
+        "code": "RR",
+        "display": "Reactive"
+      }, {
+        "code": "ReactivityObservationInterpretation",
+        "display": "ReactivityObservationInterpretation"
+      }, {
+        "code": "S",
+        "display": "Susceptible"
+      }, {
+        "code": "SDD",
+        "display": "Susceptible-dose dependent"
+      }, {
+        "code": "SYN-R",
+        "display": "Synergy - resistant"
+      }, {
+        "code": "SYN-S",
+        "display": "Synergy - susceptible"
+      }, {
+        "code": "TOX",
+        "display": "Cytotoxic substance present"
+      }, {
+        "code": "U",
+        "display": "Significant change up"
+      }, {
+        "code": "UNE",
+        "display": "Unexpected"
+      }, {
+        "code": "VS",
+        "display": "very susceptible"
+      }, {
+        "code": "W",
+        "display": "Worse"
+      }, {
+        "code": "WR",
+        "display": "Weakly reactive"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-24T12:20:46-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "<",
+      "display": "Off scale low"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": ">",
+      "display": "Off scale high"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "A",
+      "display": "Abnormal"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "AA",
+      "display": "Critical abnormal"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "AC",
+      "display": "Anti-complementary substances present"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "B",
+      "display": "Better"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "CAR",
+      "display": "Carrier"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "Carrier",
+      "display": "Carrier"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "D",
+      "display": "Significant change down"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "DET",
+      "display": "Detected"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "E",
+      "display": "Equivocal"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "EX",
+      "display": "outside threshold"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "EXP",
+      "display": "Expected"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "H",
+      "display": "High"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "H>",
+      "display": "Significantly high"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "HH",
+      "display": "Critical high"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "HM",
+      "display": "Hold for Medical Review"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "HU",
+      "display": "Significantly high"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "HX",
+      "display": "above high threshold"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "I",
+      "display": "Intermediate"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "IE",
+      "display": "Insufficient evidence"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "IND",
+      "display": "Indeterminate"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "L",
+      "display": "Low"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "L<",
+      "display": "Significantly low"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "LL",
+      "display": "Critical low"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "LU",
+      "display": "Significantly low"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "LX",
+      "display": "below low threshold"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "MS",
+      "display": "moderately susceptible"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "N",
+      "display": "Normal"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "NCL",
+      "display": "No CLSI defined breakpoint"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "ND",
+      "display": "Not detected"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "NEG",
+      "display": "Negative"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "NR",
+      "display": "Non-reactive"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "NS",
+      "display": "Non-susceptible"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "OBX",
+      "display": "Interpretation qualifiers in separate OBX segments"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "ObservationInterpretationDetection",
+      "display": "ObservationInterpretationDetection"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "ObservationInterpretationExpectation",
+      "display": "ObservationInterpretationExpectation"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "POS",
+      "display": "Positive"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "QCF",
+      "display": "Quality control failure"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "R",
+      "display": "Resistant"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "RR",
+      "display": "Reactive"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "ReactivityObservationInterpretation",
+      "display": "ReactivityObservationInterpretation"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "S",
+      "display": "Susceptible"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "SDD",
+      "display": "Susceptible-dose dependent"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "SYN-R",
+      "display": "Synergy - resistant"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "SYN-S",
+      "display": "Synergy - susceptible"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "TOX",
+      "display": "Cytotoxic substance present"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "U",
+      "display": "Significant change up"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "UNE",
+      "display": "Unexpected"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "VS",
+      "display": "very susceptible"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "W",
+      "display": "Worse"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code": "WR",
+      "display": "Weakly reactive"
+    } ]
+  }
+}

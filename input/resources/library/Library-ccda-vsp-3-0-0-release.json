@@ -1,0 +1,3990 @@
+{
+  "resourceType": "Library",
+  "id": "ccda-vsp-3-0-0-release",
+  "contained": [
+    {
+      "resourceType": "Parameters",
+      "id": "exp-params",
+      "parameter": [
+        {
+          "name": "system-version",
+          "valueCanonical": "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://loinc.org|2.76"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender|3.0.0"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "urn:oid:2.16.840.1.113883.6.238|1.2"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://www.ama-assn.org/go/cpt|2024"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://hl7.org/fhir/sid/cvx|20231102"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2024"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://hl7.org/fhir/sid/icd-10-cm|2024"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://www.cms.gov/Medicare/Coding/ICD10|2024"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://www.nlm.nih.gov/research/umls/rxnorm|01022024"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "https://nahdo.org/sopt|9.2"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-RoleClass|3.1.0"
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/CarePlan|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Care Plan, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.10|20251011",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet Care Plan Document Type, 20251011"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066|20240606",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet Healthcare Provider Taxonomy, 20240606"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://nucc.org/provider-taxonomy|24.1",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "CodeSystem NUCC Provider Taxonomy, 24.1"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1|20240606",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet Personal And Legal Relationship Role Type, 20240606"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "CodeSystem RoleCode, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.33|20240606",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet INDRoleclassCodes, 20240606"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.11610|20240606",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet x_ActRelationshipDocument, 20240606"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType|4.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "CodeSystem ActRelationshipType, 4.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/ConsultationNote|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Consultation Note, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.31|20250331",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet ConsultDocumentType, 20250331"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/ContinuityofCareDocumentCCD|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Continuity of Care Document (CCD), 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/DischargeSummary|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Discharge Summary, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.4.1|20250725",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet DischargeSummaryDocumentTypeCode, 20250725"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/HistoryandPhysical|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition History and Physical, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20.22|20250401",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet HPDocumentType, 20250401"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/OperativeNote|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Operative Note, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.1.1|20250819",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet SurgicalOperationNoteDocumentTypeCode, 20250819"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30|20240605",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet Care Team Member Function, 20240605"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.10267|20240605",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet ParticipationFunction, 20240605"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "CodeSystem ParticipationFunction, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27|20230706",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet Care Team Member Function (SNOMEDCT), 20230706"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/ProcedureNote|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Procedure Note, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.6.1|20250813",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet ProcedureNoteDocumentTypeCodes, 20250813"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/ProgressNote|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Progress Note, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.8.1|20251010",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet ProgressNoteDocumentTypeCode, 20251010"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/ReferralNote|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Referral Note, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20.2.3|20250816",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet ReferralDocumentType, 20250816"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/TransferSummary|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Transfer Summary, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20.2.4|20250819",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet TransferDocumentType, 20250819"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/UnstructuredDocument|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Unstructured Document, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.7.1|20240606",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet SupportedFileFormats, 20240606"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-mediaType|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "CodeSystem Media Type, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/USRealmHeaderforPatientGeneratedDocument|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition US Realm Header for Patient Generated Document, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/SmokingStatusMeaningfulUse|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Smoking Status - Meaningful Use (Deprecated), 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.6|20231012",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet Completed or Nullified Act Status, 20231012"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-ActStatus|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "CodeSystem ActStatus, 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.38|20240606",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet Smoking Status, 20240606"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://hl7.org/cda/us/ccda/StructureDefinition/TobaccoUse|3.0.0",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "StructureDefinition"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "StructureDefinition Tobacco Use (Deprecated), 3.0.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "canonicalVersion",
+          "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.41|20240606",
+          "_valueCanonical": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                "valueCode": "ValueSet"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                "valueString": "ValueSet Tobacco Use, 20240606"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Parameters",
+      "id": "endpoints",
+      "parameter": [
+        {
+          "name": "artifactEndpointConfiguration",
+          "part": [
+            {
+              "name": "artifactRoute",
+              "valueUri": "http://cts.nlm.nih.gov/fhir/"
+            },
+            {
+              "name": "endpointUri",
+              "valueUri": "https://cts.nlm.nih.gov/fhir/"
+            }
+          ]
+        },
+        {
+          "name": "artifactEndpointConfiguration",
+          "part": [
+            {
+              "name": "artifactRoute",
+              "valueUri": "http://terminology.hl7.org/"
+            },
+            {
+              "name": "endpointUri",
+              "valueUri": "https://tx.fhir.org/r4/"
+            }
+          ]
+        },
+        {
+          "name": "artifactEndpointConfiguration",
+          "part": [
+            {
+              "name": "artifactRoute",
+              "valueUri": "http://hl7.org/fhir/"
+            },
+            {
+              "name": "endpointUri",
+              "valueUri": "https://tx.fhir.org/r4/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resourceType": "Parameters",
+      "id": "input-exp-params",
+      "parameter": [
+        {
+          "name": "system-version",
+          "valueCanonical": "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://loinc.org|2.76"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender|3.0.0"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "urn:oid:2.16.840.1.113883.6.238|1.2"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://www.ama-assn.org/go/cpt|2024"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://hl7.org/fhir/sid/cvx|20231102"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2024"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://hl7.org/fhir/sid/icd-10-cm|2024"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://www.cms.gov/Medicare/Coding/ICD10|2024"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://www.nlm.nih.gov/research/umls/rxnorm|01022024"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "https://nahdo.org/sopt|9.2"
+        },
+        {
+          "name": "system-version",
+          "valueCanonical": "http://terminology.hl7.org/CodeSystem/v3-RoleClass|3.1.0"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters",
+      "valueReference": {
+        "reference": "#exp-params"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-endpointConfiguration",
+      "valueReference": {
+        "reference": "#endpoints"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-inputParameters",
+      "valueReference": {
+        "reference": "#input-exp-params"
+      }
+    }
+  ],
+  "url": "http://hl7.org/cda/us/ccda-vsp/3.0.0/Library/hl7.fhir.us.ccda-vsp-3-0-0-draft",
+  "version": "3.0.0",
+  "name": "CCDA300ValueSetPackageDefinition",
+  "title": "C-CDA 3.0.0 Value Set Package Definition",
+  "status": "active",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "asset-collection"
+      }
+    ]
+  },
+  "date": "2025-11-18T09:21:12-07:00",
+  "description": "This is a draft version of a Value Set Refresh Package Definition for the Consolidated-CDA 3.0.0 implementation guide. It contains expansions of any value sets defined or used in the C-CDA 3.0.0 implementation guide, but refreshed using the code systems versions specified in the input expansion parameters.",
+  "approvalDate": "2025-09-23",
+  "lastReviewDate": "2025-09-23",
+  "relatedArtifact": [
+    {
+      "type": "composed-of",
+      "display": "ImplementationGuide Consolidated CDA (C-CDA), 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/ImplementationGuide/hl7.cda.us.ccda|3.0.0"
+    },
+    {
+      "type": "depends-on",
+      "display": "ImplementationGuide Consolidated CDA (C-CDA), 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/ImplementationGuide/hl7.cda.us.ccda|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ImplementationGuide"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/USRealmHeader",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://loinc.org|2.76",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "CodeSystem"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet Care Plan Document Type, 20251011",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.10|20251011",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/USRealmAddress",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/StructureDefinition/shareablecodesystem",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-codesystem-cqfm",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "CodeSystem NUCC Provider Taxonomy, 24.1",
+      "resource": "http://nucc.org/provider-taxonomy|24.1",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "CodeSystem"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet Healthcare Provider Taxonomy, 20240606",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066|20240606",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "CodeSystem RoleCode, 3.0.0",
+      "resource": "http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "CodeSystem"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet Personal And Legal Relationship Role Type, 20240606",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1|20240606",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "CodeSystem RoleClass, 3.1.0",
+      "resource": "http://terminology.hl7.org/CodeSystem/v3-RoleClass|3.1.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "CodeSystem"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet INDRoleclassCodes, 20240606",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.33|20240606",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/USRealmPersonNamePNUSFIELDED",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "CodeSystem ActRelationshipType, 4.0.0",
+      "resource": "http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType|4.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "CodeSystem"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet x_ActRelationshipDocument, 20240606",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.11610|20240606",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HealthConcernsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/GoalsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ActivitiesSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HealthStatusEvaluationsandOutcomesSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AdvanceDirectivesSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Care Plan, 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CarePlan|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet ConsultDocumentType, 20250331",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.31|20250331",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AssessmentSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AssessmentandPlanSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PlanofTreatmentSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ReasonforVisitSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HistoryofPresentIllnessSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PhysicalExamSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AllergiesAndIntolerancesSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ChiefComplaintSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ChiefComplaintandReasonforVisitSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/FamilyHistorySection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/GeneralStatusSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PastMedicalHistory",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ImmunizationsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MedicationsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProblemSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProceduresSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ResultsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SocialHistorySection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/VitalSignsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/FunctionalStatusSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ReviewofSystemsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MedicalEquipmentSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/NutritionSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Consultation Note, 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ConsultationNote|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/EncountersSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PayersSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Continuity of Care Document (CCD), 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ContinuityofCareDocumentCCD|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet DischargeSummaryDocumentTypeCode, 20250725",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.4.1|20250725",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/stds/core/ValueSet/CDARoleClassAssociative",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/ValueSet/2.16.840.1.113883.3.88.12.80.33",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HospitalCourseSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/DischargeDiagnosisSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/DischargeMedicationsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AdmissionDiagnosisSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AdmissionMedicationsSectionEntriesOptional",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HospitalConsultationsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HospitalDischargeInstructionsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HospitalDischargePhysicalSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HospitalDischargeStudiesSummarySection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Discharge Summary, 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/DischargeSummary|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet HPDocumentType, 20250401",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20.22|20250401",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/InstructionsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition History and Physical, 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HistoryandPhysical|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet SurgicalOperationNoteDocumentTypeCode, 20250819",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.1.1|20250819",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "CodeSystem ParticipationFunction, 3.0.0",
+      "resource": "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "CodeSystem"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet ParticipationFunction, 20240605",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.10267|20240605",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "CodeSystem"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet Care Team Member Function (SNOMEDCT), 20230706",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27|20230706",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet Care Team Member Function, 20240605",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30|20240605",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AnesthesiaSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ComplicationsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PreoperativeDiagnosisSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProcedureEstimatedBloodLossSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProcedureFindingsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProcedureSpecimensTakenSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProcedureDescriptionSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PostoperativeDiagnosisSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProcedureImplantsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/OperativeNoteFluidsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/OperativeNoteSurgicalProcedureSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedProcedureSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProcedureDispositionSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProcedureIndicationsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SurgicalDrainsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Operative Note, 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/OperativeNote|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet ProcedureNoteDocumentTypeCodes, 20250813",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.6.1|20250813",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PostprocedureDiagnosisSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MedicalGeneralHistorySection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MedicationsAdministeredSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Procedure Note, 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProcedureNote|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet ProgressNoteDocumentTypeCode, 20251010",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.8.1|20251010",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ObjectiveSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SubjectiveSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Progress Note, 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProgressNote|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet ReferralDocumentType, 20250816",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20.2.3|20250816",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ReasonforReferralSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Referral Note, 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ReferralNote|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet TransferDocumentType, 20250819",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20.2.4|20250819",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CourseofCareSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Transfer Summary, 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/TransferSummary|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "CodeSystem Media Type, 3.0.0",
+      "resource": "http://terminology.hl7.org/CodeSystem/v3-mediaType|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "CodeSystem"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet SupportedFileFormats, 20240606",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.7.1|20240606",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Unstructured Document, 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/UnstructuredDocument|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/ValueSet/all-languages",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition US Realm Header for Patient Generated Document, 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/USRealmHeaderforPatientGeneratedDocument|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CareTeamsSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/NotesSection",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AdmissionMedication",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AdvanceDirectiveObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AdvanceDirectiveOrganizer",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AgeObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AllergyIntoleranceObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AllergyConcernAct",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AllergyStatusObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AssessmentScaleObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AssessmentScaleSupportingObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AuthorizationActivity",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AverageBloodPressureOrganizer",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/BasicIndustryObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/BasicOccupationObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/BirthSexObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/BrandNameObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CareExperiencePreference",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CareTeamMemberAct",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CareTeamMemberScheduleObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CareTeamOrganizer",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CareTeamTypeObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CaregiverCharacteristics",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CatalogNumberObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CharacteristicsofHomeEnvironment",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CommentActivity",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CompanyNameObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CoverageActivity",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CriticalityObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/CulturalandReligiousObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/DateOfDiagnosisAct",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/DeceasedObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/DeviceIdentifierObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/DisabilityStatusObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/DischargeMedication",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/DistinctIdentificationCodeObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/DrugMonitoringAct",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/DrugVehicle",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/EncounterActivity",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/EncounterDiagnosis",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/EntryReference",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/EstimatedDateofDelivery",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ExpirationDateObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ExternalDocumentReference",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/FamilyHistoryDeathObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/FamilyHistoryObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/FamilyHistoryOrganizer",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/FunctionalStatusObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/FunctionalStatusOrganizer",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/GenderIdentityObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/GoalObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HandoffCommunicationParticipants",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HealthConcernAct",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HealthStatusObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HighestPressureUlcerStage",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HospitalAdmissionDiagnosis",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/HospitalDischargeDiagnosis",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ImmunizationActivity",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ImmunizationMedicationInformation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ImmunizationNotGivenReason",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ImplantableDeviceStatusObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/Indication",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/Instruction",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/InterventionAct",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/LatexSafetyObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/LongitudinalCareWoundObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/LotOrBatchNumberObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ManufacturingDateObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MedicalEquipmentOrganizer",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MedicationActivity",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MedicationAdherence",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MedicationDispense",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MedicationFreeTextSig",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MedicationInformation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MedicationSupplyOrder",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MentalStatusOrganizer",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ModelNumberObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/MRISafetyObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/NonMedicinalSupplyActivity",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/NoteActivity",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/NumberofPressureUlcersObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/NutritionAssessment",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/NutritionRecommendation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/NutritionalStatusObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/OutcomeObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PatientReferralAct",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedCoverage",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedEncounter",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedImmunizationActivity",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedInterventionAct",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedMedicationActivity",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedProcedure",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PlannedSupply",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PolicyActivity",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PostprocedureDiagnosis",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PreconditionforSubstanceAdministration",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PregnancyIntentionInNextYear",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PregnancyObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PreoperativeDiagnosis",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PriorityPreference",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProblemConcernAct",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProblemObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProblemStatus",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProcedureActivityProcedure",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProductInstance",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/PrognosisObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProgressTowardGoalObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ReactionObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/Reason",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ResultObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ResultOrganizer",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/RiskConcernAct",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SectionTimeRangeObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SelfCareActivitiesADLandIADL",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SensoryStatus",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SerialNumberObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ServiceDeliveryLocation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SeverityObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SexObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SexualOrientationObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SmokingStatus",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SocialHistoryObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SpecimenCollectionProcedure",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SpecimenConditionObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SubstanceAdministeredAct",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SubstanceOrDeviceAllergyIntoleranceObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/TreatmentInterventionPreference",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/TribalAffiliationObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/UDIOrganizer",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/VitalSignObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/VitalSignsOrganizer",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/WoundCharacteristic",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/WoundMeasurementObservation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/AuthorParticipation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProvenanceAssemblerParticipation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/ProvenanceAuthorParticipation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/RelatedPersonRelationshipAndNameParticipant",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/USRealmDateTimeInterval",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/USRealmDateTime",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/USRealmPatientNamePTNUSFIELDED",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "CodeSystem ActStatus, 3.0.0",
+      "resource": "http://terminology.hl7.org/CodeSystem/v3-ActStatus|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "CodeSystem"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet Completed or Nullified Act Status, 20231012",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.6|20231012",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet Smoking Status, 20240606",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.38|20240606",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Smoking Status - Meaningful Use (Deprecated), 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/SmokingStatusMeaningfulUse|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "ValueSet Tobacco Use, 20240606",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.41|20240606",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "ValueSet"
+          }
+        ]
+      }
+    },
+    {
+      "type": "depends-on",
+      "display": "StructureDefinition Tobacco Use (Deprecated), 3.0.0",
+      "resource": "http://hl7.org/cda/us/ccda/StructureDefinition/TobaccoUse|3.0.0",
+      "_resource": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+            "valueCode": "StructureDefinition"
+          }
+        ]
+      }
+    }
+  ]
+}

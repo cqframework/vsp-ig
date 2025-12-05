@@ -1,0 +1,123 @@
+{
+  "resourceType": "ValueSet",
+  "id": "32882550-1b36-4314-aecf-e7fd882f673a",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-07-23"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2023-07-15"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20.12",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.1.11.20.12"
+  } ],
+  "version": "20230715",
+  "name": "HealthStatus",
+  "title": "HealthStatus",
+  "status": "active",
+  "date": "2023-07-15T01:01:22-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Represents a patient’s overall general health status (e.g., well, symptom-free, chronically ill).),(Data Element Scope: Used to record a patient's general health condition in clinical observations (e.g., HealthStatusObservation).),(Inclusion Criteria: Includes SNOMED CT concepts that clearly describe general physical health states relevant to patient assessments (e.g., “General health poor,” “General health good\").),(Exclusion Criteria: Excludes concepts that represent non-general or situational conditions, like specific diagnoses, or events not indicative of overall health status.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "135815002",
+        "display": "General health good (finding)"
+      }, {
+        "code": "135818000",
+        "display": "General health poor (finding)"
+      }, {
+        "code": "161045001",
+        "display": "Disability - severe (finding)"
+      }, {
+        "code": "162467007",
+        "display": "Free of symptoms (situation)"
+      }, {
+        "code": "21134002",
+        "display": "Disability (finding)"
+      }, {
+        "code": "271593001",
+        "display": "Moribund (finding)"
+      }, {
+        "code": "27624003",
+        "display": "Chronic disease (disorder)"
+      }, {
+        "code": "419099009",
+        "display": "Dead (finding)"
+      }, {
+        "code": "765205004",
+        "display": "Disorder in remission (disorder)"
+      }, {
+        "code": "81323004",
+        "display": "Normal general body function (finding)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2025-11-24T12:21:31-07:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "code": "135815002",
+      "display": "General health good (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "135818000",
+      "display": "General health poor (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "161045001",
+      "display": "Disability - severe (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "162467007",
+      "display": "Free of symptoms (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "21134002",
+      "display": "Disability (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "271593001",
+      "display": "Moribund (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "27624003",
+      "display": "Chronic disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "419099009",
+      "display": "Dead (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "765205004",
+      "display": "Disorder in remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "81323004",
+      "display": "Normal general body function (finding)"
+    } ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "id": "53de7ad4-0a6e-498d-af19-887451cb1dfd",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "HL7 US Realm Program Management Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-21"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.1.11.20275"
+  } ],
+  "version": "20240606",
+  "name": "HealthcareServiceLocation",
+  "title": "HealthcareServiceLocation",
+  "status": "active",
+  "date": "2024-06-06T01:23:01-04:00",
+  "publisher": "HL7 US Realm Program Management Steward",
+  "description": "A comprehensive classification of locations and settings where healthcare services are provided. This value set is based on the National Healthcare Safety Network (NHSN) location code system that has been developed over a number of years through CDC's interaction with a variety of healthcare facilities and is intended to serve a variety of reporting needs where coding of healthcare service locations is required.\nValue Set: HealthcareServiceLocation 2.16.840.1.113883.1.11.20275 DYNAMIC\nCode System(s):\tHealthcareServiceLocation 2.16.840.1.113883.6.259\n\nCode\tCode System\tPrint Name\n1024-9\tHealthcareServiceLocation\tCritical Care Unit\n1117-1\tHealthcareServiceLocation\tFamily Medicine Clinic\n1128-8\tHealthcareServiceLocation\tPediatric Clinic\n1160-1\tHealthcareServiceLocation\tUrgent Care Center",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Concepts representing locations and settings where healthcare services are provided. This includes non- (or atypical) patient care locations where emergency services may be provided.\nThe values are derived from the NHSN Healthcare Facility Patient Care Location code system.),(Data Element Scope: Location),(Inclusion Criteria: All codes in code system),(Exclusion Criteria: Codes that do not represent an actual location where health care services can be delivered, IE: Float, or a location aggregation.)",
+  "compose": {
+    "include": [ {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "version": "2022"
+    } ],
+    "exclude": [ {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "version": "2022",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "1206-2"
+      } ]
+    }, {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "version": "2022",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "1250-0"
+      } ]
+    }, {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "version": "2022",
+      "filter": [ {
+        "property": "concept",
+        "op": "=",
+        "value": "1251-8"
+      } ]
+    } ]
+  }
+}

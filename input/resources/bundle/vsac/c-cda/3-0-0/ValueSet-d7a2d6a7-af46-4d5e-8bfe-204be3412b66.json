@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "d7a2d6a7-af46-4d5e-8bfe-204be3412b66",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-11-24T12:08:41.884-07:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "AND Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-24"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2020-09-16"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.19",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1095.19"
+  } ],
+  "version": "20200916",
+  "name": "NutritionCounselingApproachAndStrategiesSNOMEDCT",
+  "title": "Nutrition Counseling Approach and Strategies SNOMED CT",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-09-16T01:00:30-04:00",
+  "publisher": "AND Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: These terms represent a collaborative counselor-patient relationship to establish food, nutrition and physical activity priorities, goals, and individual action plans that acknowledge and foster responsibility for self-care to treat an existing condition and improve health.),(Data Element Scope: These terms represent nutrition intervention as part of an individualized nutrition care plan.),(Inclusion Criteria: All concepts which are children of \"nutritional counseling\" in SNOMED CT.),(Exclusion Criteria: Any other terms not in this hierarchy.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2025-09",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "441041000124100"
+      } ]
+    } ]
+  }
+}
