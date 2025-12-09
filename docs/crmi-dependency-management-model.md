@@ -19,12 +19,14 @@ The CRMI dependency model describes how artifacts relate to one another across *
 Each dependency may carry:
 - A **role** (why it matters).
 - A **package-source** (where it came from).
+- A **referenceSource** (where in the source artifact it was discovered).
 - The resource type.
 
 | Concept | Purpose |
 |---------|---------|
 | **Dependency Role** (`crmi-dependencyRole`) | Describes *why* the dependency exists (key/default/example/test). |
 | **package-source** (`http://hl7.org/fhir/StructureDefinition/package-source`) | Identifies package supplied the artifact. |
+| **referenceSource** (`http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-referenceSource`) | Identifies the artifact & element/path where the dependency was referenced. |
 | **excludePackageId** (parameter to `$package`) | Lets clients say "don't include anything from package X." |
 
 ---
@@ -84,7 +86,44 @@ Allows `$package` to determine whether a dependency should be excluded based on 
 
 ---
 
-## 4. `$release` Responsibilities
+## 4. Reference Source
+
+### Extension  
+**URL:** `http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-referenceSource`  
+**Context:** `RelatedArtifact` (type = `depends-on`)  
+**Type:** complex extension with nested `artifact` and `path` children.
+
+The `crmi-referenceSource` extension captures *where* in the originating artifact a dependency was discovered.
+
+- `artifact` — Canonical URL of the artifact containing the reference.  
+- `path` — A FHIRPath-based expression or element path locating the exact reference.
+
+**Example**
+
+```json
+{
+  "extension" : [
+    {
+      "url" : "artifact",
+      "valueCanonical" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/publishable-example"
+    },
+    {
+      "url" : "path",
+      "valueString" : "differential.element.where(id='Observation.value[x]').binding.valueSet"
+    }
+  ],
+  "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-referenceSource"
+}
+```
+
+### Population Rules (in `$release`)
+- `$release` SHOULD populate this extension whenever a dependency is discovered during the dependency walk.  
+- Multiple occurrences MAY be recorded when the same dependency appears in more than one place.  
+- Extensions MUST be attached to the `RelatedArtifact` representing the dependency.
+
+---
+
+## 5. `$release` Responsibilities
 
 During `$release`, the server SHALL:
 
@@ -100,6 +139,7 @@ During `$release`, the server SHALL:
    - Annotate it with:
      - `crmi-dependencyRole` (0..*)
      - `package-source` (0..1, if determinable)
+     - `crmi-referenceSource` (0..*, where the dependency was found)
      - `cqf-resourceType` (existing extension)
 
 3. If duplicates are found by canonical:
@@ -110,7 +150,7 @@ Result: a manifest (typically a CRMI Manifest Library) that is both **complete**
 
 ---
 
-## 5. `$package` Responsibilities
+## 6. `$package` Responsibilities
 
 `$package` produces an installable FHIR package by filtering dependencies in the released manifest.
 
@@ -145,7 +185,7 @@ If no package can be identified, the dependency is **not excluded** (to prevent 
 
 ---
 
-## 6. Example Manifest Fragment
+## 7. Example Manifest Fragment
 
 ```json
 {
@@ -162,6 +202,19 @@ If no package can be identified, the dependency is **not excluded** (to prevent 
         "valueString": "hl7.fhir.us.core#6.1.0"
       },
       {
+        "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-referenceSource",
+        "extension": [
+          {
+            "url": "artifact",
+            "valueCanonical": "http://hl7.org/fhir/uv/crmi/StructureDefinition/publishable-example"
+          },
+          {
+            "url": "path",
+            "valueString": "differential.element.where(id='Observation.value[x]').binding.valueSet"
+          }
+        ]
+      },
+      {
         "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/cqf-resourceType",
         "valueCode": "StructureDefinition"
       }
@@ -172,7 +225,7 @@ If no package can be identified, the dependency is **not excluded** (to prevent 
 
 ---
 
-## 7. Typical Usage Patterns
+## 8. Typical Usage Patterns
 
 | Mode | Description | Example Parameters |
 |------|-------------|--------------------|
@@ -184,7 +237,7 @@ If no package can be identified, the dependency is **not excluded** (to prevent 
 
 ---
 
-## 8. Summary Diagram
+## 9. Summary Diagram
 
 ```
 ┌────────────────────────────────────────────────────────┐
@@ -194,6 +247,7 @@ If no package can be identified, the dependency is **not excluded** (to prevent 
 │  • Records:                                            │
 │      - crmi-dependencyRole                             │
 │      - package-source                                  │
+│      - crmi-referenceSource                            │
 │  • Produces manifest (CRMI Manifest Library)           │
 └────────────────────────────────────────────────────────┘
                  │
@@ -212,7 +266,7 @@ If no package can be identified, the dependency is **not excluded** (to prevent 
 
 ---
 
-## 9. Key Takeaways
+## 10. Key Takeaways
 
 | Concept | Description |
 |----------|-------------|
@@ -220,6 +274,7 @@ If no package can be identified, the dependency is **not excluded** (to prevent 
 | `excludePackageId` | Removes dependencies from specified packages. |
 | `crmi-dependencyRole` | Explains *why* a dependency exists. |
 | `package-source` | Standard FHIR extension (extended for `RelatedArtifact`) to record provenance. |
+| `crmi-referenceSource` | Captures where in the source artifact a dependency originated. |
 | Fallback logic | If no provenance known, `$package` does **not** exclude. |
 | Safety model | Always errs on side of including too much rather than too little. |
 
