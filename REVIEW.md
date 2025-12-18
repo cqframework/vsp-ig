@@ -2,7 +2,7 @@
 
 * [Draft Definition](input/resources/library/Library-uscore-vsp-6-1-0-draft.json)
 * [Release Definition](input/resources/bundle/vsac/uscore/6-1-0/Library-uscore-vsp-6-1-0-release.json)
-* [Complete Package Bundle (built with VSAC)](input/resources/bundle/vsac/uscore/6-1-0/BUndle-uscore-vsp-6-1-0.json)
+* [Complete Package Bundle (built with VSAC)](input/resources/bundle/vsac/uscore/6-1-0/Bundle-uscore-vsp-6-1-0.json)
 * [ValueSet (same content as in the bundle, in files for ease of reference)](input/resources/bundle/vsac/uscore/6-1-0)
 
 ## C-CDA 3.0.0 2025-09 Value Set Package
