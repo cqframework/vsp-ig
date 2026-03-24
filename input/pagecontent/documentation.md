@@ -19,7 +19,9 @@ The _implementer_ user is anyone that needs to access complete expansions for th
 
 The Browse Value Set Packages page allows users to view the available value set packages:
 
-<img src="BrowseValueSetPackages.png" alt="Browse value set packages" width="200"/>
+<div>
+<img src="BrowseValueSetPackages.png" alt="Browse value set packages" width="800"/>
+</div>
 
 The page includes a Filter by IG Canonical that allows the set of packages to be filtered to those available for a specific implementation guide. This filter can be set to the canonical URL of the implementation guide resource, optionally including the version. For example, to list the available value set packages for version 6.1.0 of the US Core implementation guide, set the Filter to:
 
@@ -39,7 +41,9 @@ Once the specific value set package has been identified, click on the ID of the 
 
 To retrieve the Value Set Package, click on the `Export` button in the Value Set Package View:
 
-<img src="ExportOptions.png" alt="Export options" width="200"/>
+<div>
+<img src="ExportOptions.png" alt="Export options" width="800"/>
+</div>
 
 * JSON: The value set package will be downloaded as a FHIR Bundle resource in JSON format
 * XML: The value set package will be downloaded as a FHIR Bundle resource in XML format
@@ -49,7 +53,9 @@ To retrieve the Value Set Package, click on the `Export` button in the Value Set
 
 To compare value set package versions, click the `Compare Versions` button:
 
-<img src="CompareValueSetVersions.png" alt="Compare value set versions" width="200"/>
+<div>
+<img src="CompareValueSetVersions.png" alt="Compare value set versions" width="800"/>
+</div>
 
 Then choose another Value Set Package to compare. This feature allows users to compare differences between the content of two value set packages, displaying differences in:
 
@@ -61,7 +67,9 @@ Then choose another Value Set Package to compare. This feature allows users to c
 
 The Value Set Packages application accesses terminology servers using credentials for each user. To configure the credentials for your user account, go to the settings page, select the terminology endpoint you want to configure, and click `Edit`. Enter the user name and password you use to access the terminology server and click `Save`.
 
-<img src="TerminologyEndpointSettings.png" alt="Terminology endpoint settings" width="200"/>
+<div>
+<img src="TerminologyEndpointSettings.png" alt="Terminology endpoint settings" width="800"/>
+</div>
 
 > The Value Set Package Manager only supports Basic Authentication for connections to the terminology server at this time.
 
@@ -73,7 +81,9 @@ The _publisher_ user can create value set packages for download. This user is ty
 
 On the Browse value set packages page, click the `Create Value Set Package` button:
 
-<img src="CreateValueSetPackage.png" alt="Create value set package" width="200"/>
+<div>
+<img src="CreateValueSetPackage.png" alt="Create value set package" width="800"/>
+</div>
 
 If the Canonical IG was set in the browse, it will be used to default the Canonical IG for the package being created.
 
@@ -107,7 +117,9 @@ Initially, the Value Set Package will have manifest parameters for all the code 
 
 Typically, the _external_ (i.e. not HL7-maintained) code systems such as SNOMED, LOINC, an RxNORM, will not have versions specified as part of the published implementation guide, and these are the ones that will need to be _pinned_ by the value set package definition:
 
-<img src="ChooseCodeSystemVersion.png" alt="Choosing a code system version" width="200"/>
+<div>
+<img src="ChooseCodeSystemVersion.png" alt="Choosing a code system version" width="800"/>
+</div>
 
 On the right is a listing of the code systems in the manifest. This is any code system used in any value set in the implementation guide, or any of its dependencies, displayed with the currently specified version, or an Unresolved indicator if no version is set.
 
@@ -126,7 +138,9 @@ For the first option, see the Release process documentation.
 
 For the second option, select the Value Sets tab in the Manifest edit:
 
-<img src="ChooseValueSetVersion.png" alt="Choosing a value set version" width="200"/>
+<div>
+<img src="ChooseValueSetVersion.png" alt="Choosing a value set version" width="800"/>
+</div>
 
 On the right is a listing of the value sets in the manifest. This is any value set defined in or used by the implementation guide, or any of its dependencies, displayed with the currently specified version, or an Unresolved indicator if no version is set.
 
@@ -179,11 +193,15 @@ The Value Set Package manager uses KeyCloak for user administration. The followi
 
 At this time, only administrators can configure the terminology endpoints available for use in the value set package manager:
 
-<img src="OnboardingDetails.png" alt="Onboarding details" width="200"/>
+<div>
+<img src="OnboardingDetails.png" alt="Onboarding details" width="800"/>
+</div>
 
 The application can be configured with any number of endpoints, but requires at least one. If no endpoints are configured, the application will indicate this:
 
-<img src="TerminologySettings-NoEndpointsDefinedError.png" alt="Browse value set packages" width="200"/>
+<div>
+<img src="TerminologySettings-NoEndpointsDefinedError.png" alt="Browse value set packages" width="800"/>
+</div>
 
 Each endpoint can have an associated _route_ that is used to determine which endpoint should be used to support a given value set. The _route_ is a portion of the canonical identifier for the value set. 
 
@@ -196,24 +214,31 @@ This instructs the application to use the VSAC endpoint to process value sets wh
 
 To ensure that the application always has at least one endpoint that can be used to process any value set, the configuration should always include an endpoint that has no route specified, the _catch-all_ endpoint. If no catch all endpoing it configured, application will indicate this:
 
-<img src="TerminologySettings-NoCatchAll.png" alt="No catch all" width="200"/>
+<div>
+<img src="TerminologySettings-NoCatchAll.png" alt="No catch all" width="800"/>
+</div>
 
 When adding a terminology endpoint, connectivity to the endpoint is verified. Endpoint status is displayed in the settings page:
 
-<img src="TerminologySettings-EndpointStatus.png" alt="Terminology endpoint status" width="200"/>
+<div>
+<img src="TerminologySettings-EndpointStatus.png" alt="Terminology endpoint status" width="800"/>
+</div>
 
 As part of configuring an endpoint, specify the authentication to be used:
 
-<img src="EditEndpoint-NoAuthentication.png" alt="Endpoint authentication options" width="200"/>
+<div>
+<img src="EditEndpoint-NoAuthentication.png" alt="Endpoint authentication options" width="800"/>
+</div>
 
 When authentication is configured, each user must provide their own credentials to be used to connect to the terminology endpoint.
 
 ### Deployment
 
-For complete deployment instructions, refer to the VSP Documentation in the Value Set Manager repository.
+For complete local setup instructions, refer to the [VSP Setup](https://github.com/DBCG/aphl-vsm/blob/main/vsp/docs/setup.md) documentation in the Value Set Manager repository.
 
 Although we do not currently have exhaustive recommendations or metrics for usage, for our testing environments, we have been using:
 
 - CPU: 1 vCPU (1024 units)
 - Memory: 8 GB (8192 MB)
+- Disk: 20 GB
 
