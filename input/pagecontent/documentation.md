@@ -63,6 +63,8 @@ Then choose another Value Set Package to compare. This feature allows users to c
 * Value sets that are in one package and not the other
 * Value sets with differing expansions between the packages
 
+Note that this capability is also useful as a tool for verifying the expected content changes are present when defining new value set packages.
+
 #### Setting Terminology Server Credentials
 
 The Value Set Packages application accesses terminology servers using credentials for each user. To configure the credentials for your user account, go to the settings page, select the terminology endpoint you want to configure, and click `Edit`. Enter the user name and password you use to access the terminology server and click `Save`.
@@ -150,7 +152,7 @@ On the left is a drop down for the value sets available from the terminology ser
 
 Once the manifest parameters have been set, the value set package can be released. In the Value Set Package view, click the `Release` button to start the release process.
 
-> Prior to releasing, you can review the contents of the package using the `Export` button, as well as compare the contents of the package to other versions using the `Compare Versions` button.
+> Prior to releasing, you can review the contents of the package using the `Export` button, as well as compare the contents of the package to other versions using the `Compare Versions` button. Comparison is especially useful for verifying expected changes, as well as producing change documentation.
 
 The release process:
 
@@ -179,6 +181,8 @@ The Value Set Package manager uses KeyCloak for user administration. The followi
 |----|----|----|----|----|----|
 |Log in | ✅ | ✅ | ✅ | ✅ | ✅ |
 |View specifications | ✅ | ✅ | ✅ | ✅ | ✅ |
+|Export (download) specifications | ✅ | ✅ | ✅ | ✅ | ✅ |
+|Compare specification versions | ✅ | ✅ | ✅ | ✅ | ✅ |
 |Approve a specification | | ✅ | ✅ | ✅ | ✅ |
 |Clone (create draft) | | | ✅ | ✅ | ✅ |
 |Edit a draft | | | ✅ | ✅ | ✅ |
