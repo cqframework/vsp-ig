@@ -20,6 +20,7 @@
       </li>
     </ul>
   </li>
+  <li><a href="documentation.html" class="item">Documentation</a></li>
   <li><a href="examples.html" class="item">Examples</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">

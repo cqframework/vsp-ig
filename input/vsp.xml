@@ -60,6 +60,11 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="documentation.html"/>
+        <title value="Documentation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="downloads.html"/>
         <title value="Useful Downloads"/>
         <generation value="markdown"/>
