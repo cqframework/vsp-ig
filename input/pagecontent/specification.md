@@ -143,8 +143,8 @@ Next, make sure to provide a name and description for this manifest parameters r
     <reference>
         <reference value="Parameters/manifest"/>
     </reference>
-    <name value="Input Expansion Parameters"/>
-    <description value="The input expansion parameters resource for this implementation guide, specifying SNOMED Edition. This resource will be contained within the published implementation guide with all pinned references."/>
+    <name value="Expansion Parameters"/>
+    <description value="The expansion parameters resource for this implementation guide, specifying SNOMED Edition and version, as well as pinned versions for versionless references used in the IG."/>
     <exampleBoolean value="false"/>
 </resource>
 ```
