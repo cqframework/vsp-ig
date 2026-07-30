@@ -11,3 +11,4 @@ In the root directory, run, for example:
 ```
 _extractBundleResources "input\resources\bundle\tx"
 ```
+
